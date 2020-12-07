@@ -29,7 +29,7 @@ Market data is consumed via [MarketDataService](https://github.com/julian-frech/
 # Component Design
 
 1. [CalculatorService](https://github.com/julian-frech/CodeExampleFB#calculatorservice)
-2. [MarketDataService](https://github.com/julian-frech/CodeExampleFB/tree/MarketDataServiceV2#marketdataservice)
+2. [FinanceBroGraphQL](https://github.com/julian-frech/CodeExampleFB#financebrographql)
 
 ## CalculatorService
 
