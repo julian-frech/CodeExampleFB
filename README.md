@@ -53,3 +53,12 @@ The [DefaultProblemDetailsFactory](https://github.com/dotnet/aspnetcore/blob/mas
 
 ## FinanceBroGraphQL
 The FinanceBroGraphQL is a GraphQL API based on [HotChocolate](https://github.com/ChilliCream/hotchocolate) and also the first application based on the new [.NET 5.0](https://docs.microsoft.com/en-us/dotnet/core/dotnet-five), which is the successor also of the .NET Core framework. Thus, the .NET Core and .NET Framework should finally be dropped. One needs to take into consideration the following: "ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6."
+
+# Design and Features
+
+The Options pattern in [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) enables usage of strongly typed access to settings. Depdening on the scenario applied the configuration is isolated into separate classes. 
+This leads to conformity with the [Interface Segregation Principle](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles#encapsulation): 
+1. Decouple not needed modules (unnecessary dependencies)
+     1. No need to recompile if i.e. launchsettings change.
+
+Brief example:  
