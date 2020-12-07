@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{77CD2464-4A26-4A04-AB70-8D7E2A690923}|Default">
+  <MonoDevelop.Ide.ItemProperties.CalculatorService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalculatorService/appsettings.json-e-e">
+    <Files>
+      <File FileName="CalculatorService/Data/SqlDatabaseContext.cs" Line="32" Column="2" />
+      <File FileName="CalculatorService/Properties/launchSettings.json" />
+      <File FileName="CalculatorService/appsettings.json" Line="12" Column="4" />
+      <File FileName="CalculatorService/Program.cs" />
+      <File FileName="CalculatorService/Calculator/RSI.cs" />
+      <File FileName="CalculatorService/Calculator/AverageSimple.cs" />
+      <File FileName="CalculatorService/Calculator/ICalculator.cs" />
+      <File FileName="CalculatorService/Models/Analysis.cs" />
+      <File FileName="CalculatorServiceUT/CalculatorServiceUT.csproj" />
+      <File FileName="CalculatorServiceUT/CalculationDataSample.csv" />
+      <File FileName="CalculatorServiceUT/AverageExponentialSolution.csv" />
+      <File FileName="CalculatorServiceUT/AverageSimpleSolution.csv" />
+      <File FileName="CalculatorServiceUT/CalculatorUT/AverageExponentialUT.cs" />
+      <File FileName="CalculatorServiceUT/CalculatorUT/AverageSimpleUT.cs" />
+      <File FileName="CalculatorServiceUT/CalculatorUT/RSIUT.cs" />
+      <File FileName="CalculatorService/Calculator/AverageExponential.cs" />
+      <File FileName="CalculatorService/Models/ApiInputClass.cs" />
+      <File FileName="CalculatorService/Startup.cs" />
+      <File FileName="CalculatorService/Models/CalculationData.cs" />
+      <File FileName="CalculatorService/Controllers/AnalysisController.cs" />
+      <File FileName="CalculatorService/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="CalculatorService/appsettings.json-e" Line="1" Column="1" />
+      <File FileName="CalculatorService/appsettings.json-e-e" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CalculatorService" expanded="True">
+            <Node name="CalculatorService" expanded="True">
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="appsettings.json-e-e" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

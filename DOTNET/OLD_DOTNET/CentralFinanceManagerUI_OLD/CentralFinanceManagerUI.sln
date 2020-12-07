@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralFinanceManagerUI", "CentralFinanceManagerUI.csproj", "{3C9B38E2-29E6-4A29-85CB-1F8F2DC5B03A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C9B38E2-29E6-4A29-85CB-1F8F2DC5B03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9B38E2-29E6-4A29-85CB-1F8F2DC5B03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9B38E2-29E6-4A29-85CB-1F8F2DC5B03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9B38E2-29E6-4A29-85CB-1F8F2DC5B03A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{82F11388-2FEF-4444-85A5-D7E6DE5CFBFF}|AnalysisSignals">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AnalysisSignals/AnalysisDiffMethods/AverageSimple.cs">
+    <Files>
+      <File FileName="AnalysisSignals/Calculations/AnalysisMethods.cs" Line="20" Column="37" />
+      <File FileName="AnalysisSignals/AnalysisDiffMethods/AverageSimple.cs" Line="91" Column="42" />
+      <File FileName="AnalysisSignals/Program.cs" />
+      <File FileName="AnalysisSignalsUnitTests/UnitTest1.cs" />
+      <File FileName="AnalysisSignals/Analysis.cs" />
+      <File FileName="AnalysisSignals/Model/AnalysisData.cs" />
+      <File FileName="AnalysisSignals/Data/DatabaseFetcher.cs" />
+      <File FileName="AnalysisSignals/Data/ConnectionBuilder1.cs" />
+      <File FileName="AnalysisSignals/AnalysisWorker.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AnalysisSignals" expanded="True">
+            <Node name="AnalysisSignals" expanded="True">
+              <Node name="AnalysisDiffMethods" expanded="True">
+                <Node name="AverageSimple.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="AnalysisSignalsUnitTests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AnalysisSignals PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

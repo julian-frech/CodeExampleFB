@@ -1,0 +1,68 @@
+@model CentralFinanceManagerUI.Models.F_MARKET_DATA
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>F_MARKET_DATA</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Symbol" class="control-label"></label>
+                <input asp-for="Symbol" class="form-control" />
+                <span asp-validation-for="Symbol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Open" class="control-label"></label>
+                <input asp-for="Open" class="form-control" />
+                <span asp-validation-for="Open" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="High" class="control-label"></label>
+                <input asp-for="High" class="form-control" />
+                <span asp-validation-for="High" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Low" class="control-label"></label>
+                <input asp-for="Low" class="form-control" />
+                <span asp-validation-for="Low" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Close" class="control-label"></label>
+                <input asp-for="Close" class="form-control" />
+                <span asp-validation-for="Close" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AGG_Volume" class="control-label"></label>
+                <input asp-for="AGG_Volume" class="form-control" />
+                <span asp-validation-for="AGG_Volume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Market_Timestamp" class="control-label"></label>
+                <input asp-for="Market_Timestamp" class="form-control" />
+                <span asp-validation-for="Market_Timestamp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

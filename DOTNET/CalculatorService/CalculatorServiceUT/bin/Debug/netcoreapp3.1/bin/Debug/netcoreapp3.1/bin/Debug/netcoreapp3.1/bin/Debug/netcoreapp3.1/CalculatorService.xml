@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculatorService</name>
+    </assembly>
+    <members>
+        <member name="M:CalculatorService.Controllers.AnalysisDataController.GetData(CalculatorService.Models.ApiInputClass)">
+             <summary>
+             Choose a calculation method to be performed on a specific company.
+             Mandatory: Method, Symbol, Interval,
+             Optional: Weighting
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Analysis
+                 {
+                    "Method": "average",
+                    "Symbol": "msft",
+                    "Interval": 200,
+                    "Weighting: 1
+                 }
+             </remarks>
+             <param name="inputClass"></param>
+             <returns code="202">Latest 100 calculations.</returns>
+        </member>
+        <member name="P:CalculatorService.Models.CalculationData.AnalysisId">
+            <summary>
+            Here are values used for calculation
+            </summary>
+        </member>
+    </members>
+</doc>

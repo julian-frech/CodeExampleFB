@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  FinanceBro:
+    image: ${DOCKER_REGISTRY-}financebro
+    build:
+      context: .
+      dockerfile: FinanceBro/Dockerfile
+
+  MarketDataService:
+    image: ${DOCKER_REGISTRY-}marketdataservice
+    build:
+      context: .
+      dockerfile: MarketDataService/Dockerfile
+

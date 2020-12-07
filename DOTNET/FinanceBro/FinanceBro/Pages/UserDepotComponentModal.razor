@@ -1,0 +1,151 @@
+﻿@using FinanceBro.Data
+@inject AuthenticationStateProvider authenticationService
+@inject ISymbolNewsListService service
+@inject ISymbolFactsDataListService symbolservice
+@inject IJSRuntime jsRuntime
+@inject IUserDepotListService userDepotService
+@inject IUserDepotComponentListService userDepotComponentService
+
+<div class="modal fade show" tabindex="-1" role="dialog" id="taskModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Depot Component</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <EditForm Model="@newDepotComponent" OnValidSubmit="@ComponentSubmit">
+                    <div class="form-group">
+                        <label for="DepotId">Depot Name</label>
+                        <InputSelect id="Summary" class="form-control"
+                                     @bind-Value="@DepotName">
+                            <option value="">Select</option>
+                            @if (ListDepotsUnique == null)
+                            {
+                                @foreach (var sym in InitialisingList)
+                                {
+                                    <option value="@sym">
+                                        @sym
+                                    </option>
+                                }
+                            }
+                            else
+                            {
+                                @foreach (var sym in ListDepotsUnique)
+                                {
+                                    <option value="@sym">
+                                        @sym
+                                    </option>
+                                }
+                            }
+                        </InputSelect>
+                    </div>
+                    <div class="form-group">
+                        <label for="headline">Symbol</label>
+                        <InputSelect id="Summary" class="form-control"
+                                     @bind-Value="@newDepotComponent.Symbol">
+                            <option value="">Select</option>
+                            @if (symbolFactsDataList == null)
+                            {
+                                @foreach (var sym in InitialisingList)
+                                {
+                                    <option value="@sym">
+                                        @sym
+                                    </option>
+                                }
+                            }
+                            else
+                            {
+                                @foreach (var sym in symbolFactsDataList)
+                                {
+                                    <option value="@sym.Symbol">
+                                        @sym.CompanyName
+                                    </option>
+                                }
+                            }
+                        </InputSelect>
+                    </div>
+                    <div class="form-group">
+                        <label for="ValidFrom">Order Price</label>
+                        <input type="text" @bind-value="@newDepotComponent.MarketValue" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ValidFrom">Number of Shares</label>
+                        <input type="number" id="Quantity" name="math" @bind-value="@newDepotComponent.Quantity" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ValidFrom">Order Date</label>
+                        <input type="date" id="addition" name="math" @bind-value="@newDepotComponent.ValidFrom" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ValidTo">Liquidation Date</label>
+                        <input type="date" id="addition" name="math" @bind-value="@newDepotComponent.ValidTo" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public Action DataChanged { get; set; }
+
+    [Parameter]
+    public UserDepotComponents newDepotComponent { get; set; }
+
+    public DateTime? DateValue { get; set; } = DateTime.Now;
+
+    public string DepotName { get; set; }
+
+    [CascadingParameter(Name = "ListDepotsUnique")] List<string> ListDepotsUnique { get; set; }
+
+    [CascadingParameter(Name = "ListAllDepots")] List<UserDepotsView> ListDepots { get; set; }
+
+    [CascadingParameter(Name = "UserData")] public string User { get; set; }
+
+    [Parameter]
+    public List<SymbolFacts> symbolFactsDataList { get; set; }
+
+    List<string> InitialisingList = new List<string>() { "Initialising" };
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var authState = await authenticationService.GetAuthenticationStateAsync();
+        var _user = authState.User;
+
+        User = _user.Identity.Name;
+
+        if (!(User is null))
+        {
+            symbolFactsDataList = await symbolservice.Get();
+        }
+
+    }
+
+    private async Task CloseTaskModal()
+    {
+        await jsRuntime.InvokeAsync<object>
+            ("CloseModal", "taskModal");
+    }
+
+    private async void ComponentSubmit()
+    {
+        var DepotId = ListDepots.Where(x => x.DepotName == DepotName && x.UserName == User).Select(x => x.DepotId).FirstOrDefault();
+        await userDepotComponentService.Create(DepotId, User, newDepotComponent.Symbol, newDepotComponent.Quantity, newDepotComponent.MarketValue, newDepotComponent.ValidFrom, newDepotComponent.ValidTo);
+        DataChanged?.Invoke();
+        await CloseTaskModal();
+    }
+
+
+
+}
+

@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <IsPackable>false</IsPackable>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+    <PackageReference Include="CsvHelper" Version="15.0.8" />
+    <PackageReference Include="NLog" Version="4.7.5" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CalculatorService\CalculatorService.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CalculatorUT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CalculationDataSample.csv" />
+    <None Remove="AverageExponentialSolution.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Remove="bin\Debug\netcoreapp3.1\CalculatorService.pdb" />
+    <Content Remove="bin\Debug\netcoreapp3.1\CalculatorService.dll" />
+    <Content Remove="obj\Debug\netcoreapp3.1\CalculatorServiceUT.csproj.CopyComplete" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CalculationDataSample.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="**/*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="CalculationDataSample.csv">
+      <IncludeInPackage>false</IncludeInPackage>
+    </Content>
+  </ItemGroup>
+</Project>

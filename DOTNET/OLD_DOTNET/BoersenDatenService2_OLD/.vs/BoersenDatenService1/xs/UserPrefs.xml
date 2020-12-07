@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{46EC4FEF-6DFC-466D-82BE-E86D0C0EC4EB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoersenDatenService1/NewWorkerService.cs">
+    <Files>
+      <File FileName="BoersenDatenService1/Interfaces/IApi.cs" Line="9" Column="1" />
+      <File FileName="BoersenDatenService1/ApiServices/ApiAlphAdv2.cs" />
+      <File FileName="BoersenDatenService1/ApiServices/ApiFxRates.cs" />
+      <File FileName="BoersenDatenService1/ApiServices/ApiKursDaten.cs" />
+      <File FileName="BoersenDatenService1/BoersenDatenService.cs" />
+      <File FileName="BoersenDatenService1/Program.cs" />
+      <File FileName="BoersenDatenService1/Interfaces/IProperties.cs" />
+      <File FileName="BoersenDatenService1/ApiProperties/PropertyApiAlphAdv2.cs" />
+      <File FileName="BoersenDatenService1/ApiProperties/PropertyApiFxRates.cs" />
+      <File FileName="BoersenDatenService1/ApiProperties/PropertyApiKursDaten.cs" />
+      <File FileName="BoersenDatenService1/appsettings.json" />
+      <File FileName="BoersenDatenService1/NewWorkerService.cs" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BoersenDatenService1" expanded="True" selected="True">
+            <Node name="BoersenDatenService1" expanded="True">
+              <Node name="ApiProperties" expanded="True" />
+              <Node name="ApiServices" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BoersenDatenService1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

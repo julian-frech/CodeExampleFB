@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{77CD2464-4A26-4A04-AB70-8D7E2A690923}|MarketDataService">
+  <MonoDevelop.Ide.ItemProperties.MarketDataService PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MarketDataService/ApiService/ApiService.cs">
+    <Files>
+      <File FileName="MarketDataService/appsettings.json" Line="13" Column="2" />
+      <File FileName="MarketDataService/Program.cs" />
+      <File FileName="MarketDataService/Startup.cs" />
+      <File FileName="MarketDataService/Data/SqlDatabaseContext.cs" />
+      <File FileName="MarketDataService/Models/Symbol.cs" />
+      <File FileName="MarketDataService/Controllers/SymbolsController.cs" />
+      <File FileName="MarketDataService/Properties/launchSettings.json" />
+      <File FileName="MarketDataService/Models/IEXCloudClass.cs" />
+      <File FileName="MarketDataService/ApiService/ApiService.cs" Line="72" Column="18" />
+      <File FileName="MarketDataService/Models/IModel.cs" />
+      <File FileName="MarketDataService/Controllers/TriggerController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MarketDataService" expanded="True">
+            <Node name="MarketDataService" expanded="True">
+              <Node name="ApiService" expanded="True">
+                <Node name="ApiService.cs" selected="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/ApiService/IexApi.cs" relfile="MarketDataService/ApiService/IexApi.cs" line="44" column="1" />
+      <Breakpoint file="/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/Controllers/TriggerController.cs" relfile="MarketDataService/Controllers/TriggerController.cs" line="31" column="1" />
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Breakpoint file="/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/ApiService/ApiService.cs" relfile="MarketDataService/ApiService/ApiService.cs" line="102" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

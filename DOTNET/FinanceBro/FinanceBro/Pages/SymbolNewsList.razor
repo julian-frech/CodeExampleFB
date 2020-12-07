@@ -1,0 +1,132 @@
+﻿@page "/symbolnews"
+
+@using FinanceBro.Data
+@inject ISymbolNewsListService service
+@inject IJSRuntime jsRuntime
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.DropDowns
+
+
+<h1>News Articles</h1>
+
+<div>
+    <input type="button" data-toggle="modal" data-target="#taskModal" class="btn btn-primary" value="Add News Article" @onclick="(() => InitializeTaskObject())" />
+    <input type="button" class="btn btn-primary" value="Transfer Update" @onclick="@(async() => await TransferNewsList(symbolNewsList))" />
+</div>
+
+
+@if (symbolNewsList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+
+
+    <SfGrid DataSource="@symbolNewsList" AllowPaging="true" Toolbar="@(new List<string>() { "Edit", "Cancel", "Update" })" Height="315">
+        <GridEditSettings AllowEditing="true" Mode="EditMode.Normal"></GridEditSettings>
+        <GridColumns>
+            <GridColumn Field=@nameof(SymbolNews.NewsId) HeaderText="Company" IsPrimaryKey="true" Visible="false" TextAlign="TextAlign.Right" Width="120" AllowEditing="false"></GridColumn>
+            <GridColumn Field=@nameof(SymbolNews.symbol) HeaderText="Company"  TextAlign="TextAlign.Right" Width="120" AllowEditing="false"></GridColumn>
+            <GridColumn Field=@nameof(SymbolNews.headline) HeaderText="Headline"  Width="120" AllowEditing="false"></GridColumn>
+            <GridColumn Field=@nameof(SymbolNews.articledatetime) HeaderText="Date"  Format="d" TextAlign="TextAlign.Right" Width="130" Type="ColumnType.Date" AllowEditing="false"></GridColumn>
+            <GridColumn Field=@nameof(SymbolNews.summary) HeaderText="Summary" TextAlign="TextAlign.Right" AllowEditing="false" Width="120"></GridColumn>
+            <GridColumn Field=@nameof(SymbolNews.comment) HeaderText=" Rating" EditType="EditType.DropDownEdit" Width="150">
+                <EditTemplate>
+                    <SfDropDownList ID="ShipState" Placeholder="Rating...?" TItem="string" Enabled="true" TValue="string" @bind-Value="@((context as SymbolNews).comment)" DataSource="@SymbolComment">
+                        <DropDownListFieldSettings Text="SymbolComment" Value="SymbolComment"></DropDownListFieldSettings>
+                    </SfDropDownList>
+                </EditTemplate>
+            </GridColumn>
+        </GridColumns>
+    </SfGrid>
+
+}
+
+
+
+<SymbolNewsModal SymbolNews=symbolNews DataChanged="@DataChanged"></SymbolNewsModal>
+
+@code {
+
+
+    private async void DataChanged()
+    {
+        searchTerm = (searchTerm is null) ? "" : searchTerm;
+        symbolNewsList = await SearchIssues();
+        StateHasChanged();
+    }
+
+
+
+    List<string> SymbolComment = new List<string>() { "Positive", "Negative", "Neutral" };
+
+    List<SymbolNews> symbolNewsList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        symbolNewsList = await service.Get();
+    }
+
+    private string searchTerm;
+
+    async Task<List<SymbolNews>> SearchIssues()
+    {
+        return await service.Get(searchTerm);
+    }
+
+
+    SymbolNews symbolNews = new SymbolNews();
+
+    private void InitializeTaskObject()
+    {
+        symbolNews = new SymbolNews();
+    }
+
+
+
+
+    private async Task TransferNewsList(List<SymbolNews> _symbolNewsList)
+    {
+        await service.BulkUpdate(_symbolNewsList);
+        this.DataChanged();
+    }
+
+
+}
+
+
+@functions{
+
+    private bool IsSortedAscending;
+
+    private string CurrentSortColumn;
+
+    private void SortTable(string columnName)
+    {
+        //Sorting against a column that is not currently sorted against.
+        if (columnName != CurrentSortColumn)
+        {
+            //We need to force order by ascending on the new column
+            //This line uses reflection and will probably perform inefficiently in a production environment.
+            symbolNewsList = symbolNewsList.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            CurrentSortColumn = columnName;
+            IsSortedAscending = true;
+
+        }
+        else //Sorting against same column but in different direction
+        {
+            if (IsSortedAscending)
+            {
+                symbolNewsList = symbolNewsList.OrderByDescending(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            else
+            {
+                symbolNewsList = symbolNewsList.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+
+            //Toggle this boolean
+            IsSortedAscending = !IsSortedAscending;
+        }
+    }
+}

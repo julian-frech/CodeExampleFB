@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/MarketDataService.csproj": {}
+  },
+  "projects": {
+    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/MarketDataService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/MarketDataService.csproj",
+        "projectName": "MarketDataService",
+        "projectPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/MarketDataService.csproj",
+        "packagesPath": "/Users/julianfrech/.nuget/packages/",
+        "outputPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/MarketDataService/MarketDataService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianfrech/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Z.EntityFramework.Extensions.EFCore": {
+              "target": "Package",
+              "version": "[3.0.85, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

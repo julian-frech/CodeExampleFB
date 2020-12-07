@@ -1,0 +1,9 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/Identity" Path="/Users/julianfrech/.nuget/packages/microsoft.aspnetcore.identity.ui/3.1.7/build/../staticwebassets/V4/" />
+  <ContentRoot BasePath="_content/Blazored.Modal" Path="/Users/julianfrech/.nuget/packages/blazored.modal/5.0.3/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise" Path="/Users/julianfrech/.nuget/packages/blazorise/0.9.1.2/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="/Users/julianfrech/.nuget/packages/blazorise.bootstrap/0.9.1.2/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise.Charts" Path="/Users/julianfrech/.nuget/packages/blazorise.charts/0.9.1.2/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/BlazorTable" Path="/Users/julianfrech/.nuget/packages/blazortable/1.12.1/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor" Path="/Users/julianfrech/.nuget/packages/syncfusion.blazor/18.2.0.55/build/../staticwebassets/" />
+</StaticWebAssets>

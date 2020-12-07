@@ -1,0 +1,248 @@
+@model CentralFinanceManagerUI.Models.V_MARKET_DATA_EOD
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    <link href="~/css/TableScrollCSS.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="~/js/TableScrollJS.js"></script>
+
+    List<SelectListItem> _listDateOptions = new List<SelectListItem>();
+    _listDateOptions.Add(new SelectListItem
+    {
+        Text = "Select your time horizon",
+        Value = "0"
+    });
+    _listDateOptions.Add(new SelectListItem
+    {
+        Text = "One Week",
+        Value = "1"
+    });
+    _listDateOptions.Add(new SelectListItem
+    {
+        Text = "Two Weeks",
+        Value = "2",
+        Selected = true
+    });
+    _listDateOptions.Add(new SelectListItem
+    {
+        Text = "One Month",
+        Value = "3"
+    });
+}
+
+<!DOCTYPE html>
+
+
+<h2>Aktien Einzelansicht</h2>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+<body>
+    <header>
+        @using (Html.BeginForm("Index", "V_MARKET_DATA_EOD", FormMethod.Post, new { id = "signupform", role = "form" }))
+        {
+            Dictionary<string, string> _symbols_ = (Dictionary<string, string>)ViewBag.ListOfSymbolsDic;
+            @Html.DropDownListFor(model => model.Symbol, new SelectList(_symbols_, "Key", "Value"),
+                                                                                                                               new { style = "width:200px; height: 40px; padding 10px; margin: 5px 0 6px; background: no-repeat middle #f4f4f4; border: 1px solid #f4f4f4; vertical-align:middle;" })
+
+            @Html.DropDownListFor(model => model.StartDate_IND, new SelectList(_listDateOptions, "Value", "Text"),
+                                                                                                                               new { style = "width:200px; height: 40px; padding 10px; margin: 5px 0 6px; background: no-repeat middle #f4f4f4; border: 1px solid #f4f4f4; vertical-align:middle;" })
+            <input type="submit" value="Go" class="btn btn-primary">
+        }
+    </header>
+    <script>document.getElementById("signupform").addEventListener("Go", myFunction);</script>
+
+    <div class="box-body">
+        <div class="chart-container">
+            <canvas id="chart2" style="width:30%; height:70px"></canvas>
+            <canvas id="chart1" style="width:30%; height:70px"></canvas>
+            <canvas id="myPieChart" style="width:30%; height:70px"></canvas>
+        </div>
+    </div>
+</body>
+
+
+<script>
+     var ctx = document.getElementById('chart1').getContext('2d');
+        var chart1 = new Chart(ctx, {
+            type: 'line',
+            data: {
+                    labels: @Html.Raw(ViewBag.SelectedMarketTimeStamps) ,
+                    datasets: [{
+                        label: 'normal value',
+                        data: @Html.Raw(ViewBag.SelectedCloseValues),
+                        backgroundColor: "#0043FF",
+                        borderColor: "#0043FF",
+                        label: "Close",
+                        type: "line",
+                        fill: false
+                    },{
+                        label: @Html.Raw(ViewBag.SelectedMarketTimeStamps),
+                            data: @Html.Raw(ViewBag.SelectedHighValues),
+                            backgroundColor: "#008200",
+                            borderColor: "#008200",
+                            label: "High",
+                            type: "line",
+                            fill: false
+                    },{
+                        label: @Html.Raw(ViewBag.SelectedMarketTimeStamps),
+                            data: @Html.Raw(ViewBag.SelectedLowValues),
+                            backgroundColor: "#FF1500",
+                            borderColor: "#FF1500",
+                            label: "Low",
+                            type: "line",
+                            fill: false,
+                            lineTension: 0,
+                    }]
+                },
+            options: {
+                scales: {
+                    xAxes: [{
+                        stacked: false
+                    }],
+                    yAxes: [{
+                        stacked: false
+                    }]
+                }
+            }
+        });
+    var ctx2 = document.getElementById('chart2').getContext('2d');
+        var chart2 = new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: @Html.Raw(ViewBag._selectedMarketTimeStampsVol) ,
+                    datasets: [{
+                        label: 'Aggregated Volume',
+                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                        data: @Html.Raw(ViewBag.SelectedVolume),
+                    }]
+                },
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Aggregated Volume last 5 Days'
+                }
+            }
+        });
+    var ctxP = document.getElementById("myPieChart").getContext('2d');
+    var myPieChart = new Chart(ctxP, {
+        plugins: [ChartDataLabels],
+        type: 'pie',
+        data: {
+            labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+            datasets: [{
+                data: [210, 130, 120, 160, 120],
+                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+            }]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'right',
+                labels: {
+                    padding: 20,
+                    boxWidth: 10
+                }
+            },
+            plugins: {
+                datalabels: {
+                    formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value * 100 / sum).toFixed(2) + "%";
+                        return percentage;
+                    },
+                    color: 'white',
+                    labels: {
+                        title: {
+                            font: {
+                                size: '16'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+    myPieChart.render();
+    chart1.render();
+    chart2.render();
+
+
+</script>
+
+<pre class="tab"></pre>
+<pre class="tab"></pre>
+
+<table class="blue">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Symbol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Open)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.High)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Low)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Close)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AGG_Volume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Market_Timestamp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in (ViewBag.MarketDataEodList as List<V_MARKET_DATA_EOD>))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Symbol)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Open)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.High)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Low)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Close)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGG_Volume)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Market_Timestamp)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

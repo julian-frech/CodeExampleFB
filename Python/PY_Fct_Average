@@ -1,0 +1,53 @@
+def func_avg(Symbol,AvgPeriodEMA,AvgPeriodGLD):
+    ##  EMA(t) = EMA(t-1) + (SF * (C(t)-EMA(t-1)))
+    ##  SF  = Anzahl an Perioden = 2 / (n+1)
+    ##  C = Close Price
+    ##  EMA(0) = C(0)    
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import decimal 
+
+    PriceData = func_get_prices(Symbol)
+    NumDataEMA   = len(PriceData)
+    NumDataGLD   = len(PriceData)-(AvgPeriodGLD)
+    
+    ClosePrices     = PriceData[:,2]
+    Dates           = PriceData[:,1]
+    EMA = []
+    GLD = []
+    
+    SF = decimal.Decimal(2/(AvgPeriodEMA+1))
+    EMA.append(ClosePrices[1])
+    
+    for t in range(NumDataEMA-1):
+        EMA.append(EMA[t]+(SF * (ClosePrices[t+1] - EMA[t])))
+    
+    i = 0
+    while i < NumDataGLD:
+        o = i+AvgPeriodGLD
+        u = ClosePrices[+i: +o]
+        GLD.append(sum(u)/AvgPeriodGLD)
+        i += 1
+
+    print(GLD)
+
+
+def func_get_prices(Symbol):
+
+    import numpy as np
+    
+    import pyodbc 
+
+    cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=tcp:teq92.database.windows.net;PORT=1433;DATABASE=Datenbank01;UID=Password=WrongDBUser;PWD=Password=WrongPWD')
+
+    cur = cnxn.cursor()
+    
+    cur.execute('SELECT Symbol,Market_Timestamp,[Close] FROM production.F_MARKET_DATA WHERE Symbol = ? ',Symbol)
+   
+    PriceData = cur.fetchall()
+    
+    PriceData = np.array(PriceData)
+    
+    return(PriceData)
+
+func_avg(Symbol='air.de',AvgPeriodEMA=20,AvgPeriodGLD=20)

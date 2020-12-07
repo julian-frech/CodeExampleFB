@@ -1,0 +1,138 @@
+﻿@using FinanceBro.Data
+@inject IJSRuntime JSRuntime
+@using Blazorise.Charts
+@*@using Blazorise.Components*@
+@using Blazorise
+@inject ISymbolFactsDataListService SymbolListService
+@inject IMarketDataListService MarketDataService
+@using System
+
+
+@page "/historicChart"
+@*<SelectList Data="@symbolFactsDataList"
+    TextField="@((item) => item.CompanyName)"
+    ValueField="@((item) => item.Symbol)"
+    SelectedValue="@selectedListValue"
+    SelectedValueChanged="@MyListValueChangedHandler" />*@
+
+
+<Autocomplete Data="@symbolFactsDataList"
+              TextField="@((item)=>item.CompanyName)"
+              ValueField="@( (item)=> item.Symbol)"
+              SelectedValue="@selectedListValue"
+              SelectedValueChanged="@SymbolSelectionListHandler"
+              Placeholder="Company Name ..." />
+
+<form class="form-inline">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">Days Interval:</span>
+        </div>
+        <input id="Interval1" type="text" placeholder="(Days)@TimeInterval" @bind-value="@TimeInterval" />
+    </div>
+    <input class="btn btn-primary mb-3" type="button" value="Confirm" @onclick="@(() => SymbolSelectionListHandler(null))" />
+</form>
+
+<Slider TValue="int" Value="@TimeInterval" Max="365" ValueChanged="@( (int v) => IntervalSelectionHandler(v) )" />
+
+<LineChart @ref="lineChart" TItem="double" />
+
+@code{
+
+    public List<SymbolFacts> symbolFactsDataList { get; set; }
+    private int TimeInterval { get; set; } = 14;
+    object selectedListValue { get; set; }
+    LineChart<double> lineChart;
+    List<MarketData> marketDataList;
+    List<string> SymbolSelections = new List<string>();
+    List<string>
+backgroundColors = new List<string>
+{ ChartColor.FromRgba(255, 99, 132, 0.2f), ChartColor.FromRgba(54, 162, 235, 0.2f), ChartColor.FromRgba(255, 206, 86, 0.2f), ChartColor.FromRgba(75, 192, 192, 0.2f), ChartColor.FromRgba(153, 102, 255, 0.2f), ChartColor.FromRgba(255, 159, 64, 0.2f) };
+
+    List<string>
+        borderColors = new List<string>
+            { ChartColor.FromRgba(255, 99, 132, 1f), ChartColor.FromRgba(54, 162, 235, 1f), ChartColor.FromRgba(255, 206, 86, 1f), ChartColor.FromRgba(75, 192, 192, 1f), ChartColor.FromRgba(153, 102, 255, 1f), ChartColor.FromRgba(255, 159, 64, 1f) };
+
+    /// <summary>
+    /// Method triggered on page initialization.
+    /// sets list of all possible symbols.
+    /// </summary>
+    /// <returns></returns>
+    protected override async Task OnInitializedAsync()
+    {
+        symbolFactsDataList = await SymbolListService.Get();
+        StateHasChanged();
+    }
+
+
+
+
+    /// <summary>
+    /// Method to ammend new symbols to the list SymbolSelections.
+    /// After the selection based on the user input i
+    /// </summary>
+    /// <param name="SymbolSelectionFromUser"></param>
+    private async Task SymbolSelectionListHandler(object SymbolSelectionFromUser)
+    {
+        if (!(SymbolSelectionFromUser is null))
+        {
+            if (!SymbolSelections.Contains(SymbolSelectionFromUser.ToString().ToLower()))
+            {
+                if (SymbolSelections.Count() > 3) { SymbolSelections.RemoveAt(0); }
+                SymbolSelections.Add(SymbolSelectionFromUser.ToString().ToLower());
+            }
+
+            selectedListValue = SymbolSelectionFromUser;
+            StateHasChanged();
+        }
+        await ChartDataRanderHandler();
+    }
+
+    async Task ChartDataRanderHandler()
+    {
+        await lineChart.Clear();
+
+        await GetMarketData();
+
+        await lineChart.AddLabel(marketDataList.Where(x => x.MarketTimestamp.Hour == 0 && x.MarketTimestamp.Minute == 0 && x.MarketTimestamp > DateTime.Today.AddDays(-TimeInterval)).OrderBy(x => x.MarketTimestamp).Select(x => x.MarketTimestamp.ToShortDateString()).Distinct().ToArray());
+
+        foreach (var item in SymbolSelections)
+        {
+            await lineChart.AddDatasetsAndUpdate(GetLineChartDataset(item));
+        }
+
+    }
+
+    private async Task IntervalSelectionHandler(int _IntervalUserInput)
+    {
+        this.TimeInterval = _IntervalUserInput;
+
+        await SymbolSelectionListHandler(null);
+    }
+
+    async Task GetMarketData()
+    {
+        marketDataList = await MarketDataService.Get(SymbolSelections);
+    }
+
+    LineChartDataset<double> GetLineChartDataset(string symbol)
+    {
+        return new LineChartDataset<double>
+        {
+            Label = "Symbol: " + symbol,
+            Data = marketDataList.Where(x => x.MarketTimestamp.Hour == 0 && x.MarketTimestamp.Minute == 0 && x.symbol.ToLower() == symbol.ToLower() && x.MarketTimestamp > DateTime.Today.AddDays(-TimeInterval)).OrderBy(x => x.MarketTimestamp).Select(x => (double)x.close).ToList(),
+            BackgroundColor = backgroundColors,
+            BorderColor = borderColors,
+            Fill = true,
+            PointRadius = 2,
+            BorderDash = new List<int>
+            { }
+        };
+    }
+
+
+
+
+
+
+}

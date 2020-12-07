@@ -1,0 +1,75 @@
+@model IEnumerable<CentralFinanceManagerUI.Models.UserDepots.UserDepot>
+
+@{
+    ViewData["Title"] = "Index";
+
+    <link href="~/css/NewCSS.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="~/js/site.js"></script>
+
+}
+
+<div class="font-weight-bold text-center p-3 mb-2 bg-gradient-primary text-black">
+    <h1 class="display-4">Manage your Depots</h1>
+</div>
+<p>
+    <a asp-action="Create">Create New Depot</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepotName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepotId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserHK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValidFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValidTo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepotName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepotId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserHK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValidFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValidTo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DepotId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DepotId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DepotId">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+

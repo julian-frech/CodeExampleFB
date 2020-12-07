@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.1" />
+<title>XmlReplace API documentation</title>
+<meta name="description" content="Contains classes: XmlReplace …" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>XmlReplace</code></h1>
+</header>
+<section id="section-intro">
+<p>Contains classes: XmlReplace</p>
+<p>XmlReplace class: Takes xml file and configuration file as input and provides configured xml file as output</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#########################################
+######## Descriptive block ##############
+#########################################
+&#34;&#34;&#34;Contains classes: XmlReplace\n
+    XmlReplace class: Takes xml file and configuration file as input and provides configured xml file as output
+    &#34;&#34;&#34;
+
+########################################
+############# Libraries ################
+########################################
+# pip install elementpath
+# pip install python-csv
+# pip install configparser
+
+import xml.etree.ElementTree as ET
+import os
+import configparser
+import datetime
+import re
+import logging
+import logging.handlers
+from datetime import datetime
+
+from AuxiliaryModule import Helper
+
+class XmlReplace:
+    &#34;&#34;&#34;Class for replacing strings in xml file based on configuration file
+    &#34;&#34;&#34;
+    Encoding = &#34;utf-8&#34;
+    &#34;&#34;&#34;
+    Encoding format of the output xml file.
+    &#34;&#34;&#34;
+    helper = Helper()
+    &#34;&#34;&#34;
+    Helper class of AuxiliaryModule is initiated.
+    &#34;&#34;&#34;
+    APPLY_RULES_FOLDER = []
+    &#34;&#34;&#34;Options are FOLDER and/or SMART_FOLDER provided by the config file.
+    &#34;&#34;&#34;
+
+    def __init__(self, configFile, target, env):
+        &#34;&#34;&#34;Constructor for XmlReplace class --&gt; initializes the class based on input variables
+        Args:
+            fileSource (string): folder location of the source xml
+            fileTarget (string): configured xml file name
+            configFile (string): configuration file name
+        &#34;&#34;&#34;
+        self.Target = target
+        self.Env = env.upper()
+        self.data = []
+        self.WorkDir = os.path.abspath(os.getcwd())
+        self.configFilePath = self.WorkDir + &#34;/&#34; + configFile
+
+    def ConfigurationParser(self):
+        &#34;&#34;&#34;Parser for the configuration file defined in variable configFilePath.
+        &#34;&#34;&#34;
+
+        ConfigString = self.Target+&#34;_&#34;+ self.Env
+        FilterString = str(&#34;Filter_&#34; + ConfigString)
+
+        configParser = configparser.RawConfigParser()
+        configParser.read(self.configFilePath)
+        self.FILTER_FOLDER_MODUS = configParser.get(
+            FilterString, &#34;FILTER_FOLDER_MODUS&#34;)
+        self.FOLDER_DATACENTER = configParser.get(
+            FilterString, &#34;FOLDER_DATACENTER&#34;)
+        self.SMART_FOLDER_REMOVE = configParser.get(
+            FilterString, &#34;SMART_FOLDER_REMOVE&#34;)
+        self.DUMMY_DEST_ALL = configParser.get(FilterString, &#34;DUMMY_DEST_ALL&#34;)
+        self.DUMMY_DEST = configParser.get(FilterString, &#34;DUMMY_DEST&#34;)
+        self.DUMMY_CC_DEST = configParser.get(FilterString, &#34;DUMMY_CC_DEST&#34;)
+        self.VARIABLE_NAME_FTP_HOSTS = configParser.get(
+            FilterString, &#34;VARIABLE_NAME_FTP_HOSTS&#34;)
+        self.ENVIRONMENT_SUBJECT = configParser.get(
+            FilterString, &#34;ENVIRONMENT_SUBJECT&#34;)
+
+        self.FILTER_FOLDER_ARTIFACT = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;FILTER_FOLDER_ARTIFACT&#34;)))
+        self.DUMMY_MEMNAME = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_MEMNAME&#34;)))
+        self.JOBNAME_TO_CONFIRM = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;JOBNAME_TO_CONFIRM&#34;)))
+        self.DUMMY_FOLDER_NAME = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_FOLDER_NAME&#34;)))
+        self.DUMMY_SUB_APPLICATION_NAME = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_SUB_APPLICATION_NAME&#34;)))
+        self.REPLACE_WHOLE_WORD = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;REPLACE_WHOLE_WORD&#34;)))
+        self.DUMMY_VARIABLE_SP = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_VARIABLE_SP&#34;)))
+        self.DUMMY_SP_NAMES = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_SP_NAMES&#34;)))
+        self.RUN_AS_REPLACE = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;RUN_AS_REPLACE&#34;)))
+        self.JOBNAME_TO_DUMMY = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;JOBNAME_TO_DUMMY&#34;)))
+        self.REMOVE_SUB_APPLICATION = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;REMOVE_SUB_APPLICATION&#34;)))
+
+        self.FTP_HOST_SUBST = []
+        self.DUMMY_SP_LIST = []
+        for SP_DUMMIES in self.DUMMY_SP_NAMES:
+            self.DUMMY_SP_LIST.append(
+                ((self.DUMMY_VARIABLE_SP[0][0], SP_DUMMIES[0]), (self.DUMMY_VARIABLE_SP[0][1], SP_DUMMIES[1])))
+
+    def ExecConfig(self, artifactXml, targetFileName):
+        &#34;&#34;&#34;Executes the configuration for the xml provided and outputs the configured xml with specified file name.
+        Args:
+            artifactXml (string): name of the xml file to be configured.
+            targetFileName (string): name of the configured file.
+        &#34;&#34;&#34;
+        log.info(str(datetime.now()) + &#34; :&#34; + &#34; ExecConfig started....&#34;)
+        
+        self.ConfigurationParser()
+
+       ########################################
+       ####### Global Replacements ############
+       ########################################
+        with open(artifactXml, &#34;r&#34;, encoding=self.Encoding) as file:
+            Artifactory = file.read()
+
+        for item in self.REPLACE_WHOLE_WORD:
+            patternSearch = re.compile(item[0])
+            patternReplace = item[1]
+            Artifactory = re.sub(patternSearch, patternReplace, Artifactory)
+
+        ########################################
+        ############# Parse XML ################
+        ########################################
+        Artifactory = ET.XML(Artifactory)
+
+        treeArtifactory = ET.ElementTree(Artifactory)
+        rootArtifactory = treeArtifactory.getroot()
+
+        #####################################################
+        ############ SMART_FOLDER Folder Level ##############
+        #####################################################
+        if self.SMART_FOLDER_REMOVE == &#34;1&#34;:
+            self.APPLY_RULES_FOLDER.append(&#34;FOLDER&#34;)
+            for FOLDER in rootArtifactory.iter(&#34;SMART_FOLDER&#34;):
+                rootArtifactory.remove(FOLDER)
+        elif self.SMART_FOLDER_REMOVE != &#34;1&#34;:
+            APPLY_RULES_FOLDER = (&#34;FOLDER&#34;, &#34;SMART_FOLDER&#34;)
+
+        for FolderLevelKind in APPLY_RULES_FOLDER:
+            for FOLDER in rootArtifactory.iter(FolderLevelKind):
+                FOLDER.set(&#34;DATACENTER&#34;, self.FOLDER_DATACENTER)
+
+            #####################################################
+            ########## Clean Artifact Folder Level ##############
+            #####################################################
+
+            FolderLvL = rootArtifactory.findall(&#34;./&#34; + FolderLevelKind)
+
+            if self.FILTER_FOLDER_MODUS == &#34;REMOVE&#34;:
+                for removeFolder in self.FILTER_FOLDER_ARTIFACT:
+                    tmp = rootArtifactory.find(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + removeFolder + &#34;&#39;&#34; + &#34;]&#34;)
+                    if(type(tmp) != type(None)):
+                        rootArtifactory.remove(tmp)
+            elif self.FILTER_FOLDER_MODUS == &#34;USE&#34;:
+                for FOLDER in FolderLvL:
+                    if FOLDER.get(&#34;FOLDER_NAME&#34;) not in self.FILTER_FOLDER_ARTIFACT:
+                        rootArtifactory.remove(FOLDER)
+
+
+            ################ Remove SubApplication #####################
+
+            for FOLDER in FolderLvL:
+                for JOB in FOLDER:
+                    if (JOB.get(&#34;APPLICATION&#34;), JOB.get(&#34;SUB_APPLICATION&#34;)) in self.REMOVE_SUB_APPLICATION:
+                        FOLDER.remove(JOB)
+
+        #########################################################################
+        ################ Dummies,TFP,RUN_AS, SubApplication #####################
+        #########################################################################
+            for _run_AS in self.RUN_AS_REPLACE:
+                for runAsReplace in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@RUN_AS=&#34; + &#34;&#39;&#34; + _run_AS[0] + &#34;&#39;&#34; + &#34;]&#34;):
+                    runAsReplace.set(&#34;RUN_AS&#34;, _run_AS[1])
+
+            for item in self.DUMMY_SUB_APPLICATION_NAME:
+                for SubApp in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + item[0] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + item[1] + &#34;&#39;&#34; + &#34;]&#34;):
+                    SubApp.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_MEMNAME:
+                for MemName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@MEMNAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34;):
+                    MemName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_FOLDER_NAME:
+                for FolderName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34; + &#34;/JOB&#34;):
+                    FolderName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_FOLDER_NAME:
+                for FolderName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34; + &#34;/JOB&#34;):
+                    FolderName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_SP_NAMES:
+                for FOLDER in FolderLvL:
+                    for JOB in FOLDER:
+                        for VARIABLE in JOB:
+                            if(VARIABLE.get(&#34;VALUE&#34;) == item[1] and VARIABLE.get(&#34;NAME&#34;) == &#34;%%DB-STP_NAME&#34;):
+                                JOB.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+
+            if self.DUMMY_DEST_ALL == &#34;1&#34;:
+                for DOMAIL in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/ON/DOMAIL&#34;):
+                    if type(DOMAIL.get(&#34;DEST&#34;))!= type(None):
+                        DOMAIL.set(&#34;DEST&#34;, self.DUMMY_DEST)
+                        if type(DOMAIL.get(&#34;SUBJECT&#34;)) != type(None):
+                            DOMAIL.set(&#34;SUBJECT&#34;, self.ENVIRONMENT_SUBJECT + &#34; &#34; + DOMAIL.get(&#34;SUBJECT&#34;))
+                        else:
+                            DOMAIL.set(&#34;SUBJECT&#34;, self.ENVIRONMENT_SUBJECT + &#34; &#34; + &#34;Missing Subject in ctrlm XML!&#34;)
+                        if type(DOMAIL.get(&#34;CC_DEST&#34;)) != type(None):
+                            DOMAIL.set(
+                                &#34;CC_DEST&#34;, self.DUMMY_CC_DEST)
+
+            for VARIABLE in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/VARIABLE&#34; + &#34;[@NAME=&#34; + &#34;&#39;&#34; + &#34;%%FTP-LHOST&#34; + &#34;&#39;&#34; + &#34;]&#34;):
+                VARIABLE.set(&#34;VALUE&#34;, self.VARIABLE_NAME_FTP_HOSTS)
+
+            for VARIABLE in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/VARIABLE&#34; + &#34;[@NAME=&#34; + &#34;&#39;&#34; + &#34;%%FTP-RHOST&#34; + &#34;&#39;&#34; + &#34;]&#34;):
+                VARIABLE.set(&#34;VALUE&#34;, self.VARIABLE_NAME_FTP_HOSTS)
+                
+            #####################################################
+            ############ Set Job to Confirmation ################
+            #####################################################
+            for itemConfirm in self.JOBNAME_TO_CONFIRM:
+                tmp1 = rootArtifactory.find(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + itemConfirm[0] + &#34;&#39;&#34; + &#34;]&#34; +
+                                            &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + itemConfirm[1] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@JOBNAME=&#34; + &#34;&#39;&#34; + itemConfirm[2] + &#34;&#39;&#34; + &#34;]&#34;)
+                if(type(tmp1) != type(None)):
+                    tmp1.set(&#34;CONFIRM&#34;, &#34;1&#34;)
+            for itemDummy in self.JOBNAME_TO_DUMMY:
+                tmp2 = rootArtifactory.find(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + itemDummy[0] + &#34;&#39;&#34; + &#34;]&#34; +
+                                            &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + itemDummy[1] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@JOBNAME=&#34; + &#34;&#39;&#34; + itemDummy[2] + &#34;&#39;&#34; + &#34;]&#34;)
+                if(type(tmp2) != type(None)):
+                    tmp2.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+        ############################################################
+        ############### Create output file #########################
+        ############################################################
+            treeArtifactory.write(targetFileName, encoding=self.Encoding, xml_declaration=True)
+        log.info(str(datetime.now()) + &#34; :&#34; + &#34; ExecConfig finished....&#34;)
+
+log = logging.getLogger(&#34;XmlReplaceLogger&#34;)
+
+handler = logging.handlers.SysLogHandler(address = &#34;/var/run/syslog&#34;)
+
+formatter = logging.Formatter(logging.BASIC_FORMAT)
+
+handler.setFormatter(formatter)
+
+log.addHandler(handler)
+
+logging.basicConfig(level=logging.DEBUG)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="XmlReplace.XmlReplace"><code class="flex name class">
+<span>class <span class="ident">XmlReplace</span></span>
+<span>(</span><span>configFile, target, env)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Class for replacing strings in xml file based on configuration file</p>
+<p>Constructor for XmlReplace class &ndash;&gt; initializes the class based on input variables</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>fileSource</code></strong> :&ensp;<code>string</code></dt>
+<dd>folder location of the source xml</dd>
+<dt><strong><code>fileTarget</code></strong> :&ensp;<code>string</code></dt>
+<dd>configured xml file name</dd>
+<dt><strong><code>configFile</code></strong> :&ensp;<code>string</code></dt>
+<dd>configuration file name</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class XmlReplace:
+    &#34;&#34;&#34;Class for replacing strings in xml file based on configuration file
+    &#34;&#34;&#34;
+    Encoding = &#34;utf-8&#34;
+    &#34;&#34;&#34;
+    Encoding format of the output xml file.
+    &#34;&#34;&#34;
+    helper = Helper()
+    &#34;&#34;&#34;
+    Helper class of AuxiliaryModule is initiated.
+    &#34;&#34;&#34;
+    APPLY_RULES_FOLDER = []
+    &#34;&#34;&#34;Options are FOLDER and/or SMART_FOLDER provided by the config file.
+    &#34;&#34;&#34;
+
+    def __init__(self, configFile, target, env):
+        &#34;&#34;&#34;Constructor for XmlReplace class --&gt; initializes the class based on input variables
+        Args:
+            fileSource (string): folder location of the source xml
+            fileTarget (string): configured xml file name
+            configFile (string): configuration file name
+        &#34;&#34;&#34;
+        self.Target = target
+        self.Env = env.upper()
+        self.data = []
+        self.WorkDir = os.path.abspath(os.getcwd())
+        self.configFilePath = self.WorkDir + &#34;/&#34; + configFile
+
+    def ConfigurationParser(self):
+        &#34;&#34;&#34;Parser for the configuration file defined in variable configFilePath.
+        &#34;&#34;&#34;
+
+        ConfigString = self.Target+&#34;_&#34;+ self.Env
+        FilterString = str(&#34;Filter_&#34; + ConfigString)
+
+        configParser = configparser.RawConfigParser()
+        configParser.read(self.configFilePath)
+        self.FILTER_FOLDER_MODUS = configParser.get(
+            FilterString, &#34;FILTER_FOLDER_MODUS&#34;)
+        self.FOLDER_DATACENTER = configParser.get(
+            FilterString, &#34;FOLDER_DATACENTER&#34;)
+        self.SMART_FOLDER_REMOVE = configParser.get(
+            FilterString, &#34;SMART_FOLDER_REMOVE&#34;)
+        self.DUMMY_DEST_ALL = configParser.get(FilterString, &#34;DUMMY_DEST_ALL&#34;)
+        self.DUMMY_DEST = configParser.get(FilterString, &#34;DUMMY_DEST&#34;)
+        self.DUMMY_CC_DEST = configParser.get(FilterString, &#34;DUMMY_CC_DEST&#34;)
+        self.VARIABLE_NAME_FTP_HOSTS = configParser.get(
+            FilterString, &#34;VARIABLE_NAME_FTP_HOSTS&#34;)
+        self.ENVIRONMENT_SUBJECT = configParser.get(
+            FilterString, &#34;ENVIRONMENT_SUBJECT&#34;)
+
+        self.FILTER_FOLDER_ARTIFACT = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;FILTER_FOLDER_ARTIFACT&#34;)))
+        self.DUMMY_MEMNAME = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_MEMNAME&#34;)))
+        self.JOBNAME_TO_CONFIRM = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;JOBNAME_TO_CONFIRM&#34;)))
+        self.DUMMY_FOLDER_NAME = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_FOLDER_NAME&#34;)))
+        self.DUMMY_SUB_APPLICATION_NAME = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_SUB_APPLICATION_NAME&#34;)))
+        self.REPLACE_WHOLE_WORD = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;REPLACE_WHOLE_WORD&#34;)))
+        self.DUMMY_VARIABLE_SP = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_VARIABLE_SP&#34;)))
+        self.DUMMY_SP_NAMES = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;DUMMY_SP_NAMES&#34;)))
+        self.RUN_AS_REPLACE = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;RUN_AS_REPLACE&#34;)))
+        self.JOBNAME_TO_DUMMY = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;JOBNAME_TO_DUMMY&#34;)))
+        self.REMOVE_SUB_APPLICATION = self.helper.EvalToList(
+            (configParser.get(FilterString, &#34;REMOVE_SUB_APPLICATION&#34;)))
+
+        self.FTP_HOST_SUBST = []
+        self.DUMMY_SP_LIST = []
+        for SP_DUMMIES in self.DUMMY_SP_NAMES:
+            self.DUMMY_SP_LIST.append(
+                ((self.DUMMY_VARIABLE_SP[0][0], SP_DUMMIES[0]), (self.DUMMY_VARIABLE_SP[0][1], SP_DUMMIES[1])))
+
+    def ExecConfig(self, artifactXml, targetFileName):
+        &#34;&#34;&#34;Executes the configuration for the xml provided and outputs the configured xml with specified file name.
+        Args:
+            artifactXml (string): name of the xml file to be configured.
+            targetFileName (string): name of the configured file.
+        &#34;&#34;&#34;
+        log.info(str(datetime.now()) + &#34; :&#34; + &#34; ExecConfig started....&#34;)
+        
+        self.ConfigurationParser()
+
+       ########################################
+       ####### Global Replacements ############
+       ########################################
+        with open(artifactXml, &#34;r&#34;, encoding=self.Encoding) as file:
+            Artifactory = file.read()
+
+        for item in self.REPLACE_WHOLE_WORD:
+            patternSearch = re.compile(item[0])
+            patternReplace = item[1]
+            Artifactory = re.sub(patternSearch, patternReplace, Artifactory)
+
+        ########################################
+        ############# Parse XML ################
+        ########################################
+        Artifactory = ET.XML(Artifactory)
+
+        treeArtifactory = ET.ElementTree(Artifactory)
+        rootArtifactory = treeArtifactory.getroot()
+
+        #####################################################
+        ############ SMART_FOLDER Folder Level ##############
+        #####################################################
+        if self.SMART_FOLDER_REMOVE == &#34;1&#34;:
+            self.APPLY_RULES_FOLDER.append(&#34;FOLDER&#34;)
+            for FOLDER in rootArtifactory.iter(&#34;SMART_FOLDER&#34;):
+                rootArtifactory.remove(FOLDER)
+        elif self.SMART_FOLDER_REMOVE != &#34;1&#34;:
+            APPLY_RULES_FOLDER = (&#34;FOLDER&#34;, &#34;SMART_FOLDER&#34;)
+
+        for FolderLevelKind in APPLY_RULES_FOLDER:
+            for FOLDER in rootArtifactory.iter(FolderLevelKind):
+                FOLDER.set(&#34;DATACENTER&#34;, self.FOLDER_DATACENTER)
+
+            #####################################################
+            ########## Clean Artifact Folder Level ##############
+            #####################################################
+
+            FolderLvL = rootArtifactory.findall(&#34;./&#34; + FolderLevelKind)
+
+            if self.FILTER_FOLDER_MODUS == &#34;REMOVE&#34;:
+                for removeFolder in self.FILTER_FOLDER_ARTIFACT:
+                    tmp = rootArtifactory.find(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + removeFolder + &#34;&#39;&#34; + &#34;]&#34;)
+                    if(type(tmp) != type(None)):
+                        rootArtifactory.remove(tmp)
+            elif self.FILTER_FOLDER_MODUS == &#34;USE&#34;:
+                for FOLDER in FolderLvL:
+                    if FOLDER.get(&#34;FOLDER_NAME&#34;) not in self.FILTER_FOLDER_ARTIFACT:
+                        rootArtifactory.remove(FOLDER)
+
+
+            ################ Remove SubApplication #####################
+
+            for FOLDER in FolderLvL:
+                for JOB in FOLDER:
+                    if (JOB.get(&#34;APPLICATION&#34;), JOB.get(&#34;SUB_APPLICATION&#34;)) in self.REMOVE_SUB_APPLICATION:
+                        FOLDER.remove(JOB)
+
+        #########################################################################
+        ################ Dummies,TFP,RUN_AS, SubApplication #####################
+        #########################################################################
+            for _run_AS in self.RUN_AS_REPLACE:
+                for runAsReplace in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@RUN_AS=&#34; + &#34;&#39;&#34; + _run_AS[0] + &#34;&#39;&#34; + &#34;]&#34;):
+                    runAsReplace.set(&#34;RUN_AS&#34;, _run_AS[1])
+
+            for item in self.DUMMY_SUB_APPLICATION_NAME:
+                for SubApp in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + item[0] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + item[1] + &#34;&#39;&#34; + &#34;]&#34;):
+                    SubApp.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_MEMNAME:
+                for MemName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@MEMNAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34;):
+                    MemName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_FOLDER_NAME:
+                for FolderName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34; + &#34;/JOB&#34;):
+                    FolderName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_FOLDER_NAME:
+                for FolderName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34; + &#34;/JOB&#34;):
+                    FolderName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+            for item in self.DUMMY_SP_NAMES:
+                for FOLDER in FolderLvL:
+                    for JOB in FOLDER:
+                        for VARIABLE in JOB:
+                            if(VARIABLE.get(&#34;VALUE&#34;) == item[1] and VARIABLE.get(&#34;NAME&#34;) == &#34;%%DB-STP_NAME&#34;):
+                                JOB.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+
+            if self.DUMMY_DEST_ALL == &#34;1&#34;:
+                for DOMAIL in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/ON/DOMAIL&#34;):
+                    if type(DOMAIL.get(&#34;DEST&#34;))!= type(None):
+                        DOMAIL.set(&#34;DEST&#34;, self.DUMMY_DEST)
+                        if type(DOMAIL.get(&#34;SUBJECT&#34;)) != type(None):
+                            DOMAIL.set(&#34;SUBJECT&#34;, self.ENVIRONMENT_SUBJECT + &#34; &#34; + DOMAIL.get(&#34;SUBJECT&#34;))
+                        else:
+                            DOMAIL.set(&#34;SUBJECT&#34;, self.ENVIRONMENT_SUBJECT + &#34; &#34; + &#34;Missing Subject in ctrlm XML!&#34;)
+                        if type(DOMAIL.get(&#34;CC_DEST&#34;)) != type(None):
+                            DOMAIL.set(
+                                &#34;CC_DEST&#34;, self.DUMMY_CC_DEST)
+
+            for VARIABLE in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/VARIABLE&#34; + &#34;[@NAME=&#34; + &#34;&#39;&#34; + &#34;%%FTP-LHOST&#34; + &#34;&#39;&#34; + &#34;]&#34;):
+                VARIABLE.set(&#34;VALUE&#34;, self.VARIABLE_NAME_FTP_HOSTS)
+
+            for VARIABLE in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/VARIABLE&#34; + &#34;[@NAME=&#34; + &#34;&#39;&#34; + &#34;%%FTP-RHOST&#34; + &#34;&#39;&#34; + &#34;]&#34;):
+                VARIABLE.set(&#34;VALUE&#34;, self.VARIABLE_NAME_FTP_HOSTS)
+                
+            #####################################################
+            ############ Set Job to Confirmation ################
+            #####################################################
+            for itemConfirm in self.JOBNAME_TO_CONFIRM:
+                tmp1 = rootArtifactory.find(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + itemConfirm[0] + &#34;&#39;&#34; + &#34;]&#34; +
+                                            &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + itemConfirm[1] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@JOBNAME=&#34; + &#34;&#39;&#34; + itemConfirm[2] + &#34;&#39;&#34; + &#34;]&#34;)
+                if(type(tmp1) != type(None)):
+                    tmp1.set(&#34;CONFIRM&#34;, &#34;1&#34;)
+            for itemDummy in self.JOBNAME_TO_DUMMY:
+                tmp2 = rootArtifactory.find(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + itemDummy[0] + &#34;&#39;&#34; + &#34;]&#34; +
+                                            &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + itemDummy[1] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@JOBNAME=&#34; + &#34;&#39;&#34; + itemDummy[2] + &#34;&#39;&#34; + &#34;]&#34;)
+                if(type(tmp2) != type(None)):
+                    tmp2.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+        ############################################################
+        ############### Create output file #########################
+        ############################################################
+            treeArtifactory.write(targetFileName, encoding=self.Encoding, xml_declaration=True)
+        log.info(str(datetime.now()) + &#34; :&#34; + &#34; ExecConfig finished....&#34;)</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="XmlReplace.XmlReplace.APPLY_RULES_FOLDER"><code class="name">var <span class="ident">APPLY_RULES_FOLDER</span></code></dt>
+<dd>
+<div class="desc"><p>Options are FOLDER and/or SMART_FOLDER provided by the config file.</p></div>
+</dd>
+<dt id="XmlReplace.XmlReplace.Encoding"><code class="name">var <span class="ident">Encoding</span></code></dt>
+<dd>
+<div class="desc"><p>Encoding format of the output xml file.</p></div>
+</dd>
+<dt id="XmlReplace.XmlReplace.helper"><code class="name">var <span class="ident">helper</span></code></dt>
+<dd>
+<div class="desc"><p>Helper class of AuxiliaryModule is initiated.</p></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="XmlReplace.XmlReplace.ConfigurationParser"><code class="name flex">
+<span>def <span class="ident">ConfigurationParser</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Parser for the configuration file defined in variable configFilePath.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def ConfigurationParser(self):
+    &#34;&#34;&#34;Parser for the configuration file defined in variable configFilePath.
+    &#34;&#34;&#34;
+
+    ConfigString = self.Target+&#34;_&#34;+ self.Env
+    FilterString = str(&#34;Filter_&#34; + ConfigString)
+
+    configParser = configparser.RawConfigParser()
+    configParser.read(self.configFilePath)
+    self.FILTER_FOLDER_MODUS = configParser.get(
+        FilterString, &#34;FILTER_FOLDER_MODUS&#34;)
+    self.FOLDER_DATACENTER = configParser.get(
+        FilterString, &#34;FOLDER_DATACENTER&#34;)
+    self.SMART_FOLDER_REMOVE = configParser.get(
+        FilterString, &#34;SMART_FOLDER_REMOVE&#34;)
+    self.DUMMY_DEST_ALL = configParser.get(FilterString, &#34;DUMMY_DEST_ALL&#34;)
+    self.DUMMY_DEST = configParser.get(FilterString, &#34;DUMMY_DEST&#34;)
+    self.DUMMY_CC_DEST = configParser.get(FilterString, &#34;DUMMY_CC_DEST&#34;)
+    self.VARIABLE_NAME_FTP_HOSTS = configParser.get(
+        FilterString, &#34;VARIABLE_NAME_FTP_HOSTS&#34;)
+    self.ENVIRONMENT_SUBJECT = configParser.get(
+        FilterString, &#34;ENVIRONMENT_SUBJECT&#34;)
+
+    self.FILTER_FOLDER_ARTIFACT = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;FILTER_FOLDER_ARTIFACT&#34;)))
+    self.DUMMY_MEMNAME = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;DUMMY_MEMNAME&#34;)))
+    self.JOBNAME_TO_CONFIRM = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;JOBNAME_TO_CONFIRM&#34;)))
+    self.DUMMY_FOLDER_NAME = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;DUMMY_FOLDER_NAME&#34;)))
+    self.DUMMY_SUB_APPLICATION_NAME = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;DUMMY_SUB_APPLICATION_NAME&#34;)))
+    self.REPLACE_WHOLE_WORD = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;REPLACE_WHOLE_WORD&#34;)))
+    self.DUMMY_VARIABLE_SP = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;DUMMY_VARIABLE_SP&#34;)))
+    self.DUMMY_SP_NAMES = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;DUMMY_SP_NAMES&#34;)))
+    self.RUN_AS_REPLACE = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;RUN_AS_REPLACE&#34;)))
+    self.JOBNAME_TO_DUMMY = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;JOBNAME_TO_DUMMY&#34;)))
+    self.REMOVE_SUB_APPLICATION = self.helper.EvalToList(
+        (configParser.get(FilterString, &#34;REMOVE_SUB_APPLICATION&#34;)))
+
+    self.FTP_HOST_SUBST = []
+    self.DUMMY_SP_LIST = []
+    for SP_DUMMIES in self.DUMMY_SP_NAMES:
+        self.DUMMY_SP_LIST.append(
+            ((self.DUMMY_VARIABLE_SP[0][0], SP_DUMMIES[0]), (self.DUMMY_VARIABLE_SP[0][1], SP_DUMMIES[1])))</code></pre>
+</details>
+</dd>
+<dt id="XmlReplace.XmlReplace.ExecConfig"><code class="name flex">
+<span>def <span class="ident">ExecConfig</span></span>(<span>self, artifactXml, targetFileName)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Executes the configuration for the xml provided and outputs the configured xml with specified file name.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>artifactXml</code></strong> :&ensp;<code>string</code></dt>
+<dd>name of the xml file to be configured.</dd>
+<dt><strong><code>targetFileName</code></strong> :&ensp;<code>string</code></dt>
+<dd>name of the configured file.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def ExecConfig(self, artifactXml, targetFileName):
+    &#34;&#34;&#34;Executes the configuration for the xml provided and outputs the configured xml with specified file name.
+    Args:
+        artifactXml (string): name of the xml file to be configured.
+        targetFileName (string): name of the configured file.
+    &#34;&#34;&#34;
+    log.info(str(datetime.now()) + &#34; :&#34; + &#34; ExecConfig started....&#34;)
+    
+    self.ConfigurationParser()
+
+   ########################################
+   ####### Global Replacements ############
+   ########################################
+    with open(artifactXml, &#34;r&#34;, encoding=self.Encoding) as file:
+        Artifactory = file.read()
+
+    for item in self.REPLACE_WHOLE_WORD:
+        patternSearch = re.compile(item[0])
+        patternReplace = item[1]
+        Artifactory = re.sub(patternSearch, patternReplace, Artifactory)
+
+    ########################################
+    ############# Parse XML ################
+    ########################################
+    Artifactory = ET.XML(Artifactory)
+
+    treeArtifactory = ET.ElementTree(Artifactory)
+    rootArtifactory = treeArtifactory.getroot()
+
+    #####################################################
+    ############ SMART_FOLDER Folder Level ##############
+    #####################################################
+    if self.SMART_FOLDER_REMOVE == &#34;1&#34;:
+        self.APPLY_RULES_FOLDER.append(&#34;FOLDER&#34;)
+        for FOLDER in rootArtifactory.iter(&#34;SMART_FOLDER&#34;):
+            rootArtifactory.remove(FOLDER)
+    elif self.SMART_FOLDER_REMOVE != &#34;1&#34;:
+        APPLY_RULES_FOLDER = (&#34;FOLDER&#34;, &#34;SMART_FOLDER&#34;)
+
+    for FolderLevelKind in APPLY_RULES_FOLDER:
+        for FOLDER in rootArtifactory.iter(FolderLevelKind):
+            FOLDER.set(&#34;DATACENTER&#34;, self.FOLDER_DATACENTER)
+
+        #####################################################
+        ########## Clean Artifact Folder Level ##############
+        #####################################################
+
+        FolderLvL = rootArtifactory.findall(&#34;./&#34; + FolderLevelKind)
+
+        if self.FILTER_FOLDER_MODUS == &#34;REMOVE&#34;:
+            for removeFolder in self.FILTER_FOLDER_ARTIFACT:
+                tmp = rootArtifactory.find(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + removeFolder + &#34;&#39;&#34; + &#34;]&#34;)
+                if(type(tmp) != type(None)):
+                    rootArtifactory.remove(tmp)
+        elif self.FILTER_FOLDER_MODUS == &#34;USE&#34;:
+            for FOLDER in FolderLvL:
+                if FOLDER.get(&#34;FOLDER_NAME&#34;) not in self.FILTER_FOLDER_ARTIFACT:
+                    rootArtifactory.remove(FOLDER)
+
+
+        ################ Remove SubApplication #####################
+
+        for FOLDER in FolderLvL:
+            for JOB in FOLDER:
+                if (JOB.get(&#34;APPLICATION&#34;), JOB.get(&#34;SUB_APPLICATION&#34;)) in self.REMOVE_SUB_APPLICATION:
+                    FOLDER.remove(JOB)
+
+    #########################################################################
+    ################ Dummies,TFP,RUN_AS, SubApplication #####################
+    #########################################################################
+        for _run_AS in self.RUN_AS_REPLACE:
+            for runAsReplace in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@RUN_AS=&#34; + &#34;&#39;&#34; + _run_AS[0] + &#34;&#39;&#34; + &#34;]&#34;):
+                runAsReplace.set(&#34;RUN_AS&#34;, _run_AS[1])
+
+        for item in self.DUMMY_SUB_APPLICATION_NAME:
+            for SubApp in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + item[0] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + item[1] + &#34;&#39;&#34; + &#34;]&#34;):
+                SubApp.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+        for item in self.DUMMY_MEMNAME:
+            for MemName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@MEMNAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34;):
+                MemName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+        for item in self.DUMMY_FOLDER_NAME:
+            for FolderName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34; + &#34;/JOB&#34;):
+                FolderName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+        for item in self.DUMMY_FOLDER_NAME:
+            for FolderName in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind + &#34;[@FOLDER_NAME=&#34; + &#34;&#39;&#34; + item + &#34;&#39;&#34; + &#34;]&#34; + &#34;/JOB&#34;):
+                FolderName.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+        for item in self.DUMMY_SP_NAMES:
+            for FOLDER in FolderLvL:
+                for JOB in FOLDER:
+                    for VARIABLE in JOB:
+                        if(VARIABLE.get(&#34;VALUE&#34;) == item[1] and VARIABLE.get(&#34;NAME&#34;) == &#34;%%DB-STP_NAME&#34;):
+                            JOB.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+
+        if self.DUMMY_DEST_ALL == &#34;1&#34;:
+            for DOMAIL in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/ON/DOMAIL&#34;):
+                if type(DOMAIL.get(&#34;DEST&#34;))!= type(None):
+                    DOMAIL.set(&#34;DEST&#34;, self.DUMMY_DEST)
+                    if type(DOMAIL.get(&#34;SUBJECT&#34;)) != type(None):
+                        DOMAIL.set(&#34;SUBJECT&#34;, self.ENVIRONMENT_SUBJECT + &#34; &#34; + DOMAIL.get(&#34;SUBJECT&#34;))
+                    else:
+                        DOMAIL.set(&#34;SUBJECT&#34;, self.ENVIRONMENT_SUBJECT + &#34; &#34; + &#34;Missing Subject in ctrlm XML!&#34;)
+                    if type(DOMAIL.get(&#34;CC_DEST&#34;)) != type(None):
+                        DOMAIL.set(
+                            &#34;CC_DEST&#34;, self.DUMMY_CC_DEST)
+
+        for VARIABLE in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/VARIABLE&#34; + &#34;[@NAME=&#34; + &#34;&#39;&#34; + &#34;%%FTP-LHOST&#34; + &#34;&#39;&#34; + &#34;]&#34;):
+            VARIABLE.set(&#34;VALUE&#34;, self.VARIABLE_NAME_FTP_HOSTS)
+
+        for VARIABLE in rootArtifactory.findall(&#34;./&#34; + FolderLevelKind+&#34;/JOB/VARIABLE&#34; + &#34;[@NAME=&#34; + &#34;&#39;&#34; + &#34;%%FTP-RHOST&#34; + &#34;&#39;&#34; + &#34;]&#34;):
+            VARIABLE.set(&#34;VALUE&#34;, self.VARIABLE_NAME_FTP_HOSTS)
+            
+        #####################################################
+        ############ Set Job to Confirmation ################
+        #####################################################
+        for itemConfirm in self.JOBNAME_TO_CONFIRM:
+            tmp1 = rootArtifactory.find(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + itemConfirm[0] + &#34;&#39;&#34; + &#34;]&#34; +
+                                        &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + itemConfirm[1] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@JOBNAME=&#34; + &#34;&#39;&#34; + itemConfirm[2] + &#34;&#39;&#34; + &#34;]&#34;)
+            if(type(tmp1) != type(None)):
+                tmp1.set(&#34;CONFIRM&#34;, &#34;1&#34;)
+        for itemDummy in self.JOBNAME_TO_DUMMY:
+            tmp2 = rootArtifactory.find(&#34;./&#34; + FolderLevelKind+&#34;/JOB&#34; + &#34;[@PARENT_FOLDER=&#34; + &#34;&#39;&#34; + itemDummy[0] + &#34;&#39;&#34; + &#34;]&#34; +
+                                        &#34;[@SUB_APPLICATION=&#34; + &#34;&#39;&#34; + itemDummy[1] + &#34;&#39;&#34; + &#34;]&#34; + &#34;[@JOBNAME=&#34; + &#34;&#39;&#34; + itemDummy[2] + &#34;&#39;&#34; + &#34;]&#34;)
+            if(type(tmp2) != type(None)):
+                tmp2.set(&#34;TASKTYPE&#34;, &#34;Dummy&#34;)
+
+    ############################################################
+    ############### Create output file #########################
+    ############################################################
+        treeArtifactory.write(targetFileName, encoding=self.Encoding, xml_declaration=True)
+    log.info(str(datetime.now()) + &#34; :&#34; + &#34; ExecConfig finished....&#34;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="XmlReplace.XmlReplace" href="#XmlReplace.XmlReplace">XmlReplace</a></code></h4>
+<ul class="">
+<li><code><a title="XmlReplace.XmlReplace.APPLY_RULES_FOLDER" href="#XmlReplace.XmlReplace.APPLY_RULES_FOLDER">APPLY_RULES_FOLDER</a></code></li>
+<li><code><a title="XmlReplace.XmlReplace.ConfigurationParser" href="#XmlReplace.XmlReplace.ConfigurationParser">ConfigurationParser</a></code></li>
+<li><code><a title="XmlReplace.XmlReplace.Encoding" href="#XmlReplace.XmlReplace.Encoding">Encoding</a></code></li>
+<li><code><a title="XmlReplace.XmlReplace.ExecConfig" href="#XmlReplace.XmlReplace.ExecConfig">ExecConfig</a></code></li>
+<li><code><a title="XmlReplace.XmlReplace.helper" href="#XmlReplace.XmlReplace.helper">helper</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.1</a>.</p>
+</footer>
+</body>
+</html>

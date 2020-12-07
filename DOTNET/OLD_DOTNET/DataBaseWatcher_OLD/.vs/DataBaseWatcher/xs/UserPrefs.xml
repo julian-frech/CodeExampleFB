@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{18157501-3AE4-4D9B-ABC8-C055D22324CB}|DataBaseWatcher">
+  <MonoDevelop.Ide.ItemProperties.DataBaseWatcher PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataBaseWatcher/Program.cs">
+    <Files>
+      <File FileName="DataBaseWatcher/Model/configuration_FlowControl.cs" Line="1" Column="1" />
+      <File FileName="DataBaseWatcher/Model/DataBaseWatcherObj.cs" />
+      <File FileName="DataBaseWatcher/Data/IConnectionBuilder.cs" />
+      <File FileName="DataBaseWatcher/Data/IDataFetcher.cs" />
+      <File FileName="DataBaseWatcher/Data/DataFetcher.cs" Line="10" Column="16" />
+      <File FileName="DataBaseWatcher/DataBaseWorkerService.cs" />
+      <File FileName="DataBaseWatcher/DataBaseWatcher.cs" />
+      <File FileName="DataBaseWatcher/Program.cs" Line="1" Column="1" />
+      <File FileName="DataBaseWatcher/appsettings.Development.json" />
+      <File FileName="DataBaseWatcher/Services/DataBaseServiceSQLServer.cs" />
+      <File FileName="DataBaseWatcher/Services/IDataBaseService.cs" />
+      <File FileName="DataBaseWatcher/Data/ConnectionBuilder1.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DataBaseWatcher" expanded="True">
+            <Node name="DataBaseWatcher" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

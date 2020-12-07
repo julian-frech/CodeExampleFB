@@ -1,0 +1,78 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@model CentralFinanceManagerUI.Models.UserDepots.DepotComponents
+
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    int someProperty = ViewContext.ViewBag.CurrentDepot;
+
+    var DateObject = DateTime.Today.ToString("yyyy-MM-dd");
+
+    var DateObjectUntil = DateTime.Today.ToString("yyyy-MM-dd");
+
+    <script type="text/javascript" src="~/js/site.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+}
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+<form asp-action="CreateNewDepotComp">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="Symbol">Symbol</label>
+            <input asp-for="Symbol" type="text" class="form-control" id="Symbol" value="pypl">
+            <span asp-validation-for="Symbol" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="Quantity">Quantity</label>
+            <input asp-for="Quantity" type="number" class="form-control" id="Quantity" value="1">
+            <span asp-validation-for="Quantity" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <label for="MarketValue">Market Price</label>
+        <input asp-for="MarketValue" type="number" class="form-control" id="MarketValue">
+        <span asp-validation-for="MarketValue" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ValidFrom">Date From</label>
+        <input asp-for="ValidFrom" type="text" class="form-control" id="ValidFrom" value="@DateObject">
+        <span asp-validation-for="ValidFrom" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ValidTo">Date Until</label>
+        <input asp-for="ValidTo" type="text" class="form-control" id="ValidTo" value="@DateObject">
+        <span asp-validation-for="ValidTo" class="text-danger"></span>
+    </div>
+    <div class="form-row col-md-4">
+        <input asp-for="USerHK" value="@userId" type="hidden" class="form-control" id="USerHK">
+        <span asp-validation-for="USerHK" class="text-danger"></span>
+    </div>
+    <div class="form-row col-md-4">
+        <input asp-for="DepotId" type="hidden" class="form-control" value="@someProperty">
+        <span asp-validation-for="DepotId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Place Order" class="btn btn-primary" />
+    </div>
+</form>
+}
+else
+{
+    <div>
+        Missing privileges!
+    </div>
+}
+

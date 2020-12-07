@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  CalculatorService:
+    ports:
+      - "5001:80"
+    networks:
+      - financebro-net
+    image: ${DOCKER_REGISTRY-}calculatorservice
+    build:
+      context: .
+      dockerfile: CalculatorService/Dockerfile
+
+networks:
+  financebro-net:
+    external: false
+    name: financebro-net

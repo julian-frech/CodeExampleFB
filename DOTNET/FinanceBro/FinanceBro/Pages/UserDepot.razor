@@ -1,0 +1,276 @@
+﻿@page "/userdepot"
+@using Microsoft.AspNetCore.Mvc.RazorPages;
+@using FinanceBro.Data
+@inject IUserDepotListService userDepotListService
+@inject AuthenticationStateProvider authenticationService
+@inject IUserDepotListService userDepotService
+@inject IUserDepotComponentListService userDepotComponentService
+@inject ISymbolFactsDataListService symbolservice
+@inject IJSRuntime jsRuntime
+
+
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Spinner
+@using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.Inputs
+@using System;
+@inject Microsoft.AspNetCore.Components.NavigationManager UriHelper
+
+
+
+<body>
+    <div>
+        <Accordion>
+            <Collapse Visible="@collapse0Visible">
+                <CollapseHeader>
+                    <Heading Size="HeadingSize.Is5">
+                        <Button Clicked="@(() => collapse0Visible = !collapse0Visible)"><h1>Welcome @User</h1></Button>
+                    </Heading>
+                </CollapseHeader>
+                <CollapseBody>
+                    @if (IsDisabled)
+                    {
+                        <p>Login or register to activate functionality on this page!</p>
+                    }
+                    else
+                    {
+                        <p>Manage all your depots or simply create a new one.</p>
+                    }
+                </CollapseBody>
+            </Collapse>
+            <Collapse Visible="@collapse1Visible">
+                <CollapseHeader>
+                    <Heading Size="HeadingSize.Is5">
+                        <Button Clicked="@(() => collapse1Visible = !collapse1Visible)">Open new Depot</Button>
+                    </Heading>
+                </CollapseHeader>
+                <CollapseBody>
+                    <Validation Validator="@ValidateDepotName">
+                        
+                            @*<SfTextBox @bind-Value="@DepotName" disabled="@IsDisabled" Placeholder="Enter depot name"></SfTextBox>*@
+                        <TextEdit @bind-Text="@DepotName" disabled="@IsDisabled" Placeholder="Enter depot name">
+                            <Feedback>
+                                <ValidationNone>Please enter the depot name.</ValidationNone>
+                                <ValidationSuccess>Depot name valid.</ValidationSuccess>
+                                <ValidationError>Depot name already taken or invalid! Max. 25 characters!</ValidationError>
+                            </Feedback>
+                        </TextEdit>
+                        
+                        <Button Color="Color.Primary" Block="true" disabled="@CreateDepotIsDisabled" @onclick="@CreateDepot">Create Depot!</Button>
+                    </Validation>
+                </CollapseBody>
+            </Collapse>
+            <Collapse Visible="@collapse2Visible">
+                <CollapseHeader>
+                    <Heading Size="HeadingSize.Is5">
+                        <Button Clicked="@(() => collapse2Visible = !collapse2Visible)">Depot Overview</Button>
+                    </Heading>
+                </CollapseHeader>
+                <CollapseBody>
+                    <SfGrid DataSource="@ListDepots" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+                        <GridPageSettings PageSize="5"></GridPageSettings>
+                        <GridColumns>
+                            <GridColumn Field=@nameof(UserDepotsView.DepotName) HeaderText="Depot Name" TextAlign="TextAlign.Center" Width="120"></GridColumn>
+                            <GridColumn Field=@nameof(UserDepotsView.Symbol) HeaderText="Share" Width="150" TextAlign="TextAlign.Center"></GridColumn>
+                            <GridColumn Field=@nameof(UserDepotsView.Company) HeaderText="Share" Width="150" TextAlign="TextAlign.Center"></GridColumn>
+                            <GridColumn Field=@nameof(UserDepotsView.Quantity) HeaderText=" Quantity" Format="N" TextAlign="TextAlign.Center" Width="130"></GridColumn>
+                            <GridColumn Field=@nameof(UserDepotsView.ComponentValidFrom) HeaderText="Order Date" Type="ColumnType.Date" TextAlign="TextAlign.Center" Width="120"></GridColumn>
+                        </GridColumns>
+                    </SfGrid>
+                </CollapseBody>
+            </Collapse>
+            <Collapse Visible="@collapse4Visible">
+                <CollapseHeader>
+                    <Heading Size="HeadingSize.Is5">
+                        <Button Clicked="@(() => collapse4Visible = !collapse4Visible)">Your Depots!</Button>
+                    </Heading>
+                </CollapseHeader>
+                <CollapseBody>
+                    <SfGrid AllowPaging="true" @ref="Grid" DataSource="@userDepotFacts" AllowSelection="true" AllowSorting="true" AllowFiltering="true">
+                        <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu"></GridFilterSettings>
+                        <GridPageSettings PageSize="4"></GridPageSettings>
+                        <GridSelectionSettings CheckboxOnly="true" PersistSelection="true" Type="Syncfusion.Blazor.Grids.SelectionType.Multiple"></GridSelectionSettings>
+                        <GridColumns>
+                            <GridColumn Type="ColumnType.CheckBox" AllowFiltering="false" AllowSorting="false" Width="60"></GridColumn>
+                            <GridColumn Field=@nameof(UserDepotF.DepotId) HeaderText="Depot ID" Visible="false" IsPrimaryKey="true" Width="130"></GridColumn>
+                            <GridColumn Field=@nameof(UserDepotF.DepotName) HeaderText="Depot" Visible="true" IsPrimaryKey="false" AllowFiltering="true" AllowSorting="true" Width="130"></GridColumn>
+                            <GridColumn Field=@nameof(UserDepotF.ValidTo) HeaderText="Status" AllowSorting="true" AllowFiltering="false" Width="150">
+                                <Template>
+                                    @{
+                                        var ActivatedDeactivated = (context as UserDepotF);
+                                        if (ActivatedDeactivated.ValidTo == DateTime.Parse("9999-12-31 00:00:00.000"))
+                                        {
+                                            <Button Color="Color.Warning" Block="true" Clicked="@(async () => await DeactivateReactivateDepotHandler(ActivatedDeactivated.DepotId, DateTime.Now))">Decomission</Button>
+                                        }
+                                        else
+                                        {
+                                            <Button Color="Color.Info" Block="true" Clicked="@(async () => await DeactivateReactivateDepotHandler(ActivatedDeactivated.DepotId, DateTime.Parse("9999-12-31 00:00:00.000")))">Activate</Button>
+                                        }
+                                    }
+                                </Template>
+                            </GridColumn>
+                        </GridColumns>
+                    </SfGrid>
+                </CollapseBody>
+            </Collapse>
+            <Collapse Visible="@collapse3Visible">
+                <CollapseHeader>
+                    <Heading Size="HeadingSize.Is5">
+                        <Button Clicked="@(() => collapse3Visible = !collapse3Visible)">Depot Overview</Button>
+                    </Heading>
+                </CollapseHeader>
+                <CollapseBody>
+                    <Button data-toggle="modal" data-target="#taskModal" Color="Color.Primary" Block="true" disabled="@IsDisabled" @onclick="@(() => InitializeTaskObject())">Add Component</Button>
+                </CollapseBody>
+            </Collapse>
+        </Accordion>
+    </div>
+</body>
+
+<CascadingValue Value="@User" Name="UserData">
+    <CascadingValue Value="@ListDepotsUnique" Name="ListDepotsUnique">
+        <CascadingValue Value="@ListDepots" Name="ListAllDepots">
+            <UserDepotComponentModal newDepotComponent=newDepotComponent DataChanged="@DataChanged"></UserDepotComponentModal>
+        </CascadingValue>
+    </CascadingValue>
+</CascadingValue>
+
+
+
+@code {
+    public string Name { get; set; } = "Syncfusion";
+    UserDepotComponents newDepotComponent = new UserDepotComponents();
+
+    SfGrid<UserDepotF> Grid;
+
+    private UserDepotF userDepotFactsUserSelect { get; set; }
+
+    private int NumberOfDepots { get; set; }
+
+    private List<UserDepotsView> ListDepots { get; set; }
+    public List<string> ListDepotsUnique { get; set; }
+    private List<UserDepotF> userDepotFacts { get; set; }
+    public List<SymbolFacts> symbolFactsDataList { get; set; }
+
+    private protected bool collapse0Visible = true;
+    private protected bool collapse1Visible = false;
+    private protected bool collapse2Visible = false;
+    private protected bool collapse3Visible = false;
+    private protected bool collapse4Visible = false;
+    private protected bool IsDisabled;
+    private protected bool CreateDepotIsDisabled;
+
+    private protected string User;
+
+    private protected string DepotName { get; set; }
+
+    private protected int SuccessCode { get; set; }
+
+    public int ExecutionOrder { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationService.GetAuthenticationStateAsync();
+        var _user = authState.User;
+
+        User = _user.Identity.Name;
+
+        if (!(User is null))
+        {
+            IsDisabled = false;
+            await GetDepotList();
+            StateHasChanged();
+        }
+        else
+        {
+            IsDisabled = true;
+            CreateDepotIsDisabled = true;
+        }
+    }
+
+    private void InitializeTaskObject()
+    {
+        newDepotComponent = new UserDepotComponents();
+        DataChanged();
+
+        StateHasChanged();
+    }
+
+
+    private async Task<int> DeactivateReactivateDepotHandler(int _DepitIdUserInput, DateTime _ValidTo)
+    {
+
+        userDepotFacts.Where(x => x.DepotId == _DepitIdUserInput).FirstOrDefault().ValidTo = _ValidTo;
+
+        var SuccessInt = await userDepotService.DeactivateReactivateDepot(_DepitIdUserInput, _ValidTo);
+
+        DataChanged();
+
+        StateHasChanged();
+
+        Grid.Refresh();
+
+        ExecutionOrder = 1;
+
+        StateHasChanged();
+
+        Grid.Refresh();
+
+        return ExecutionOrder;
+
+    }
+
+    private void DataChanged()
+    {
+
+        GetDepotList();
+
+        StateHasChanged();
+
+    }
+
+    private async Task<int> GetDepotList()
+    {
+
+
+        ListDepots = await userDepotComponentService.GetView(User);
+        ListDepotsUnique = ListDepots.Select(x => x.DepotName).Distinct().ToList();
+        symbolFactsDataList = await symbolservice.Get();
+
+        var DepotIds = ListDepots.Select(x => x.DepotId).ToList();
+        @*await Task.Delay(100);*@
+        userDepotFacts = await userDepotComponentService.GetDepotDetails(DepotIds);
+
+        NumberOfDepots = userDepotFacts.Count();
+
+
+        return 1;
+    }
+
+    private async Task<int> CreateDepot()
+    {
+        SuccessCode = await userDepotListService.CreateD(User, DepotName.Trim());
+
+        CreateDepotIsDisabled = true;
+
+        DataChanged();
+
+        StateHasChanged();
+
+        return 1;
+
+    }
+
+    void ValidateDepotName(ValidatorEventArgs e)
+    {
+        DepotName = Convert.ToString(e.Value);
+
+        e.Status = string.IsNullOrEmpty(DepotName) ? ValidationStatus.Error :
+            0 < DepotName.Count() && DepotName.Count() < 300 && !(ListDepots.Select(x => x.DepotName).Contains(DepotName)) ? ValidationStatus.Success : ValidationStatus.Error;
+
+        CreateDepotIsDisabled = (e.Status == ValidationStatus.Error) ? true : false;
+
+        StateHasChanged();
+    }
+
+}

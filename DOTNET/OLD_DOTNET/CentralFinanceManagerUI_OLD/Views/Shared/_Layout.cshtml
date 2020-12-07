@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            min-height: 100%;
+            margin: 0 auto -50px;
+        }
+
+        .footer,
+        .push {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-top-width: 1px;
+            border-top-style: solid;
+            height: 50px;
+            padding-top: 10px;
+        }
+    </style>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>@ViewData["Title"] - CentralFinanceManagerUI</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <link href="~/css/site.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+    @RenderSection("css", false)
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light sticky-top" style="background-color: #c5d5cb;">
+            <!--<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color: #e3f2fd;">-->
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/Images/Logo.jpg" alt="Site Logo" style="height:65px; width: 65px" />
+            </a>
+            <button class="pull-left navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="V_MARKET_DATA_EOD" asp-action="Index">Aktien</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="UserDepot" asp-action="Index">Depot</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="RSSFeed" asp-action="Index">Nachrichten Feed</a>
+                    </li>
+                </ul>
+                @await Html.PartialAsync("_LoginPartial")
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <i class="fa fa-search"></i>
+        <i><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></i>
+        <i><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></i>
+        <i><a href="mailto:julian-frech@gmx.de" target="_blank"><i class="fas fa-envelope"></i></a></i>
+        &copy; 2020 - CentralFinanceManagerUI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+
+</html>

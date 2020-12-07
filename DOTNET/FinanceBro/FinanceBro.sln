@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceBro", "FinanceBro\FinanceBro.csproj", "{A472D0A5-6578-4677-9743-ABBB3F122F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceBroUniTests", "FinanceBroUniTests\FinanceBroUniTests.csproj", "{3A443325-49D5-4A7B-ADFA-969FD30F69A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A472D0A5-6578-4677-9743-ABBB3F122F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A472D0A5-6578-4677-9743-ABBB3F122F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A472D0A5-6578-4677-9743-ABBB3F122F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A472D0A5-6578-4677-9743-ABBB3F122F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A443325-49D5-4A7B-ADFA-969FD30F69A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A443325-49D5-4A7B-ADFA-969FD30F69A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A443325-49D5-4A7B-ADFA-969FD30F69A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A443325-49D5-4A7B-ADFA-969FD30F69A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

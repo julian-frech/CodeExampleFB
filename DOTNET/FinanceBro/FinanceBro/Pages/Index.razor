@@ -1,0 +1,154 @@
+﻿@page "/"
+
+@using FinanceBro.Data
+@using System
+@inject IJSRuntime JSRuntime
+@using FinanceBro.Service
+@inject IApiServiceController ApiService
+@inject IMarketDataListService MarketDataService
+@inject ISymbolFactsDataListService symbolservice
+@inject AuthenticationStateProvider authenticationService
+
+@using Blazorise.Components
+@using Blazorise.Snackbar
+
+
+
+<SelectList TItem="SymbolFacts" Disabled="@IsDisabled"
+            TValue="string"
+            Data="@SymbolFactsList"
+            TextField="@((item)=>item.CompanyName)"
+            ValueField="@((item)=>item.Symbol)"
+            SelectedValue="@UserSelectedSymbol"
+            SelectedValueChanged="@MyListValueChangedHandler" />
+
+<Button Color="Color.Success" Disabled="@(UserSelectedSymbol is null)" @onclick="(async() => await PostToApi(PossibleApis[0]))">Get Market Data!</Button>
+<Button Color="Color.Success" Disabled="@(UserSelectedSymbol is null)" @onclick="(async() => await PostToCalcApi(PossibleApis[1]))">Calculate Analytics!</Button>
+
+<Snackbar @ref="snackbarStarted" Color="SnackbarColor.Info" Location=SnackbarLocation.Right Interval="5000">
+    <SnackbarBody>
+        Api call initialized...
+    </SnackbarBody>
+    <SnackbarAction Clicked="@(()=>snackbarStarted.Hide())">Initialized</SnackbarAction>
+</Snackbar>
+<Snackbar @ref="snackbarSuccess" Color="SnackbarColor.Success" Location=SnackbarLocation.Right Interval="5000">
+    <SnackbarBody>
+        The Api call finished successfully with feedback @ApiFeedback.Item2!
+    </SnackbarBody>
+    <SnackbarAction Clicked="@(()=>snackbarSuccess.Hide())">Success</SnackbarAction>
+</Snackbar>
+<Snackbar @ref="snackbarError" Color="SnackbarColor.Warning" Location=SnackbarLocation.Right Interval="5000">
+    <SnackbarBody>
+        The Api call failed with feedback @ApiFeedback.Item2!
+    </SnackbarBody>
+    <SnackbarAction Clicked="@(()=>snackbarError.Hide())">Error</SnackbarAction>
+</Snackbar>
+<Snackbar @ref="snackbarUnknown" Color="SnackbarColor.Dark" Location=SnackbarLocation.Right Interval="5000">
+    <SnackbarBody>
+        The Api call failed with unhandled reason!
+    </SnackbarBody>
+    <SnackbarAction Clicked="@(()=>snackbarUnknown.Hide())">Error</SnackbarAction>
+</Snackbar>
+
+@code {
+
+
+    Snackbar snackbarStarted;
+    Snackbar snackbarSuccess;
+    Snackbar snackbarError;
+    Snackbar snackbarUnknown;
+    /// <summary>
+    /// Variables used for disabeling functionality based on the User.
+    /// </summary>
+    private bool IsDisabled { get; set; } = true;
+    private string User { get; set; } = null;
+
+
+    private List<SymbolFacts> SymbolFactsList { get; set; }
+    private string UserSelectedSymbol { get; set; }
+    private Tuple<int, string> ApiFeedback { get; set; } = new Tuple<int, string>(0,"");
+
+
+    /// <summary>
+    /// Method called on page initialization
+    /// </summary>
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationService.GetAuthenticationStateAsync();
+        var _user = authState.User;
+
+        User = _user.Identity.Name;
+
+        if (!(User is null))
+        {
+            IsDisabled = false;
+
+            SymbolFactsList = await symbolservice.Get();
+
+            UserSelectedSymbol = SymbolFactsList.Select(x => x.Symbol).FirstOrDefault();
+
+            StateHasChanged();
+        }
+        else
+        {
+            IsDisabled = true;
+
+        }
+    }
+
+
+
+    private async void MyListValueChangedHandler(string newValue)
+    {
+        UserSelectedSymbol = newValue;
+        StateHasChanged();
+    }
+
+    private List<string> PossibleApis { get => ApiService.AvailableApiStrategies(); }
+
+
+    private async Task PostToApi(string _ApiStrategy)
+    {
+        Dictionary<string, string> ApiDictionary = new Dictionary<string, string>
+                { { "symbol","" } };
+
+
+        snackbarStarted.Show();
+        ApiDictionary["symbol"] = UserSelectedSymbol.ToString();
+        ApiFeedback = await ApiService.GetApiValues(_ApiStrategy, ApiDictionary);
+
+            try
+            {
+                switch (ApiFeedback.Item1)
+                {
+                    case 0:
+                        snackbarSuccess.Show();
+                        break;
+                    case 1:
+                        snackbarError.Show();
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine("Error in api call: " + exc.Message);
+                snackbarUnknown.Show();
+            }
+
+    }
+
+
+
+
+    private async Task PostToCalcApi(string _ApiStrategy)
+    {
+        
+        snackbarUnknown.Show();
+
+    }
+
+
+}

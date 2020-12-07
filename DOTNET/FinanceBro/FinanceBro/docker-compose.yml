@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  FinanceBro:
+    ports:
+      - "8080:80"
+    networks:
+      - financebro-net
+    image: ${DOCKER_REGISTRY-}financebro
+    build:
+      context: .
+      dockerfile: FinanceBro/Dockerfile
+
+  MarketDataService:
+    ports:
+      - "5000:80"
+    networks:
+      - financebro-net
+    image: ${DOCKER_REGISTRY-}marketdataservice
+    build:
+      context: .
+      dockerfile: MarketDataService/Dockerfile
+
+networks:
+  financebro-net:
+    external: false
+    name: financebro-net

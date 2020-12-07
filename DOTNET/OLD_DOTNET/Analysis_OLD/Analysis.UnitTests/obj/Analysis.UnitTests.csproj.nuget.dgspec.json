@@ -1,0 +1,176 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis.UnitTests/Analysis.UnitTests.csproj": {}
+  },
+  "projects": {
+    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis.UnitTests/Analysis.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis.UnitTests/Analysis.UnitTests.csproj",
+        "projectName": "Analysis.UnitTests",
+        "projectPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis.UnitTests/Analysis.UnitTests.csproj",
+        "packagesPath": "/Users/julianfrech/.nuget/packages/",
+        "outputPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis.UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianfrech/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis/Analysis.csproj": {
+                "projectPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis/Analysis.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.16.1, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis/Analysis.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis/Analysis.csproj",
+        "projectName": "Analysis",
+        "projectPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis/Analysis.csproj",
+        "packagesPath": "/Users/julianfrech/.nuget/packages/",
+        "outputPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/Analysis/Analysis/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianfrech/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.16.1, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

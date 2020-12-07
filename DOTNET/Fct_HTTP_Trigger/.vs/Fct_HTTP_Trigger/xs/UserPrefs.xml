@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{E7F8BB10-36EE-4682-B536-CA10B9B6B8C6}|Default">
+  <MonoDevelop.Ide.ItemProperties.Fct__HTTP__Trigger PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fct_HTTP_Trigger/Controller/MarketDataServiceController.cs">
+    <Files>
+      <File FileName="Fct_HTTP_Trigger/Fct_HTTP_Trigger.cs" Line="57" Column="41" />
+      <File FileName="Fct_HTTP_Trigger/Helper/ConfigurationManager.cs" />
+      <File FileName="Fct_HTTP_Trigger/appsettings.json" />
+      <File FileName="Fct_HTTP_Trigger/local.settings.json" />
+      <File FileName="Fct_HTTP_Trigger/Controller/MarketDataServiceController.cs" Line="29" Column="1" />
+      <File FileName="Fct_HTTP_Trigger/Startup.cs" />
+      <File FileName="Fct_HTTP_Trigger/Data/SqlDbContext.cs" Line="31" Column="84" />
+      <File FileName="Fct_HTTP_Trigger/host.json" />
+      <File FileName="Fct_HTTP_Trigger/Model/ApiClass.cs" />
+      <File FileName="Fct_HTTP_Trigger/Helper/IConfigurationManager.cs" />
+      <File FileName="Fct_HTTP_Trigger/mono_crash.11a6748113.0.json" />
+      <File FileName="Fct_HTTP_Trigger/Controller/IController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fct_HTTP_Trigger" expanded="True">
+            <Node name="Fct_HTTP_Trigger" expanded="True">
+              <Node name="Controller" expanded="True">
+                <Node name="MarketDataServiceController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Model" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

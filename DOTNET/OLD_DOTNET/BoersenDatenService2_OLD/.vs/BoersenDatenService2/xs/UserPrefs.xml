@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{46EC4FEF-6DFC-466D-82BE-E86D0C0EC4EB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoersenDatenService1/ApiDataClasses/AlphaAdvantage.cs">
+    <Files>
+      <File FileName="BoersenDatenService1/Interfaces/IProperties.cs" Line="7" Column="17" />
+      <File FileName="BoersenDatenService1/Interfaces/IHelper.cs" />
+      <File FileName="BoersenDatenService1/Services/DataBaseServiceSQLServer.cs" />
+      <File FileName="BoersenDatenService1/ApiServices/Apifinancialmodelingprep.cs" />
+      <File FileName="BoersenDatenService1/ApiServices/ApiOpenFigi.cs" />
+      <File FileName="BoersenDatenService1/NewWorkerService.cs" />
+      <File FileName="BoersenDatenService1/BoersenDatenService.cs" />
+      <File FileName="BoersenDatenService1/Program.cs" />
+      <File FileName="BoersenDatenService1/Interfaces/IApi.cs" />
+      <File FileName="BoersenDatenService1/ApiServices/ApiAlphaAdvantageMaDa.cs" Line="1" Column="1" />
+      <File FileName="BoersenDatenService1/ApiServices/ApiAlphaAdvantageCA.cs" />
+      <File FileName="BoersenDatenService1/appsettings.json" />
+      <File FileName="BoersenDatenService1/Services/ErrorService.cs" />
+      <File FileName="BoersenDatenService1/Services/IDataBaseService.cs" />
+      <File FileName="BoersenDatenService1/ApiProperties/PropertyApiKursDaten.cs" />
+      <File FileName="BoersenDatenService1/ApiProperties/PropertyApiAlphAdv2.cs" />
+      <File FileName="BoersenDatenService1/ApiProperties/PropertyApiFxRates.cs" />
+      <File FileName="BoersenDatenService1/ApiProperties/Propertyfinancialmodelingprep.cs" Line="1" Column="1" />
+      <File FileName="BoersenDatenService1/ApiDataClasses/AlphaAdvantage.cs" Line="1" Column="1" />
+      <File FileName="BoersenDatenService1/Services/IErrorService.cs" />
+      <File FileName="BoersenDatenService1/ApiDataClasses/OpenFigi.cs" />
+      <File FileName="BoersenDatenService1/ApiDataClasses/financialmodelingprep.cs" Line="1" Column="1" />
+      <File FileName="BoersenDatenService1/ApiDataClasses/FMPStockPrices.cs" Line="10" Column="1" />
+      <File FileName="BoersenDatenService1/ApiServices/ApiFMPMaDa.cs" Line="40" Column="86" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BoersenDatenService2" expanded="True">
+            <Node name="BoersenDatenService2" expanded="True">
+              <Node name="ApiDataClasses" expanded="True">
+                <Node name="AlphaAdvantage.cs" selected="True" />
+              </Node>
+              <Node name="ApiProperties" expanded="True" />
+              <Node name="ApiServices" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BoersenDatenService2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

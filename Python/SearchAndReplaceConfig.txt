@@ -1,0 +1,533 @@
+################################## Development ########################################
+[Filter_ICOS1_DEV]
+
+#######################################################################################
+############################## Replace all within XML #################################
+#######################################################################################
+REPLACE_WHOLE_WORD=('IS_ICOSS_SIM','IS_ICOSS_DEV'),('IS_ICOSS_PROD','IS_ICOSS_DEV'),('INFA_REP_ICOSS','INFA_REP_ICOSD'),('INFA_REP_ICOSP_A','INFA_REP_ICOSD'),('APPLUX','APPFRA'),('vmprdicosas1.cedelgroup.com','APPFRA'),('idxpas1','idxdas1'),('idxpas2','idxdas1'),('idxsas1','idxdas1'),('idxpctrm1','idxlctrm1'),('idxsctrm1','idxlctrm1'),('INFA_REP_ICOSS','INFA_REP_ICOSD'),('vmprdicosas1','APPFRA')
+
+FOLDER_DATACENTER=IDX_DEV
+
+RUN_AS_REPLACE=('APPLUX','APPFRA'),('vmprdicosas1.cedelgroup.com','APPFRA'),('idxpas1','idxdas1'),('idxpas2','idxdas1'),('idxsas1','idxdas1'),('idxpctrm1','idxlctrm1'),('idxsctrm1','idxlctrm1'),('idxpas','idxdas1'),('vmprdicosas1','APPFRA')
+
+#######################################################################################
+############################## Remove Smart Folders ###################################
+########################### Syntax: 0 = No / 1 = YES ##################################
+#######################################################################################
+SMART_FOLDER_REMOVE=0
+
+#######################################################################################
+############################## Remove Folders #########################################
+################################### Syntax: 'FOLDER_NAME' #############################
+#######################################################################################
+######### USE = only use named folders, REMOVE = delete named folders ################
+FILTER_FOLDER_MODUS=REMOVE
+FILTER_FOLDER_ARTIFACT='4D_EQUITIES','4D_EQUITIES_REG','4D_EQUITIES_REGR','SIX_TRANSFER'
+
+#######################################################################################
+############################## Remove Sub Application #################################
+################################### Syntax: 'SUB_FOLDER_NAME' #########################
+#######################################################################################
+REMOVE_SUB_APPLICATION=
+
+
+#######################################################################################
+########################## Make MEMNAME DUMMY: Scripts ################################
+########################## Syntax: 'ScriptName.sh' ####################################
+#######################################################################################
+DUMMY_MEMNAME=
+
+#######################################################################################
+########################## Make Folder DUMMY  #########################################
+########################## Syntax: 'FOLDER_NAME' ######################################
+#######################################################################################
+DUMMY_FOLDER_NAME=
+
+#######################################################################################
+################### Make SubApplication DUMMY  ########################################
+################### Syntax: ('FOLDER_NAME','SUBAPPLICATION') ##########################
+#######################################################################################
+DUMMY_SUB_APPLICATION_NAME=
+
+#######################################################################################
+############################## Set Jobs to Confirm ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME') ######################
+#######################################################################################
+JOBNAME_TO_CONFIRM=
+JOBNAME_TO_DUMMY=
+
+#######################################################################################
+####################### Change Mail Dest and CC_Dest to Dummy  ########################
+####################### Syntax:  ######################################################
+#######################################################################################
+DUMMY_DEST_ALL=0
+DUMMY_DEST=
+DUMMY_CC_DEST=
+ENVIRONMENT_SUBJECT= Development
+
+#######################################################################################
+######################### Make Stored Procedures Dummy ################################
+############## Syntax: ('DB-SCHEMA','SP-NAME') ########################################
+#######################################################################################
+DUMMY_VARIABLE_SP=('%%DB-STP_SCHEM','%%DB-STP_NAME')
+DUMMY_SP_NAMES =
+
+#######################################################################################
+######################### FTP HOSTS ###################################################
+#######################################################################################
+VARIABLE_NAME_FTP_HOSTS=idxdas1
+
+
+################################## SIMULATION #########################################
+
+[Filter_ICOS1_SIM]
+
+#######################################################################################
+############################## Replace all within XML #################################
+#######################################################################################
+FOLDER_DATACENTER=IDXSIM
+REPLACE_WHOLE_WORD=('IS_ICOSS_DEV','IS_ICOSS_SIM'),('IS_ICOSS_PROD','IS_ICOSS_SIM'),('INFA_REP_ICOSD','INFA_REP_ICOSS'),('INFA_REP_ICOSP_A','INFA_REP_ICOSS'),('APPLUX','APPFRA'),('vmprdicosas1.cedelgroup.com','APPFRA'),('idxpas2','idxsas1'),('idxpas1','idxsas1'),('idxdas1','idxsas1'),('idxpctrm1','idxsctrm1'),('idxlctrm1','idxsctrm1'),('vmprdicosas1','APPFRA')
+
+RUN_AS_REPLACE=('APPLUX','APPFRA'),('vmprdicosas1.cedelgroup.com','APPFRA'),('idxpas2','idxsas1'),('idxpas1','idxsas1'),('idxdas1','idxsas1'),('idxpctrm1','idxsctrm1'),('idxlctrm1','idxsctrm1'),('idxpas','idxsas1'),('vmprdicosas1','APPFRA')
+
+#######################################################################################
+############################## Remove Smart Folders ###################################
+########################### Syntax: 0 = No / 1 = YES ##################################
+#######################################################################################
+SMART_FOLDER_REMOVE=0
+
+#######################################################################################
+############################## Remove Folders #########################################
+################################### Syntax: 'FOLDER_NAME' #############################
+#######################################################################################
+######### USE = only use named folders, REMOVE = delete named folders ################
+FILTER_FOLDER_MODUS=REMOVE
+FILTER_FOLDER_ARTIFACT='4D_EQUITIES','4D_EQUITIES_REG','4D_EQUITIES_REGR','SIX_TRANSFER'
+
+#######################################################################################
+############################## Remove Sub Folders #####################################
+################################### Syntax: 'SUB_FOLDER_NAME' #########################
+#######################################################################################
+REMOVE_SUB_APPLICATION=
+
+#######################################################################################
+########################## Make MEMNAME DUMMY: Scripts ################################
+########################## Syntax: 'ScriptName.sh' ####################################
+#######################################################################################
+DUMMY_MEMNAME='check_tfp_file_tranfer_idx.sh','check_wf_transfer.sh','cp_cadis_tosimu.sh','cp_stxb_tosimu.sh','set_FLEX_update_XIS.sh','SYSDEV2_FILETRANSFER.sh','SYSDEV2_FILETRANSFER_TEMP_FLS.sh','download_c2.sh','PRISMA_FILETRANSFER.sh','upload_icos_settlementproces.sh','tfp_file_trigger_check_file.sh','upload_image_file_byhttp.sh','compose_and_send_mail.sh','tfp_file_trigger_check_file.sh','upload_c2.sh','bb_transfer.sh','run_matlab_job.sh','fia_filetransfer.sh','upload_icos_settlementproces.sh','tfp_file_trigger_check_file.sh','upload_image_file_byhttp.sh','compose_and_send_mail.sh','tfp_file_trigger_check_file.sh','upload_c2.sh','','bb_transfer.sh','fia_matlab_run_report.sh','tfp_file_trigger.sh','fia_matlab_run.sh','fia_agp.sh','fia_compiler_execdownload.sh','fia_compiler_execbuild.sh','sfp_outbound_main.sh','tfp_file_trigger_group.sh','executeservice.exe','remove_ind_files.sh'
+
+DUMMY_MEMNAME_EXCEPTION= 
+
+#######################################################################################
+########################## Make Folder DUMMY  #########################################
+########################## Syntax: 'FOLDER_NAME' ######################################
+#######################################################################################
+DUMMY_FOLDER_NAME=
+
+#######################################################################################
+################### Make SubApplication DUMMY  ########################################
+################### Syntax: ('FOLDER_NAME','SUBAPPLICATION') ##########################
+#######################################################################################
+DUMMY_SUB_APPLICATION_NAME=
+
+#######################################################################################
+############################## Set Jobs to Confirm ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME') ######################
+#######################################################################################
+JOBNAME_TO_CONFIRM=('AGGREGATES','1800_ONLINE_AGG','START_ONLINE_AGG_1800'),('CADIS','CORPORATE_ACTION_ADHOC','CADIS_START_CA_PROCESSING_ADHOC'),('CBI','CBI_CALC_HEDGE_DAILY','CBI_CALC_START_HEDGE_DAILY'),('CBI','CBI_CALC_REPORT_MEASURES','CBI_CALC_START_REPORT_MEASURES'),('CBI','CBI_CALC_STAY_C','CBI_CALC_START_STAY_C'),('HOUSEKEEPING','BACKUPS','START_CTRLM_JOBNET_BACKUP'),('HOUSEKEEPING','BACKUPS','START_PROD_JOBNET_BACKUP'),('HOUSEKEEPING','BACKUPS','BACKUP_INFORMATICA'),('HOUSEKEEPING','BACKUPS','BACKUP_SCRIPTS'),('HOUSEKEEPING','BACKUPS','EXPORT_APEX_APPLICATIONS'),('HOUSEKEEPING','BACKUPS','BACKUP_CADIS_ACTIVE_SEC_LIST'),('HOUSEKEEPING','INFA_REPO_CLEANUP','START_INFA_REPO_CLEANUP'),('ICOS_GUI','TRANSFER','START_OBSERVATION'),('POLICING','POLICING_SRP','POLICING_CALC_START_SRP'),('SHIFT_PLAN','SHIFT_PLAN','SP_SWITCH_TO_ALL_IDX_NEW'),('SHIFT_PLAN','SHIFT_PLAN','SP_SWITCH_TO_EARLY_IDX_NEW'),('SHIFT_PLAN','SHIFT_PLAN','SP_SWITCH_TO_EARLY_MD_IDX_NEW'),('UTILITIES','UTILITIES','TABLES_PUSH2SIMU'),('SI','SI_CTB_DAILY','START_SI_CTB_DAILY'),('EQUITIES','EQUITIES_QS_CHECK','QS_PAYOUT_START'),('EQUITIES','EQUITIES_QS_CHECK','START_IEPPR_QS_CHECKS_1000'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_EDE'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_VLT'),('EQUITIES_REPORT','INDEX_FIGURES','START_SWAXX_INDEX_FIGURES'),('BONDS','IBOXX_DAILY_SNAPSHOT','IBOXX_DAILY_SNAPSHOT_START'),('HOUSEKEEPING','LDAP','START_LDAP_SYNCHRONIZATION'),('HOUSEKEEPING','PERMISSION_CHANGER','CHANGE_PERMISSION_IDXFTRAN_EARLY'),('HOUSEKEEPING','PERMISSION_CHANGER','CHANGE_PERMISSION_IDXFTRAN_LATE'),('HOUSEKEEPING','QS_CHECKS','CHECK_FILE_TRANSFER_STATUS'),('HOUSEKEEPING','QS_CHECKS','CHECK_PROD_DB_BACKGROUND_SQL'),('HOUSEKEEPING','QS_CHECKS','CHECK_PROD_DB_BACKGROUND_SQL_E'),('HOUSEKEEPING','Shift_plan','SHIFT_PLAN_CSV_EXPORT'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_VLT'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_EDEEQUITIES'),('CBI','CBI_CALC_HEDGE_EARLY','HEDGE_EARLY_BACKUP_REMAININGS'),('CONCAT_PREP','INDEX_COMP_ADJ_ALL','MEAG_Exclusions_DAX30'),('BLOOMBERG','BLOOMBERG_VIETNAM','START_DAILY_BB_REQ_EVENING'),('BLOOMBERG','BLOOMBERG_BILLING','START_BLOOMBERG_BILLING'),('FIA','FIA_ADHOC_PDT_PUBLISH','FIA_START_ADHOC_PDT_PUBLISH'),('FIA','FIA_BATCH_INDEX','B_FIA_START_INDEX_BATCH'),('FIA','FIA_BATCH_COMP_FILES','FIA_START_COMP_FILES'),('FIA','FIA_BATCH_INIT','FIA_BATCH_CONTROL_INS'),('FIA','FIA_BATCH_OPTION','FIA_START_OPTION_BATCH'),('FIA','FIA_BATCH_UND','B_FIA_START_UND_BATCH'),('FIA','FIA_DEPLOYMENT','FIA_START_DEPLOYMENT'),('FIA','FIA_QS_CHECK','FIA_QS_AGP_RESPONSE'),('FIA','FIA_QS_CHECK','QS_CHECK_FIA_OPEN_BATCH'),('CBI','CBI_CALC_DVP','CBI_CALC_START_DVP'),('CBI','CBI_CALC_DVP_COMPOSITION','CBI_CALC_START_DVP_COMPOSITION'),('CBI','CBI_CALC_ERC','CBI_CALC_START_ERC'),('CBI','CBI_CALC_SSDF_NEW','CBI_CLOSE_CALC_RUN_SSDF_NEW_ON_ERROR'),('CBI','CBI_CEF_PRICE','START_CBI_CEF_PRICES'),('CBI','CBI_CONST_PARA_SSDF_NEW','CBI_INDEX_COMPOSITION_SET_UP_STATUS_IN_PROCESS'),('CBI','CBI_FILES_DVP','CBI_DVP_DAILY_FILE_START'),('CBI','CBI_FILES_HEDGE_DAILY','CBI_HEDGE_DAILY_GET_HTTP_FILES'),('CBI','CBI_FILES_HSBC','CBI_FILES_HSBC_FILEWAIT'),('CBI','CBI_FILES_SSDF_NEW','CBI_SSDF_FC_START_1530_NEW'),('CBI','CBI_QS_BB_PRICES','START_CBI_QS_BB_PRICES'),('CBI','CBI_QS_CHECK_INTEREST_RATES','START_QS_CHECK_INTEREST_RATES'),('CBI','CBI_QS_CHECKS','START_STOXX_CORPORATE_ACTION_FORECAST_QS_CHECK'),('CBI','CBI_QS_CHECKS','START_QS_CBI_SOCGEN_PRICE_CH'),('CBI','CBI_QS_CHECKS','QS_CBI_MISSING_RICS'),('CBI','CBI_QS_CHECKS','START_QS_CBI_HEDGE_CURRENCY_CHECK'),('CBI','CBI_REPORT_SSDF','CBI_START_QUARTER_REPORT'),('CBI','CBI_REPORTING_DVP','CBI_START_DVP_REPORTING'),('CBI','CBI_UNDERL_PARA_SSDF_NEW','CBI_UNDERLYING_PARAM_SSDF_STATUS_IN_PROCESS'),('EQUITIES','EQUITIES_VLT_DAILY','FILL_F_INSTRUMENT_ASSOCIATION'),('EQUITIES','EQUITIES_VLT_DAILY','DWH_TRANSFER_F_INSTRUMENT_ASSOCIATION'),('EQUITIES','EQUITIES_VLT_DAILY','DWH_TRANSFER_REF_INSTR_REPLACEMENTS'),('EQUITIES','EQUITIES_VLT_DAILY','DWH_TRANSFER_F_INSTRUMENTS_ASSOCIATION_STEP2_VLT'),('UTILITIES','SYNC_FILES_P2S','SYNC_FILES_P2S_CONTROL'),('UTILITIES','TABLES_PUSH2SIMU','START_SYNC_FILES_P2S'),('UTILITIES','MANUAL_PDT','START_MANUAL_PDT'),('ICOS_GUI','ICOS_GUI_APEX','APEX_STACI_PF'),('SHIFT_PLAN','SHIFT_PLAN','SP_START'),('SHIFT_PLAN','SHIFT_PLAN','SP_GENERATE_IDX_EFI_TFP_LISTS'),('SHIFT_PLAN','SHIFT_PLAN','SP_GENERATE_IM_EMAIL_IDX'),('SHIFT_PLAN','SHIFT_PLAN','SP_GENERATE_IM_SMS_IDX'),('AGGREGATES','AGGREGATES_PUSH2SIMU','START_AGGREGATES_PUSH2SIMU'),('HOUSEKEEPING','Daily','START_CTRLM_HOUSEKEEPING'),('HOUSEKEEPING','DB_BACKUPS','START_CTRLM_EM_DB_BACKUP'),('HOUSEKEEPING','FLS','FLS_CLEANER'),('EQUITIES','ACK_NOTIFICATIONS','DAX_ACK_FILEWAIT'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_VLT'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_EDE'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_CBI_BCRCI_LATE'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_CBI_C2_OPEN'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_CBI'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_CBI_C2'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_CBI_STAY_C'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_CBI_BCRCI_EARLY'),('EQUITIES','AGP_RESPONSE','START_RESPONSE_READ_IN_LTE'),('DWH','DWH_MASTERDATA','LOAD_WSS_MASTERDATA_LOAD_STATS'),('DWH','DWH_MASTERDATA','MASTER_DATA__INTERFACE_TRANSFER_TARGET_PARAMETER_STEP1'),('DWH','DWH_MASTERDATA_PUSH2SIMU','START_P2S_DWH_MASTERDATA'),('BONDS','REX_PARAM','REQUEST_XIS_REX_UNDERLYING'),('BONDS','REX_PARAM','REX_QS_CHECK'),('EQUITIES','EQUITIES_QS_CHECK','QS_PAYOUT_START_1800'),('HOUSEKEEPING','SERVER_CHECK','START_SERVER_CHECK'),('UTILITIES','TABLES_PUSH2SIMU','START_P2S_TABLES')
+JOBNAME_TO_DUMMY=('EQUITIES','EQUITIES_EDE_DAILY','DWH_TRANSFER_F_INSTRUMENTS_ASSOCIATION_STEP1'),('EQUITIES','EQUITIES_EDE_DAILY','DWH_TRANSFER_REF_CA_STEP1'),('EQUITIES','EQUITIES_EDE_DAILY','DWH_TRANSFER_REF_INSTR_REPLACEMENTS_EDE'),('EQUITIES','EQUITIES_EDE_DAILY','DWH_TRANSFER_F_INSTRUMENTS_ASSOCIATION_STEP2'),('EQUITIES','EQUITIES_EDE_DAILY','EI_CA'),('EQUITIES','EQUITIES_EDE_DAILY','DWH_TRANSFER_REF_CA_STEP2'),('EQUITIES','EQUITIES_EDE_DAILY','EI_QS_CHECK_INDEX_DAILY_EDE'),('EQUITIES','EQUITIES_VLT_DAILY','DWH_TRANSFER_F_INSTRUMENT_ASSOCIATION'),('EQUITIES','EQUITIES_VLT_DAILY','DWH_TRANSFER_F_INSTRUMENTS_ASSOCIATION_STEP1_VLT'),('EQUITIES','EQUITIES_VLT_DAILY','DWH_TRANSFER_F_INSTRUMENTS_ASSOCIATION_STEP2_VLT'),('EQUITIES','EQUITIES_VLT_DAILY','DWH_TRANSFER_REF_INSTR_REPLACEMENTS'),('EQUITIES_REPORT','WF_EDE','WF_DE_EDE_CHECK_TRANSFER'),('EQUITIES_REPORT','WF_EDE','WF_DE_EDE_CHECK_TRANSFER_IDX_HOST')
+
+#######################################################################################
+####################### Change Mail Dest and CC_Dest to Dummy  ########################
+####################### Syntax:  ######################################################
+#######################################################################################
+DUMMY_DEST_ALL=1
+DUMMY_DEST= StoxxOPSFrankfurt@deutsche-boerse.com
+DUMMY_CC_DEST= CC_SIM@PlaceHolder
+ENVIRONMENT_SUBJECT= SIMULATION
+
+#######################################################################################
+######################### Make Stored Procedures Dummy ################################
+############## Syntax: ('DB-SCHEMA','SP-NAME') ########################################
+#######################################################################################
+DUMMY_VARIABLE_SP=('%%DB-STP_SCHEM','%%DB-STP_NAME')
+DUMMY_SP_NAMES =('TFP','START_MARS_REPORT')
+
+#######################################################################################
+######################### FTP HOSTS ###################################################
+#######################################################################################
+VARIABLE_NAME_FTP_HOSTS=idxsas1
+
+
+
+
+
+################################## PRODUCTION #########################################
+[Filter_ICOS1_PROD]
+
+#######################################################################################
+############################## Replace all within XML #################################
+#######################################################################################
+REPLACE_WHOLE_WORD=('IS_ICOSS_SIM','IS_ICOSS_PROD'),('IS_ICOSS_DEV','IS_ICOSS_PROD'),('INFA_REP_ICOSP','INFA_REP_ICOSP_A'),('INFA_REP_ICOSD','INFA_REP_ICOSP_A'),('INFA_REP_ICOSS','INFA_REP_ICOSP_A'),('APPLUX','APPFRA'),('vmprdicosas1.cedelgroup.com','APPFRA'),('idxdas1','idxpas1'),('idxsas1','idxpas1'),('idxlctrm1','idxpctrm1'),('idxsctrm1','idxpctrm1'),('vmprdicosas1','APPFRA')
+
+FOLDER_DATACENTER=IDX_PRD
+
+RUN_AS_REPLACE=('APPLUX','APPFRA'),('vmprdicosas1.cedelgroup.com','APPFRA'),('idxdas1','idxpas'),('idxsas1','idxpas'),('idxlctrm1','idxlptrm1'),('idxsctrm1','idxpctrm1'),('vmprdicosas1','APPFRA')
+
+#######################################################################################
+############################## Remove Smart Folders ###################################
+########################### Syntax: 0 = No / 1 = YES ##################################
+#######################################################################################
+SMART_FOLDER_REMOVE=0
+
+#######################################################################################
+############################## Remove Folders #########################################
+################################### Syntax: 'FOLDER_NAME' #############################
+#######################################################################################
+######### USE = only use named folders, REMOVE = delete named folders ################
+FILTER_FOLDER_MODUS=REMOVE
+FILTER_FOLDER_ARTIFACT='4D_EQUITIES','4D_EQUITIES_REG','4D_EQUITIES_REGR','DEPLOYMENT'
+
+#######################################################################################
+########################## Make MEMNAME DUMMY: Scripts ################################
+########################## Syntax: 'ScriptName.sh' ####################################
+#######################################################################################
+DUMMY_MEMNAME=
+
+#######################################################################################
+########################## Make Folder DUMMY  #########################################
+########################## Syntax: 'FOLDER_NAME' ######################################
+#######################################################################################
+DUMMY_FOLDER_NAME=
+
+#######################################################################################
+################### Make SubApplication DUMMY  ########################################
+################### Syntax: ('FOLDER_NAME','SUBAPPLICATION') ##########################
+#######################################################################################
+DUMMY_SUB_APPLICATION_NAME=
+
+#######################################################################################
+############################## Remove Sub Folders #####################################
+################################### Syntax: 'SUB_FOLDER_NAME' #########################
+#######################################################################################
+REMOVE_SUB_APPLICATION=('UTILITIES','DATA_ENVIRONMENT')
+
+#######################################################################################
+#######################################################################################
+####################### Change Mail Dest and CC_Dest to Dummy  ########################
+####################### Syntax:  ######################################################
+#######################################################################################
+DUMMY_DEST_ALL=0
+DUMMY_DEST=
+DUMMY_CC_DEST=
+ENVIRONMENT_SUBJECT=
+
+#######################################################################################
+############################## Set Jobs to Confirm ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME') ######################
+#######################################################################################
+JOBNAME_TO_CONFIRM=
+JOBNAME_TO_DUMMY=
+
+#######################################################################################
+######################### Make Stored Procedures Dummy ################################
+############## Syntax: ('DB-SCHEMA','SP-NAME') ########################################
+#######################################################################################
+DUMMY_VARIABLE_SP=('%%DB-STP_SCHEM','%%DB-STP_NAME')
+DUMMY_SP_NAMES =
+
+#######################################################################################
+######################### FTP HOSTS ###################################################
+#######################################################################################
+VARIABLE_NAME_FTP_HOSTS=idxpas
+
+
+
+################################## Development ########################################
+[Filter_ICOS2_DEV]
+
+
+#######################################################################################
+############################## Replace all within XML #################################
+#######################################################################################
+
+REPLACE_WHOLE_WORD=('APPFRA','APPLUX'),('INFA_FRA','INFA_LUX'),('IDX_REPO_LUXPRD','IDX_REPO'),('IDX_REPO_LUXSIM','IDX_REPO'),('IDX_INT_LUXPRD','IDX_INT'),('IDX_INT_LUXSIM','IDX_INT'),('vmsimicosas1.cedelgroup.com','vmicospocas1.cedelgroup.com'),('vmprdicosas1.cedelgroup.com','vmicospocas1.cedelgroup.com'),('vmsimicosas1','vmicospocas1.cedelgroup.com'),('vmprdicosas1','vmicospocas1.cedelgroup.com')
+
+FOLDER_DATACENTER=IDX_DEV
+
+RUN_AS_REPLACE=('APPFRA','APPLUX'),('INFA_FRA','INFA_LUX'),('IDX_REPO_LUXPRD','IDX_REPO'),('IDX_REPO_LUXSIM','IDX_REPO'),('IDX_INT_LUXPRD','IDX_INT'),('IDX_INT_LUXSIM','IDX_INT'),('vmsimicosas1.cedelgroup.com','vmicospocas1.cedelgroup.com'),('vmprdicosas1.cedelgroup.com','vmicospocas1.cedelgroup.com'),('vmsimicosas1','vmicospocas1.cedelgroup.com'),('vmprdicosas1','vmicospocas1.cedelgroup.com')
+
+
+#######################################################################################
+############################## Remove Smart Folders ###################################
+########################### Syntax: 0 = No / 1 = YES ##################################
+#######################################################################################
+SMART_FOLDER_REMOVE=0
+
+#######################################################################################
+############################## Remove Folders #########################################
+################################### Syntax: 'FOLDER_NAME' #############################
+#######################################################################################
+######### USE = only use named folders, REMOVE = delete named folders ################
+FILTER_FOLDER_MODUS=USE
+FILTER_FOLDER_ARTIFACT='4D_EQUITIES','4D_EQUITIES_REGR'
+
+#######################################################################################
+############################## Remove Sub Application #################################
+################################### Syntax: 'SUB_FOLDER_NAME' #########################
+#######################################################################################
+REMOVE_SUB_APPLICATION=
+
+
+#######################################################################################
+########################## Make MEMNAME DUMMY: Scripts ################################
+########################## Syntax: 'ScriptName.sh' ####################################
+#######################################################################################
+DUMMY_MEMNAME=
+
+#######################################################################################
+########################## Make Folder DUMMY  #########################################
+########################## Syntax: 'FOLDER_NAME' ######################################
+#######################################################################################
+DUMMY_FOLDER_NAME=
+
+#######################################################################################
+################### Make SubApplication DUMMY  ########################################
+################### Syntax: ('FOLDER_NAME','SUBAPPLICATION') ##########################
+#######################################################################################
+DUMMY_SUB_APPLICATION_NAME=
+
+#######################################################################################
+############################## Set Jobs to Confirm ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME') ######################
+#######################################################################################
+JOBNAME_TO_CONFIRM=
+JOBNAME_TO_DUMMY=
+
+#######################################################################################
+####################### Change Mail Dest and CC_Dest to Dummy  ########################
+####################### Syntax:  ######################################################
+#######################################################################################
+DUMMY_DEST_ALL=0
+DUMMY_DEST=
+DUMMY_CC_DEST=
+ENVIRONMENT_SUBJECT= LUX_DEV 
+
+#######################################################################################
+######################### Make Stored Procedures Dummy ################################
+############## Syntax: ('DB-SCHEMA','SP-NAME') ########################################
+#######################################################################################
+DUMMY_VARIABLE_SP=('%%DB-STP_SCHEM','%%DB-STP_NAME')
+DUMMY_SP_NAMES =
+
+#######################################################################################
+######################### FTP HOSTS ###################################################
+#######################################################################################
+VARIABLE_NAME_FTP_HOSTS=idxdas1
+
+
+################################## SIMULATION #########################################
+
+[Filter_ICOS2_SIM]
+
+#######################################################################################
+############################## Replace all within XML #################################
+#######################################################################################
+FOLDER_DATACENTER=IDX_SIM
+
+REPLACE_WHOLE_WORD=('APPFRA','APPLUX'),('INFA_FRA','INFA_LUX'),('IDX_REPO_LUXPRD','IDX_REPO_LUXSIM'),('IDX_REPO','IDX_REPO_LUXSIM'),('IDX_INT_LUXPRD','IDX_INT_LUXSIM'),('IDX_INT','IDX_INT_LUXSIM'),('vmicospocas1.cedelgroup.com','vmsimicosas1.cedelgroup.com'),('vmprdicosas1.cedelgroup.com','vmsimicosas1.cedelgroup.com'),('LUX PROD','LUX SIM'),('LUX DEV','LUX SIM')
+
+
+RUN_AS_REPLACE=('APPFRA','APPLUX'),('INFA_FRA','INFA_LUX'),('IDX_REPO_LUXPRD','IDX_REPO_LUXSIM'),('IDX_REPO','IDX_REPO_LUXSIM'),('IDX_INT_LUXPRD','IDX_INT_LUXSIM'),('IDX_INT','IDX_INT_LUXSIM'),('vmicospocas1.cedelgroup.com','vmsimicosas1.cedelgroup.com'),('vmprdicosas1.cedelgroup.com','vmsimicosas1.cedelgroup.com')
+
+
+#######################################################################################
+############################## Remove Smart Folders ###################################
+########################### Syntax: 0 = No / 1 = YES ##################################
+#######################################################################################
+SMART_FOLDER_REMOVE=0
+
+#######################################################################################
+############################## Remove Folders #########################################
+################################### Syntax: 'FOLDER_NAME' #############################
+#######################################################################################
+######### USE = only use named folders, REMOVE = delete named folders ################
+FILTER_FOLDER_MODUS=USE
+FILTER_FOLDER_ARTIFACT='4D_EQUITIES'
+
+#######################################################################################
+############################## Remove Sub Folders #####################################
+################################### Syntax: 'SUB_FOLDER_NAME' #########################
+#######################################################################################
+REMOVE_SUB_APPLICATION=
+
+#######################################################################################
+########################## Make MEMNAME DUMMY: Scripts ################################
+########################## Syntax: 'ScriptName.sh' ####################################
+#######################################################################################
+DUMMY_MEMNAME=
+
+DUMMY_MEMNAME_EXCEPTION= 
+
+#######################################################################################
+########################## Make Folder DUMMY  #########################################
+########################## Syntax: 'FOLDER_NAME' ######################################
+#######################################################################################
+DUMMY_FOLDER_NAME=
+
+#######################################################################################
+################### Make SubApplication DUMMY  ########################################
+################### Syntax: ('FOLDER_NAME','SUBAPPLICATION') ##########################
+#######################################################################################
+DUMMY_SUB_APPLICATION_NAME=
+
+#######################################################################################
+############################## Set Jobs to Confirm ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME') ######################
+#######################################################################################
+JOBNAME_TO_CONFIRM=('4D_EQUITIES','REFRESH_LDAP_GROUPS','START_LDAP_SYNCHRONIZATION')
+JOBNAME_TO_DUMMY=('4D_EQUITIES','EQ_CA_RECALCULATION','CHECK_EQ_EU_RECALC_DVP_TRIGGER'),('4D_EQUITIES','EQ_CA_RECALCULATION','EQ_RECALC_UPDATE_GUI_STATUS_FINISHED'),('4D_EQUITIES','EQ_AS_65_REPORTING','EQ_AS_CUST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_65_REPORTING','EQ_AS_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_65_REPORTING','EQ_AS_AFTER_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_65_REPORTING','EQ_AS_BEFORE_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','4D_DAILY_ODS_FILE_LOAD','DOWNLOAD_4D_INPUT_FILES_FROM_LUPNAS'),('4D_EQUITIES','4D_DAILY_ODS_FILE_LOAD','4D_FILES_CALENDAR_DATA_STEP_4'),('4D_EQUITIES','EQ_COPPCLARK_EXCH_TRADING','EQ_GET_UPDATED_Calendar_FILE'),('4D_EQUITIES','EQ_COPPCLARK_EXCH_TRADING','EQ_COPPCLARK_EXCH_TRADING_SEND_EMAIL'),('4D_EQUITIES','EQ_AM_65_REPORTING','EQ_AM_AFTER_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AM_65_REPORTING','EQ_AM_BEFORE_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_70_EU_REPORTING','EQ_EU_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_70_EU_REPORTING','EQ_EU_BEFORE_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_70_EU_REPORTING','EQ_EU_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_70_EU_REPORTING','EQ_EU_ONLY_EU_BEFORE_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_70_EU_REPORTING','EQ_EU_ONLY_EU_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_70_EU_REPORTING','EQ_EU_AFTER_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_70_EU_REPORTING','EQ_EU_BEFORE_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_65_DVP','EQ_EU_DVP_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_PRE_CHECKS','4D_IDX_COMPOSITION_DERV_QS_CHECKS'),('4D_EQUITIES','EQ_PRE_CHECKS','4D_IDX_COMP_DERIV_QS_CHECKS'),('4D_EQUITIES','EQ_EU_CHECKS','EQ_EU_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_GL_CHECKS','EQ_GL_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_AS_CHECKS','EQ_AS_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_AM_CHECKS','EQ_AM_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_POST_CHECKS','EQ_EU_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_GL_65_GL_REPORTING','EQ_GL_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_65_GL_REPORTING','EQ_GL_AFTER_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_65_GL_REPORTING','EQ_GL_BEFORE_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_65_GL_REPORTING','EQ_GL_BACKUP_CUST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_05_XIS_INBOUND','EQ_GL_BEFORE_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RECALC_15_LISTING_PRICE','EQ_EU_BEFORE_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RECALC_50_INDEX_REPORTING','EQ_EU_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_EU_RECALC_50_INDEX_REPORTING','EQ_EU_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_EU_RECALC_50_INDEX_REPORTING','EQ_EU_RECALC_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_EU_RECALC_65_EU_REPORTING','EQ_EU_RECALC_CUST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RECALC_65_EU_REPORTING','EQ_EU_RECALC_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RECALC_65_EU_REPORTING','EQ_EU_RECALC_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RECALC_70_DVP','START_EQ_EU_RECALC_DVP_TRIGGER'),('4D_EQUITIES','EQ_EU_RECALC_70_DVP','EQ_EU_RECALC_DVP_REPORTING_FILE'),('4D_EQUITIES','EQ_EU_RECALC_70_DVP','EQ_EU_RECALC_DVP_REPORTING_INDEX_FILE'),('4D_EQUITIES','EQ_EU_RECALC_70_DVP','EQ_EU_RECALC_DVP_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RESET_50_INDEX_REPORTING','EQ_EU_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_EU_RESET_50_INDEX_REPORTING','EQ_EU_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_EU_RESET_50_INDEX_REPORTING','EQ_EU_RESET_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_EU_RESET_65_EU_REPORTING','EQ_EU_RESET_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RESET_65_EU_REPORTING','EQ_EU_RESET_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RESET_65_EU_REPORTING','EQ_EU_RESET_CREATE_CLOSE_REPORTS'),('4D_EQUITIES','EQ_EU_RESET_65_EU_REPORTING','EQ_EU_RESET_TRANSFER_AWS_CLOSE'),('4D_EQUITIES','EQ_GL_RECALC_50_INDEX_REPORTING','EQ_GL_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_GL_RECALC_50_INDEX_REPORTING','EQ_GL_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_GL_RECALC_50_INDEX_REPORTING','EQ_GL_RECALC_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_GL_RECALC_65_REPORTING','EQ_GL_CUST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_RECALC_65_REPORTING','EQ_GL_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_RECALC_65_REPORTING','EQ_GL_RECALC_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_RECALC_65_REPORTING','EQ_GL_RECALC_TRANSFER_INDEX_FACTORY'),('4D_EQUITIES','EQ_GL_RECALC_65_REPORTING','EQ_GL_RECALC_ONLY_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_RECALC_50_INDEX_REPORTING','EQ_AS_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_AS_RECALC_50_INDEX_REPORTING','EQ_AS_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_AS_RECALC_50_INDEX_REPORTING','EQ_AS_RECALC_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_AS_RECALC_15_LISTING_PRICE','EQ_AS_BEFORE_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_RECALC_65_REPORTING','EQ_AS_RECALC_CUST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_RECALC_65_REPORTING','EQ_AS_RECALC_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_RECALC_65_REPORTING','EQ_AS_RECALC_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AM_RECALC_50_INDEX_REPORTING','EQ_AM_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_AM_RECALC_50_INDEX_REPORTING','EQ_AM_RECALC_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_AM_RECALC_50_INDEX_REPORTING','EQ_AM_RECALC_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_AM_RECALC_65_REPORTING','EQ_AM_RECALC_CUST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AM_RECALC_65_REPORTING','EQ_AM_RECALC_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AM_RECALC_65_REPORTING','EQ_AM_RECALC_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_EU_RECALC_CHECKS','EQ_EU_RECALC_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_GL_RECALC_CHECKS','EQ_GL_QS_RECALC_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_AS_RECALC_CHECKS','EQ_AS_RECALC_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','EQ_AM_RECALC_CHECKS','EQ_AM_RECALC_QS_CHECK_XIS_UPLOAD'),('4D_EQUITIES','4D_RECALC_IDX_COMP_DERIVATION','RECALC_SEND_UEBLIST_TO_OPERATIONS'),('4D_EQUITIES','EQ_DAILY_INTRADAY_REPORTS','EQ_DAILY_XIS_INTRADAY_INBOUND_OQ_UPLOAD'),('4D_EQUITIES','EQ_DAILY_INTRADAY_REPORTS','EQ_DAILY_INTRADAY_INBOUND_SETTLEMENT_UPLOAD'),('4D_EQUITIES','EQ_DAILY_INTRADAY_REPORTS','EQ_DAILY_INTRADAY_INBOUND_KO_UPLOAD'),('4D_EQUITIES','EQ_DAILY_INTRADAY_REPORTS','EQ_DAILY_INTRADAY_INBOUND_SETTLEMENT__HISTORY_UPLOAD'),('4D_EQUITIES','EQ_INBOUND_XIS_DIVISOR','EQ_GL_AS_QS_CHECK_XIS_DIVISOR_DIFFERENCE'),('4D_EQUITIES','EQ_INBOUND_XIS_CURRENCY','EQ_CURRENCY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AM_RESET_50_INDEX_REPORTING','EQ_AM_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_AM_RESET_50_INDEX_REPORTING','EQ_AM_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_AM_RESET_50_INDEX_REPORTING','EQ_AM_RESET_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_AM_RESET_65_REPORTING','EQ_AM_RESET_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AM_RESET_65_REPORTING','EQ_AM_RESET_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AM_RESET_65_REPORTING','EQ_AM_RESET_CREATE_CLOSE_REPORTS'),('4D_EQUITIES','EQ_AM_RESET_65_REPORTING','EQ_AM_RESET_TRANSFER_AWS_CLOSE'),('4D_EQUITIES','EQ_AS_RESET_50_INDEX_REPORTING','EQ_AS_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_AS_RESET_50_INDEX_REPORTING','EQ_AS_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_AS_RESET_50_INDEX_REPORTING','EQ_AS_RESET_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_AS_RESET_65_REPORTING','EQ_AS_RESET_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_RESET_65_REPORTING','EQ_AS_RESET_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_AS_RESET_65_REPORTING','EQ_AS_RESET_TRANSFER_AWS_CLOSE'),('4D_EQUITIES','EQ_AS_RESET_65_REPORTING','EQ_AS_RESET_CREATE_CLOSE_REPORTS'),('4D_EQUITIES','EQ_GL_RESET_50_INDEX_REPORTING','EQ_GL_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP'),('4D_EQUITIES','EQ_GL_RESET_50_INDEX_REPORTING','EQ_GL_RESET_INDEX_REPORTING_AFTER_BATCH_INDEX_COMP_FILE'),('4D_EQUITIES','EQ_GL_RESET_50_INDEX_REPORTING','EQ_GL_RESET_TRANSFER_INDEX_FACTORY_COMP'),('4D_EQUITIES','EQ_GL_RESET_65_REPORTING','EQ_GL_RESET_HIST_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_RESET_65_REPORTING','EQ_GL_RESET_AFTER_BATCH_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_RESET_65_REPORTING','EQ_GL_RESET_TRANSFER_INDEX_FACTORY'),('4D_EQUITIES','EQ_GL_RESET_65_REPORTING','EQ_GL_RESET_CREATE_CLOSE_REPORTS'),('4D_EQUITIES','EQ_GL_RESET_65_REPORTING','EQ_GL_RESET_TRANSFER_AWS_CLOSE'),('4D_EQUITIES','EQ_GL_RESET_65_REPORTING','EQ_GL_RESET_AFTER_BATCH_ONLY_TRANSFER_SINGLE_FILES'),('4D_EQUITIES','EQ_GL_RESET_65_REPORTING','EQ_GL_RESET_CREATE_CUST_REPORTS'),('4D_EQUITIES','EQ_TRANSFER_CONFIGURATION','EQ_IFT_FILE_TRANSFER_DELETE__CHECK_CONCURRENT_PROCESS'),('4D_EQUITIES','TRANSFERS_TO_BAT','TRANSFER_4D_INPUT_FILES_SIMU'),('4D_EQUITIES','TRANSFERS_TO_BAT','TRANSFER_4D_INPUT_FILES_DEV'),('4D_EQUITIES','TRANSFERS_TO_BAT','TRANSFER_XIS_FILES_TO_LUPNAS'),('4D_EQUITIES','TRANSFERS_TO_BAT','PUSH_DATA_TO_DEV'),('4D_EQUITIES','REMINDER','REMINDER_FOR_BA_TASKS'),('4D_EQUITIES','EQ_REJECT','EQ_REJECT_UPDATE_GUI_STATUS'),('4D_EQUITIES','SEI_EDI_40_DAILY_REPORTING','SEI_TRANSFER_AWS_CLOSE'),('4D_EQUITIES','SEI_DISP_HISTORY_UPLOAD','SEI_DISP_HISTORY_UPDATE_PROCESSED_FLAG'),('4D_EQUITIES','SEI_MAVEN_20_DAILY_REPORTING','SEI_TRANSFER_AWS_CLOSE'),('4D_EQUITIES','EQ_COPPCLARK_CENTER_CHANGE_REPORT','EQ_CENTER_CHANGE_REPORT_CC_EMAIL'),('4D_EQUITIES','EQ_COPPCLARK_CENTER_CHANGE_REPORT','EQ_CHECK_READY_TO_DOWNLOAD_FILES'),('4D_EQUITIES','SEI_DP_20_DAILY_REPORTING','SEI_DP_TRANSFER_AWS_HIST'),('4D_EQUITIES','SEI_DP_20_DAILY_REPORTING','SEI_DP_TRANSFER_SINGLEFILES')
+
+#######################################################################################
+############################## Set Jobs Start time ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME','TIMEFROM') ###########
+#######################################################################################
+CHANGE_TIMEFROM=1
+JOBNAME_TO_TIMEFROM=('4D_EQUITIES','EQ_GL_20_LISTING_REPORTING','START_EQ_GL_DAILY_LISTING_REPORTING_START','2345'),('4D_EQUITIES','EQ_AS_05_XIS_INBOUND','START_EQ_AS_XIS_INBOUND_FILES','2130'),('4D_EQUITIES','EQ_EU_05_XIS_INBOUND','START_EQ_EU_XIS_INBOUND_FILES','2130'),('4D_EQUITIES','4D_DAILY_ODS_FILE_LOAD','START_EQ_EU_DUMMY_GUI_CONDITIONS','2115'),('4D_EQUITIES','EQ_AM_10_LISTING_CALC_RUN_OPEN','START_EQ_AM_DAILY_CALC_LISTING_LISTING_CALC_RUN','2230')	
+
+#######################################################################################
+############################## Modify Jobs Start time #################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME','TIMEFROM') ###########
+#######################################################################################
+
+
+#######################################################################################
+############################## ADD extra conditions to jobs ###########################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME','CONDITION') ##########
+#######################################################################################
+JOBNAME_ADD_CONDITION=('4D_EQUITIES','4D_IDX_COMP_DERIVATION','END_4D_IDX_COMP_DERIVATION','<OUTCOND NAME="END_4D_IDX_COMP_DERIVATION-TO-START_EQ_AS_XIS_INBOUND_FILES" ODATE="ODAT" SIGN="+"/>'),('4D_EQUITIES','EQ_INBOUND_XIS_CURRENCY','END_EQ_INBOUND_XIS_CURRENCY','<OUTCOND NAME="END_EQ_INBOUND_XIS_CURRENCY-TO-START_EQ_AS_XIS_INBOUND_FILES" ODATE="ODAT" SIGN="+"/>'),('4D_EQUITIES','EQ_INBOUND_XIS_CURRENCY','END_EQ_INBOUND_XIS_CURRENCY','<OUTCOND NAME="END_EQ_INBOUND_XIS_CURRENCY-TO-START_EQ_EU_XIS_INBOUND_FILES" ODATE="ODAT" SIGN="+"/>'),('4D_EQUITIES','EQ_INBOUND_XIS_CURRENCY','START_EQ_INBOUND_XIS_CURRENCY','<INCOND NAME="START_EQ_EU_DUMMY_GUI_CONDITIONS-TO-START_EQ_INBOUND_XIS_CURRENCY" ODATE="ODAT" AND_OR="OR"/>'),('4D_EQUITIES','EQ_INBOUND_XIS_CURRENCY','START_EQ_INBOUND_XIS_CURRENCY','<OUTCOND NAME="START_EQ_EU_DUMMY_GUI_CONDITIONS-TO-START_EQ_INBOUND_XIS_CURRENCY" ODATE="ODAT" SIGN="-"/>'),('4D_EQUITIES','EQ_AS_05_XIS_INBOUND','START_EQ_AS_XIS_INBOUND_FILES','<INCOND NAME="END_EQ_INBOUND_XIS_CURRENCY-TO-START_EQ_AS_XIS_INBOUND_FILES" ODATE="ODAT" AND_OR="AND"/>'),('4D_EQUITIES','EQ_AS_05_XIS_INBOUND','START_EQ_AS_XIS_INBOUND_FILES','<OUTCOND NAME="END_EQ_INBOUND_XIS_CURRENCY-TO-START_EQ_AS_XIS_INBOUND_FILES" ODATE="ODAT" SIGN="-"/>'),('4D_EQUITIES','EQ_EU_05_XIS_INBOUND','START_EQ_EU_XIS_INBOUND_FILES','<INCOND NAME="END_EQ_INBOUND_XIS_CURRENCY-TO-START_EQ_EU_XIS_INBOUND_FILES" ODATE="ODAT" AND_OR="AND"/>'),('4D_EQUITIES','EQ_EU_05_XIS_INBOUND','START_EQ_EU_XIS_INBOUND_FILES','<OUTCOND NAME="END_EQ_INBOUND_XIS_CURRENCY-TO-START_EQ_EU_XIS_INBOUND_FILES" ODATE="ODAT" SIGN="-"/>'),('4D_EQUITIES','4D_DAILY_ODS_FILE_LOAD','START_EQ_EU_DUMMY_GUI_CONDITIONS','<OUTCOND NAME="START_EQ_EU_DUMMY_GUI_CONDITIONS-TO-START_EQ_INBOUND_XIS_CURRENCY" ODATE="ODAT" SIGN="+"/>'),('4D_EQUITIES','EQ_AS_05_XIS_INBOUND','START_EQ_AS_XIS_INBOUND_FILES','<INCOND NAME="END_4D_IDX_COMP_DERIVATION-TO-START_EQ_AS_XIS_INBOUND_FILES" ODATE="ODAT" AND_OR="AND"/>'),('4D_EQUITIES','EQ_AS_05_XIS_INBOUND','START_EQ_AS_XIS_INBOUND_FILES','<OUTCOND NAME="END_4D_IDX_COMP_DERIVATION-TO-START_EQ_AS_XIS_INBOUND_FILES" ODATE="ODAT" SIGN="-"/>')
+
+#######################################################################################
+####################### Change Mail Dest and CC_Dest to Dummy  ########################
+####################### Syntax:  ######################################################
+#######################################################################################
+DUMMY_DEST_ALL=1
+DUMMY_DEST= StoxxOPSFrankfurt@deutsche-boerse.com
+DUMMY_CC_DEST= CC_SIM@PlaceHolder
+ENVIRONMENT_SUBJECT=LUX_SIMU
+
+#######################################################################################
+######################### Make Stored Procedures Dummy ################################
+############## Syntax: ('DB-SCHEMA','SP-NAME') ########################################
+#######################################################################################
+DUMMY_VARIABLE_SP=
+DUMMY_SP_NAMES =
+
+#######################################################################################
+######################### FTP HOSTS ###################################################
+#######################################################################################
+VARIABLE_NAME_FTP_HOSTS=
+
+
+
+################################## ICOS2 PRODUCTION####################################
+
+[Filter_ICOS2_PROD]
+
+#######################################################################################
+############################## Replace all within XML #################################
+#######################################################################################
+FOLDER_DATACENTER=IDX_PRD
+
+REPLACE_WHOLE_WORD=('LUX_SIM','LUX_PROD'),('LUX_DEV','LUX_PROD')
+
+
+RUN_AS_REPLACE=
+
+
+#######################################################################################
+############################## Remove Smart Folders ###################################
+########################### Syntax: 0 = No / 1 = YES ##################################
+#######################################################################################
+SMART_FOLDER_REMOVE=0
+
+#######################################################################################
+############################## Remove Folders #########################################
+################################### Syntax: 'FOLDER_NAME' #############################
+#######################################################################################
+######### USE = only use named folders, REMOVE = delete named folders ################
+FILTER_FOLDER_MODUS=USE
+FILTER_FOLDER_ARTIFACT='4D_EQUITIES'
+
+#######################################################################################
+############################## Remove Sub Folders #####################################
+################################### Syntax: 'SUB_FOLDER_NAME' #########################
+#######################################################################################
+REMOVE_SUB_APPLICATION=
+
+#######################################################################################
+########################## Make MEMNAME DUMMY: Scripts ################################
+########################## Syntax: 'ScriptName.sh' ####################################
+#######################################################################################
+DUMMY_MEMNAME=
+
+DUMMY_MEMNAME_EXCEPTION= 
+
+#######################################################################################
+########################## Make Folder DUMMY  #########################################
+########################## Syntax: 'FOLDER_NAME' ######################################
+#######################################################################################
+DUMMY_FOLDER_NAME=
+
+#######################################################################################
+################### Make SubApplication DUMMY  ########################################
+################### Syntax: ('FOLDER_NAME','SUBAPPLICATION') ##########################
+#######################################################################################
+DUMMY_SUB_APPLICATION_NAME=
+
+#######################################################################################
+############################## Set Jobs to Confirm ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME') ######################
+#######################################################################################
+JOBNAME_TO_CONFIRM=('4D_EQUITIES','SEI_DP_05_DAILY_INDEX_COMPOSITION','SEI_DP_START_RECALC_GUI'),('4D_EQUITIES','EQ_DAILY_STOXX_EXPECTED_CONST_CNT','START_DAILY_STOXX_EXPECTED_CONST_CNT'),('4D_EQUITIES','EQ_DAILY_STOXX_EXPECTED_CONST_CNT','START_GUI_STOXX_EXPECTED_CONST_CNT')
+
+JOBNAME_TO_DUMMY=('4D_EQUITIES','EQ_AS_45_INDEX_CONST_MEASURES','EQ_AS_IDX_CONST_MEASURES_CALC_CONST_SP'),('4D_EQUITIES','TRANSFERS_TO_BAT','MOVE_DATA_TO_EQUITY_EXP'),('4D_EQUITIES','EQ_AS_45_INDEX_CONST_MEASURES','EQ_AS_IDX_CONST_MEASURES_CALC_INDEX_SP'),('4D_EQUITIES','4D_DAILY_ODS_FILE_LOAD','START_EQ_EU_DUMMY_GUI_CONDITIONS'),('4D_EQUITIES','4D_DAILY_ODS_FILE_LOAD','4D_TEST_INDEX_COMPOSITION_STEP_1'),('4D_EQUITIES','4D_DAILY_ODS_FILE_LOAD','4D_FILES_TEST_INDEX_COMPOSITION_STEP_2'),('4D_EQUITIES','EQ_AM_45_INDEX_CONST_MEASURES','EQ_AM_IDX_CONST_MEASURES_CALC_INDEX_SP'),('4D_EQUITIES','EQ_AM_45_INDEX_CONST_MEASURES','EQ_AM_IDX_CONST_MEASURES_CALC_CONST_SP'),('4D_EQUITIES','EQ_EU_45_INDEX_CONST_MEASURES','EQ_EU_IDX_CONST_MEASURES_CALC_CONST_SP'),('4D_EQUITIES','EQ_EU_45_INDEX_CONST_MEASURES','EQ_EU_IDX_CONST_MEASURES_CALC_INDEX_SP'),('4D_EQUITIES','EQ_GL_45_INDEX_CONST_MEASURES','EQ_GL_IDX_CONST_MEASURES_CALC_CONST_SP'),('4D_EQUITIES','EQ_GL_45_INDEX_CONST_MEASURES','EQ_GL_IDX_CONST_MEASURES_CALC_INDEX_SP'),('4D_EQUITIES','EQ_AS_RECALC_15_LISTING_PRICE','EQ_AS_RECALC_GUI_CHECKPOINT_AFTER_BEFORE_BATCH_FILES'),('4D_EQUITIES','EQ_ADHOC_PROD_REFRESH_SCHEMA_UPDATES','EQ_UPDATE_EQUITY_GUI'),('4D_EQUITIES','EQ_ADHOC_PROD_REFRESH_SCHEMA_UPDATES','EQ_UPDATE_EQUITY_SCHEMA'),('4D_EQUITIES','EQ_ADHOC_PROD_REFRESH_SCHEMA_UPDATES','EQ_UPDATE_IFT'),('4D_EQUITIES','EQ_30_ISTUDIO_DAY1_STG_TEST_INDEX_SIMU_ONLY','ISTUDIO_TEST_INDEX_FILE_STEP_0_1'),('4D_EQUITIES','EQ_30_ISTUDIO_DAY1_STG_TEST_INDEX_SIMU_ONLY','ISTUDIO_TEST_INDEX_FILE_STEP_0_2'),('4D_EQUITIES','EQ_80_ISTUDIO_TEST_INDEX_SIMU_ONLY','ISTUDIO_TEST_INDEX_STEP_0_5')
+
+#######################################################################################
+############################## Set Jobs Start time ####################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME','TIMEFROM') ###########
+#######################################################################################
+CHANGE_TIMEFROM=1
+JOBNAME_TO_TIMEFROM=
+#######################################################################################
+############################## Modify Jobs Start time #################################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME','TIMEFROM') ###########
+#######################################################################################
+
+
+#######################################################################################
+############################## ADD extra conditions to jobs ###########################
+############# Syntax: ('FOLDER_NAME','SUBAPPLICATION','JOBNAME','CONDITION') ##########
+#######################################################################################
+JOBNAME_ADD_CONDITION=
+
+#######################################################################################
+####################### Change Mail Dest and CC_Dest to Dummy  ########################
+####################### Syntax:  ######################################################
+#######################################################################################
+DUMMY_DEST_ALL=1
+DUMMY_DEST= 
+DUMMY_CC_DEST= 
+ENVIRONMENT_SUBJECT= LUX_PROD
+
+#######################################################################################
+######################### Make Stored Procedures Dummy ################################
+############## Syntax: ('DB-SCHEMA','SP-NAME') ########################################
+#######################################################################################
+DUMMY_VARIABLE_SP=
+DUMMY_SP_NAMES =
+
+#######################################################################################
+######################### FTP HOSTS ###################################################
+#######################################################################################
+VARIABLE_NAME_FTP_HOSTS=

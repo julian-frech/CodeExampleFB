@@ -1,0 +1,183 @@
+@model CentralFinanceManagerUI.Models.UserDepots.DepotComponents
+
+@{
+    <script type="text/javascript" src="~/js/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+    List<CentralFinanceManagerUI.Models.UserDepots.V_DepotComponentsAggregated> ListViewData
+        = (List<CentralFinanceManagerUI.Models.UserDepots.V_DepotComponentsAggregated>)ViewBag.ViewDepotDetails;
+
+    <link href="~/cssDetails/TableScrollCSS.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+
+
+
+
+        .negative10 {
+            background-color: #F08080;
+        }
+
+        .negative20 {
+            background-color: #FF4500;
+        }
+
+        .negative30 {
+            background-color: #EE4000;
+        }
+
+        .negative40 {
+            background-color: #CD3700;
+        }
+
+        .negative50 {
+            background-color: #CD3700;
+        }
+
+        .negativeMAX {
+            background-color: #CD3700;
+        }
+
+        .positive10 {
+            background-color: #98FB98;
+        }
+
+        .positive20 {
+            background-color: #00FF7F;
+        }
+
+        .positive30 {
+            background-color: #00FF00;
+        }
+
+        .neutral {
+            background-color: grey;
+        }
+    </style>
+}
+
+
+<body onload="fct_alternate('thetable')">
+    <div class="font-weight-bold text-center p-3 mb-2 bg-gradient-primary text-black">
+        <h1 class="display-4">Manage your Depots</h1>
+    </div>
+    <p>
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">Order Manager</button>
+    </p>
+    <input type="text" id="myInput" onkeyup="fct_searchable()" placeholder="Search for names.." title="Type in a name">
+    <table id="thetable" class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayName("Symbol")
+                </th>
+                <th>
+                    @Html.DisplayName("Quantity")
+                </th>
+                <th>
+                    @Html.DisplayName("PositionValueThen")
+                </th>
+                <th>
+                    @Html.DisplayName("PositionValueNow")
+                </th>
+                <th>
+                    @Html.DisplayName("PositionNetValue")
+                </th>
+                <th>
+                    @Html.DisplayName("Percentage")
+                </th>
+                <th>
+                    @Html.DisplayName("ValidFrom")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ListViewData)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.Symbol)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PositionValueThen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PositionValueNow)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PositionNetValue)
+                    </td>
+                    <td>
+                        @{
+                            var fullName = item.Percentage + "%";
+                            @Html.DisplayFor(modelitem => fullName)
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.ValidFrom)
+                    </td>
+                    <td>
+                        <a asp-action="DeleteDepotComp" asp-route-depotComponentId="@item.DepotComponentId" asp-route-depotId="@ViewBag.CurrentDepot">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+<div>
+    <a asp-action="Index">Back to my Depots</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Order Manager</h1>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                @{ await Html.RenderPartialAsync("~/Views/Shared/_OrderManager.cshtml");
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @{ await Html.RenderPartialAsync("~/Views/Shared/_OrderManager.cshtml");
+                }
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

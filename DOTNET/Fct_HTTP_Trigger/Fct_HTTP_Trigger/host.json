@@ -1,0 +1,14 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingExcludedTypes": "Request",
+      "samplingSettings": {
+        "isEnabled": true
+      }
+    }
+  },
+  "ConnectionStrings": {
+    "cpni": "Server=tcp:ThisIsNotTheAddress.database.windows.net,1433;Initial Catalog=Datenbank01;Persist Security Info=False;User ID=Password=WrongDBUser;Password=Password=WrongPWD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False"
+  }
+}

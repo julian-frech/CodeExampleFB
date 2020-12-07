@@ -1,0 +1,111 @@
+﻿@page "/symbolfacts"
+
+@using FinanceBro.Data
+@inject ISymbolFactsDataListService symbolservice
+@inject IJSRuntime jsRuntime
+@using Blazorise.Icons.FontAwesome
+
+<h1>Company Details</h1>
+
+
+@if (symbolFactsList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <input type="text" @bind-value="@searchTerm" />
+    <input type="button" value="Search" @onclick="@SearchIssues" />
+
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th><span class="sort-link" @onclick="@(() => SortTable("Symbol"))">Symbol</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("CompanyName"))">Headline</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("Industry"))">Publication</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("Sector"))">Publication</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("Website"))">Publication</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("Description"))">Publication</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("CEO"))">Publication</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("CEO"))">SecurityName</span></th>
+                <th><span class="sort-link" @onclick="@(() => SortTable("CEO"))">country</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var symbolFacts in symbolFactsList)
+            {
+            <tr>
+                <td>@symbolFacts.Symbol</td>
+                <td>@symbolFacts.CompanyName</td>
+                <td>@symbolFacts.Industry</td>
+                <td>@symbolFacts.Sector</td>
+                <td>@symbolFacts.Website</td>
+                <td>@symbolFacts.Description</td>
+                <td>@symbolFacts.CEO</td>
+                <td>@symbolFacts.SecurityName</td>
+                <td>@symbolFacts.country</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+
+
+    List<SymbolFacts> symbolFactsList;
+    SymbolFacts symbolFact;
+
+    protected override async Task OnInitializedAsync()
+    {
+        symbolFactsList = await symbolservice.Get();
+    }
+
+    private string searchTerm;
+
+    async Task SearchIssues()
+    {
+        symbolFact = await symbolservice.Get(searchTerm);
+    }
+
+
+
+}
+
+
+@functions{
+
+    private bool IsSortedAscending;
+
+    private string CurrentSortColumn;
+
+    private void SortTable(string columnName)
+    {
+        //Sorting against a column that is not currently sorted against.
+        if (columnName != CurrentSortColumn)
+        {
+            //We need to force order by ascending on the new column
+            //This line uses reflection and will probably perform inefficiently in a production environment.
+            symbolFactsList = symbolFactsList.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            CurrentSortColumn = columnName;
+            IsSortedAscending = true;
+
+        }
+        else //Sorting against same column but in different direction
+        {
+            if (IsSortedAscending)
+            {
+                symbolFactsList = symbolFactsList.OrderByDescending(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+            else
+            {
+                symbolFactsList = symbolFactsList.OrderBy(x => x.GetType().GetProperty(columnName).GetValue(x, null)).ToList();
+            }
+
+            //Toggle this boolean
+            IsSortedAscending = !IsSortedAscending;
+        }
+    }
+}

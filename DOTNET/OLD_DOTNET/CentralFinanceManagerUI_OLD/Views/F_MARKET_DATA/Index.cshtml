@@ -1,0 +1,77 @@
+@model IEnumerable<CentralFinanceManagerUI.Models.F_MARKET_DATA>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Symbol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Open)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.High)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Low)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Close)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AGG_Volume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Market_Timestamp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Symbol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Open)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.High)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Low)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Close)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AGG_Volume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Market_Timestamp)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ColumnID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ColumnID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ColumnID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{3C9B38E2-29E6-4A29-85CB-1F8F2DC5B03A}|Default">
+  <MonoDevelop.Ide.ItemProperties.CentralFinanceManagerUI PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="Views/Shared/_Layout.cshtml" Line="52" Column="44" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="Data/SqlDbContext.cs" />
+      <File FileName="Models/SymbolViewModels/Symbols.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Models/ApplicationUser.cs" />
+      <File FileName="Models/ErrorViewModel.cs" />
+      <File FileName="Models/F_MARKET_DATA.cs" />
+      <File FileName="Models/UserDepots/UserDepot.cs" />
+      <File FileName="Controllers/F_MARKET_DATAController.cs" />
+      <File FileName="Data/ApplicationDbContext.cs" />
+      <File FileName="Controllers/RSSFeedController.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Controllers/AccountController.cs" />
+      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Views/UserDepot/CreateNew.cshtml" />
+      <File FileName="Controllers/UserDepotController.cs" Line="47" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CentralFinanceManagerUI" expanded="True">
+            <Node name="CentralFinanceManagerUI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="UserDepot" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="Images" expanded="True">
+                  <Node name="Background.jpeg" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

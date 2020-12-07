@@ -1,0 +1,66 @@
+@model CentralFinanceManagerUI.Models.F_MARKET_DATA
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>F_MARKET_DATA</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Symbol)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Symbol)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Open)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Open)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.High)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.High)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Low)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Low)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Close)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Close)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AGG_Volume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AGG_Volume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Market_Timestamp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Market_Timestamp)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ColumnID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

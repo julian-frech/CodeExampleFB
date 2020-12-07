@@ -1,0 +1,76 @@
+﻿<Properties StartupConfiguration="{A472D0A5-6578-4677-9743-ABBB3F122F3D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FinanceBro/Startup.cs">
+    <Files>
+      <File FileName="FinanceBro/Pages/SymbolNewsModal.razor" Line="63" Column="61" />
+      <File FileName="FinanceBro/Data/SqlDbContext.cs" />
+      <File FileName="FinanceBro/Data/SymbolDataListService.cs" />
+      <File FileName="FinanceBro/Data/SymbolNewsListService.cs" />
+      <File FileName="FinanceBro/Startup.cs" Line="51" Column="36" />
+      <File FileName="FinanceBro/_Imports.razor" />
+      <File FileName="FinanceBro/Pages/SymbolDataList.razor" />
+      <File FileName="FinanceBro/Pages/SymbolNewsList.razor" />
+      <File FileName="FinanceBro/Pages/HistoricChart.razor" />
+      <File FileName="FinanceBro/wwwroot/css/open-iconic/FONT-LICENSE" />
+      <File FileName="FinanceBro/Data/MarketDataListService.cs" />
+      <File FileName="FinanceBro/Pages/Index.razor" />
+      <File FileName="FinanceBro/Pages/_Host.cshtml" />
+      <File FileName="FinanceBro/appsettings.json" Line="16" Column="1" />
+      <File FileName="FinanceBro/appsettings.Development.json" />
+      <File FileName="FinanceBro/Properties/launchSettings.json" />
+      <File FileName="FinanceBro/Pages/Error.cshtml" />
+      <File FileName="FinanceBro/Shared/NavMenu.razor" />
+      <File FileName="FinanceBro/Shared/MainLayout.razor" />
+      <File FileName="FinanceBro/Shared/LoginDisplay.razor" />
+      <File FileName="FinanceBro/Models/ApiTrigger.cs" />
+      <File FileName="FinanceBro/App.razor" />
+      <File FileName="FinanceBroUniTests/ServiceUT.cs" />
+      <File FileName="FinanceBro/Pages/Counter.razor" />
+      <File FileName="FinanceBro/Service/MarketDataApiService.cs" />
+      <File FileName="FinanceBro/Data/ApplicationDbContext.cs" />
+      <File FileName="FinanceBro/Data/Migrations/ApplicationDbContextModelSnapshot.cs" />
+      <File FileName="FinanceBro/Data/UserDepotListService.cs" Line="63" Column="38" />
+      <File FileName="FinanceBro/Data/UserDataListService.cs" Line="32" Column="1" />
+      <File FileName="FinanceBro/Pages/UserDepot.razor" />
+      <File FileName="FinanceBro/FinanceBroUI.cs" />
+      <File FileName="FinanceBro/Data/Models.cs" />
+      <File FileName="FinanceBro/Pages/UserDepotComponentModal.razor" />
+      <File FileName="FinanceBro/Data/UserDepotComponentListService.cs" Line="47" Column="17" />
+      <File FileName="FinanceBro/Data/LatestDatesListService.cs" />
+      <File FileName="../../../../.nuget/packages/nlog.config/4.7.5/contentFiles/any/any/nlog.config" />
+      <File FileName="FinanceBro/Shared/SurveyPrompt.razor" />
+      <File FileName="FinanceBro/Dockerfile" />
+      <File FileName="FinanceBro/nlog.config" />
+      <File FileName="FinanceBro/Service/ApiServiceController.cs" />
+      <File FileName="FinanceBro/Service/IApiService.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FinanceBro" expanded="True">
+            <Node name="FinanceBro" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Service" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+            <Node name="FinanceBroUniTests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FinanceBroUniTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.FinanceBro PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Catchpoint exceptionName="System.ObjectDisposedException" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.NullReferenceException" includeSubclasses="True" />
+      <Breakpoint file="/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBro/Data/UserDepotListService.cs" relfile="FinanceBro/Data/UserDepotListService.cs" line="92" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

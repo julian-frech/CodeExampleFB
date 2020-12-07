@@ -1,0 +1,16 @@
+services:
+  financebro:
+    build:
+      context: /Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro
+      dockerfile: FinanceBro/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: financebro
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/julianfrech/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/julianfrech/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
