@@ -2,20 +2,16 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="FinanceBroGraphQL/appsettings.json">
     <Files>
       <File FileName="FinanceBroGraphQL/Program.cs" Line="17" Column="10" />
-      <File FileName="FinanceBroGraphQL/Data/SqlDbContext.cs" Line="34" Column="39" />
-      <File FileName="FinanceBroGraphQL/Models/Models.cs" Line="115" Column="1" />
-      <File FileName="FinanceBroGraphQL/Models/GraphQLTypes.cs" Line="33" Column="1" />
-      <File FileName="FinanceBroGraphQL/Queries/Query.cs" Line="23" Column="89" />
-      <File FileName="FinanceBroGraphQL/Startup.cs" Line="50" Column="45" />
+      <File FileName="FinanceBroGraphQL/Data/SqlDbContext.cs" />
+      <File FileName="FinanceBroGraphQL/Startup.cs" />
       <File FileName="FinanceBroGraphQL/appsettings.json" Line="5" Column="5" />
-      <File FileName="FinanceBroGraphQL/appsettings.Development.json" Line="15" Column="1" />
-      <File FileName="FinanceBroGraphQL/CoreServices/IUserDepotService.cs" Line="13" Column="70" />
-      <File FileName="FinanceBroGraphQL/CoreServices/UserDepotService.cs" Line="54" Column="12" />
-      <File FileName="FinanceBroGraphQL/CoreServices/DepotResolver.cs" Line="17" Column="59" />
-      <File FileName="FinanceBroGraphQL/ExceptionHandler/DepotNotFoundException.cs" Line="9" Column="1" />
-      <File FileName="FinanceBroGraphQL/Queries/Mutation.cs" Line="20" Column="12" />
-      <File FileName="FinanceBroGraphQL/GraphQL/DeleteDepotInput.cs" Line="13" Column="19" />
-      <File FileName="FinanceBroGraphQL/GraphQL/CreateDepotInput.cs" Line="15" Column="1" />
+      <File FileName="FinanceBroGraphQL/appsettings.Development.json" />
+      <File FileName="FinanceBroGraphQL/CoreServices/IUserDepotService.cs" />
+      <File FileName="FinanceBroGraphQL/CoreServices/UserDepotService.cs" />
+      <File FileName="FinanceBroGraphQL/CoreServices/DepotResolver.cs" />
+      <File FileName="FinanceBroGraphQL/ExceptionHandler/DepotNotFoundException.cs" />
+      <File FileName="FinanceBroGraphQL/GraphQL/DeleteDepotInput.cs" />
+      <File FileName="FinanceBroGraphQL/GraphQL/CreateDepotInput.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj": {}
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj": {}
   },
   "projects": {
-    "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj": {
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
+        "projectUniqueName": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
         "projectName": "CalculatorService",
-        "projectPath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
+        "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
         "packagesPath": "/Users/julianfrech/.nuget/packages/",
-        "outputPath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/obj/",
+        "outputPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -124,14 +124,14 @@
         }
       }
     },
-    "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj": {
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj",
+        "projectUniqueName": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj",
         "projectName": "CalculatorServiceUT",
-        "projectPath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj",
+        "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj",
         "packagesPath": "/Users/julianfrech/.nuget/packages/",
-        "outputPath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorServiceUT/obj/",
+        "outputPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorServiceUT/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -149,8 +149,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj": {
-                "projectPath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj"
+              "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj": {
+                "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj"
               }
             }
           }

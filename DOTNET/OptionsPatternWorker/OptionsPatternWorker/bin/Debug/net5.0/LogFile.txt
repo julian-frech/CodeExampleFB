@@ -1,0 +1,403 @@
+2020-12-07 21:21:20.9906|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:21:21.0254|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:21:21.0285|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:23:31.7530|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:23:31.7847|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:23:31.7865|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:23:50.4746|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:23:50.5054|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:23:50.5073|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:26:52.9678|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:26:53.0013|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:26:53.0030|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:31:03.3535|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:31:03.3847|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:31:03.3864|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:32:14.7905|INFO|OptionsPatternWorker.Worker|Worker running at: 12/07/2020 21:32:14 +01:00
+2020-12-07 21:32:14.8415|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:32:14.8415|INFO|OptionsPatternWorker.Worker|Configured csv file:OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:32:14.8415|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:32:14.8436|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:32:14.8436|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:32:14.8436|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:33:14.8503|INFO|OptionsPatternWorker.Worker|Worker running at: 12/07/2020 21:33:14 +01:00
+2020-12-07 21:33:14.8509|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:33:14.8509|INFO|OptionsPatternWorker.Worker|Configured csv file:OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:33:14.8516|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:34:14.8573|INFO|OptionsPatternWorker.Worker|Worker running at: 12/07/2020 21:34:14 +01:00
+2020-12-07 21:34:14.8585|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:34:14.8588|INFO|OptionsPatternWorker.Worker|Configured csv file:OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:34:14.8588|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:37:02.7064|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:37:02 +01:00
+2020-12-07 21:37:02.7327|FATAL|OptionsPatternWorker.Worker|Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:37:02.7488|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:37:02.7488|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:37:02.7493|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:37:02.7509|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:37:02.7509|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:37:02.7513|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:37:53.7468|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:37:53 +01:00
+2020-12-07 21:37:53.7849|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:37:53.7854|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:37:53.7854|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:37:53.7854|FATAL|OptionsPatternWorker.Worker|Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:37:53.7873|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:37:53.7873|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:37:53.7873|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:38:37.7320|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:38:37 +01:00
+2020-12-07 21:38:37.7723|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:38:37.7731|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:38:37.7731|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:38:37.7731|FATAL|OptionsPatternWorker.Worker|#######
+ Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+###########
+2020-12-07 21:38:37.7754|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:38:37.7754|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:38:37.7754|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:39:37.7833|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:39:37.7836|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:39:37.7836|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:39:37.7836|FATAL|OptionsPatternWorker.Worker|#######
+ Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+###########
+2020-12-07 21:40:37.7733|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:40:37.7733|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:40:37.7739|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:40:37.7739|FATAL|OptionsPatternWorker.Worker|#######
+ Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+###########
+2020-12-07 21:41:04.4623|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:41:04 +01:00
+2020-12-07 21:41:04.4989|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:41:04.4989|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:41:04.4989|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:41:04.4989|FATAL|OptionsPatternWorker.Worker|Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:41:04.5011|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:41:04.5011|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:41:04.5011|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:42:04.5070|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:42:04.5073|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:42:04.5073|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:42:04.5073|FATAL|OptionsPatternWorker.Worker|Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:42:12.8718|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:42:12 +01:00
+2020-12-07 21:42:12.9123|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:42:12.9128|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:42:12.9128|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:42:12.9128|FATAL|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:42:12.9149|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:42:12.9149|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:42:12.9154|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:42:29.0176|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:42:28 +01:00
+2020-12-07 21:42:29.0597|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:42:29.0602|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:42:29.0602|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:42:29.0608|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:42:29.0625|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:42:29.0629|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:42:29.0629|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:43:29.0705|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:43:29.0705|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:43:29.0713|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:43:29.0713|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:44:27.9434|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:44:27 +01:00
+2020-12-07 21:44:27.9852|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:44:27.9857|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:44:27.9857|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:44:27.9857|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:44:27.9877|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:44:27.9877|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:44:27.9877|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:45:27.9980|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:45:27.9980|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:45:27.9992|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:45:27.9992|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:46:28.0080|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:46:28.0089|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:46:28.0089|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:46:28.0095|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:47:28.0184|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\
+2020-12-07 21:47:28.0194|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:47:28.0197|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:47:28.0197|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:48:28.0309|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads
+2020-12-07 21:48:28.0330|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:48:28.0332|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:48:28.0332|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:49:28.0445|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads
+2020-12-07 21:49:28.0445|INFO|OptionsPatternWorker.Worker|Configured csv file:{file} worker is watching: OptionsPatternWorker.Models.FileWatchedConfig
+2020-12-07 21:49:28.0445|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:49:28.0455|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:50:47.1200|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:50:47 +01:00
+2020-12-07 21:50:47.1667|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads
+2020-12-07 21:50:47.1667|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloadstest.csv
+2020-12-07 21:50:47.1674|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:50:47.1674|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:50:47.1693|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 21:50:47.1693|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 21:50:47.1693|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 21:51:47.1783|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads
+2020-12-07 21:51:47.1791|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloadstest.csv
+2020-12-07 21:51:47.1791|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-07 21:51:47.1797|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2020-12-07 21:52:47.1894|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:52:47.1894|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:52:47.1902|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:49.1730|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 21:58:49 +01:00
+2020-12-07 21:58:49.2124|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:49.2128|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:49.2128|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:49.5231|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:49.5237|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:49.5237|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:49.5237|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:49.6152|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:49.6156|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:49.6156|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:49.6156|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:49.7110|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:49.7115|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:49.7115|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:49.7115|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:49.8082|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:49.8086|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:49.8086|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:49.8086|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:49.9073|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:49.9077|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:49.9077|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:49.9077|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.0029|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.0029|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.0036|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.0036|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.1003|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.1009|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.1009|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.1009|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.1943|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.1956|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.1969|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.1969|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.2916|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.2916|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.2924|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.2924|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.3861|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.3865|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.3865|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.3865|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.4813|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.4817|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.4817|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.4817|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.5767|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.5767|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.5767|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.5774|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.6742|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.6746|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.6746|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.6746|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.7700|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.7700|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.7706|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.7706|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.8676|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.8676|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.8688|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.8688|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:50.9653|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:50.9658|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:50.9658|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:50.9658|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.0595|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.0595|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.0595|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.0595|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.1564|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.1569|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.1569|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.1569|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.2506|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.2506|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.2506|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.2506|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.3462|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.3466|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.3466|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.3466|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.4428|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.4428|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.4428|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.4436|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.5400|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.5400|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.5405|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.5405|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.6366|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.6366|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.6366|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.6366|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.7356|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.7356|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.7356|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.7366|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.8614|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.8620|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.8620|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.8620|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:51.9567|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:51.9567|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:51.9567|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:51.9567|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.0502|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.0506|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.0506|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.0506|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.1473|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.1476|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.1476|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.1476|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.2431|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.2431|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.2437|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.2437|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.3394|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.3402|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.3405|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.3405|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.4384|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.4388|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.4388|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.4388|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.5356|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.5368|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.5368|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.5376|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.6324|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.6328|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.6328|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.6328|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.7542|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.7550|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.7550|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.7550|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.8534|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.8544|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.8551|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.8551|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:52.9591|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:52.9591|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:52.9597|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:52.9597|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.0632|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.0643|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.0643|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.0645|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.1689|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.1689|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.1695|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.1695|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.2779|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.2779|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.2779|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.2786|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.3817|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.3817|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.3817|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.3817|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.4815|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.4815|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.4815|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.4815|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.5826|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.5826|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.5826|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.5826|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.6834|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.6838|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.6838|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.6838|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.7858|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.7858|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.7858|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.7866|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.8863|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.8867|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.8867|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.8867|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:53.9843|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:53.9847|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:53.9847|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:53.9847|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:54.0811|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:54.0816|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:54.0816|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:54.0816|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:54.1790|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:54.1790|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:54.1796|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:54.1796|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 21:58:54.2713|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 21:58:54.2728|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 21:58:54.2728|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 21:58:54.2735|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:00:22.0961|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 22:00:22 +01:00
+2020-12-07 22:00:22.1403|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:00:22.1403|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 22:00:22.1403|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:00:22.4726|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 22:00:22.4743|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 22:00:22.4743|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 22:00:22.4743|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 22:02:05.3191|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 22:02:05 +01:00
+2020-12-07 22:02:05.3574|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:02:05.3574|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 22:02:05.3574|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:02:05.6826|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 22:02:05.6843|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 22:02:05.6845|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 22:02:05.6845|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 22:04:49.5228|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 22:04:49 +01:00
+2020-12-07 22:04:49.5626|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:04:49.5632|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.csv
+2020-12-07 22:04:49.5632|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:04:49.8903|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 22:04:49.8918|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 22:04:49.8918|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 22:04:49.8922|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 22:05:24.2619|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 22:05:24 +01:00
+2020-12-07 22:05:24.2998|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: test.numbers at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:05:24.3002|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/test.numbers
+2020-12-07 22:05:24.3002|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:05:24.5859|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: You can ignore bad data by setting BadDataFound to null.
+2020-12-07 22:05:24.5875|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 22:05:24.5875|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 22:05:24.5881|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 22:07:24.5961|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:07:24.5972|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-07 22:07:24.5972|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:07:24.8099|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 22:07:31.5664|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 22:07:31 +01:00
+2020-12-07 22:07:31.6041|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:07:31.6041|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-07 22:07:31.6041|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:07:31.9009|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 22:07:31.9027|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 22:07:31.9030|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 22:07:31.9030|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 22:08:08.2683|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 22:08:08 +01:00
+2020-12-07 22:08:08.3070|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:08:08.3070|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-07 22:08:08.3070|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:08:08.6311|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 22:08:08.6326|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 22:08:08.6328|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 22:08:08.6328|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-07 22:08:17.9226|INFO|OptionsPatternWorker.Worker|Worker started at: 12/07/2020 22:08:17 +01:00
+2020-12-07 22:08:17.9601|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-07 22:08:17.9601|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-07 22:08:17.9601|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-07 22:08:18.2552|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: No members are mapped for type 'OptionsPatternWorker.Models.CsvInput'.
+2020-12-07 22:08:18.2569|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-07 22:08:18.2571|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-07 22:08:18.2571|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker

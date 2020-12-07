@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qZhkaKwfI7q6BidWLUDen3M3QhhanV2LENkU3tsnOrQKOzb1F5nXnHVMbMBNlMi33Dihta+rwAgf4/CuMHmyDA==",
+  "dgSpecHash": "fubJLDRfkAHo0fnfNxf5yUYp/w/HyyoI79wQNhAGOPp7yM3zHc+iTjcqqJeUwkH9zpDK29v/YVbVJ808QLj2Xg==",
   "success": true,
-  "projectFilePath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj",
+  "projectFilePath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj",
   "expectedPackageFiles": [
     "/Users/julianfrech/.nuget/packages/blazorise/0.9.2/blazorise.0.9.2.nupkg.sha512",
     "/Users/julianfrech/.nuget/packages/blazorise.bootstrap/0.9.2/blazorise.bootstrap.0.9.2.nupkg.sha512",

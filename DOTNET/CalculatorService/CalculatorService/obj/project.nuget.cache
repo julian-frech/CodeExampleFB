@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IWtz851etc4z56QUm+0VpHprOgIlGXR8CrS9Z54pwW5aictp64Nh3fX8su/oPdS33pF4PFHutKLUd311g62qCA==",
+  "dgSpecHash": "Fo5e4spSLYh07X2NFksLw+nTQqRs5UUhEvNZm7t9TCvi0JYeLJhM3n07QDV+bqLvSE+wdwA3/FdBLAb0PkG2pA==",
   "success": true,
-  "projectFilePath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
+  "projectFilePath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
   "expectedPackageFiles": [
     "/Users/julianfrech/.nuget/packages/dynamiclanguageruntime/1.2.3/dynamiclanguageruntime.1.2.3.nupkg.sha512",
     "/Users/julianfrech/.nuget/packages/efcore.bulkextensions/3.1.5/efcore.bulkextensions.3.1.5.nupkg.sha512",

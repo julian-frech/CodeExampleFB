@@ -6468,11 +6468,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
+      "projectUniqueName": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
       "projectName": "CalculatorService",
-      "projectPath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
+      "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
       "packagesPath": "/Users/julianfrech/.nuget/packages/",
-      "outputPath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorService/obj/",
+      "outputPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

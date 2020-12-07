@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj": {}
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj": {}
   },
   "projects": {
-    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj": {
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj",
+        "projectUniqueName": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj",
         "projectName": "FinanceBro",
-        "projectPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj",
+        "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj",
         "packagesPath": "/Users/julianfrech/.nuget/packages/",
-        "outputPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBro/obj/",
+        "outputPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBro/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj": {
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj",
+        "projectUniqueName": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj",
         "projectName": "FinanceBroUniTests",
-        "projectPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj",
+        "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBroUniTests/FinanceBroUniTests.csproj",
         "packagesPath": "/Users/julianfrech/.nuget/packages/",
-        "outputPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBroUniTests/obj/",
+        "outputPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBroUniTests/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -183,8 +183,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj": {
-                "projectPath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj"
+              "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj": {
+                "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FinanceBro/FinanceBro/FinanceBro.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oa5UW2GRF44PiVaRQpgHk8alIh6S/lidx2snA05Bec0d35zG41PaX3cZo2nba7s+JMKq0z4IBzrkXwMmyq2LwQ==",
+  "dgSpecHash": "zyPCd0z2vtBg6bM9lKAZxiSurE4hyflsPEKAEkd8iiYaTH8lWq+vJAuI2O8hm/u3lyXk1XaG7quuZD2Q/vTTLg==",
   "success": true,
-  "projectFilePath": "/Users/julianfrech/Documents/GitHub/FinanceExample/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj",
+  "projectFilePath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorServiceUT/CalculatorServiceUT.csproj",
   "expectedPackageFiles": [
     "/Users/julianfrech/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
     "/Users/julianfrech/.nuget/packages/csvhelper/15.0.8/csvhelper.15.0.8.nupkg.sha512",
