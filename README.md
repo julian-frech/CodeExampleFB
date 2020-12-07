@@ -61,4 +61,4 @@ This leads to conformity with the [Interface Segregation Principle](https://docs
 1. Decouple not needed modules (unnecessary dependencies)
      1. No need to recompile if i.e. launchsettings change.
 
-Brief example:  
+Brief example: [OptionsPatternWorker](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/OptionsPatternWorker) 
