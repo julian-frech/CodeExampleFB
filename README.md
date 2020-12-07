@@ -13,23 +13,23 @@ Multiple services and applications, database and scripts to collect financial da
 
 ## Components Overview
 
-1. [FinanceBro](https://github.com/julian-frech/CentralFinanceManagerV1/tree/master/DOTNET/FinanceBro) 
-2. [MarketDataService](https://github.com/julian-frech/CentralFinanceManagerV1/tree/master/DOTNET/MarketDataService) 
-3. [Fct_HTTP_Trigger](https://github.com/julian-frech/CentralFinanceManagerV1/tree/master/DOTNET/Fct_HTTP_Trigger) 
-4. [CalculatorService](https://github.com/julian-frech/CentralFinanceManagerV1/tree/NewReadMe/DOTNET/CalculatorService)
+1. [FinanceBro](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/FinanceBro) 
+2. [MarketDataService](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/MarketDataService) 
+3. [Fct_HTTP_Trigger](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/Fct_HTTP_Trigger) 
+4. [CalculatorService](https://github.com/julian-frech/CodeExampleFB/tree/NewReadMe/DOTNET/CalculatorService)
 5. [FinanceBroGraphQL](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/FinanceBroGraphQL)
 
 ## Introduction
 
-[FinanceBro](https://github.com/julian-frech/CentralFinanceManagerV1/tree/master/DOTNET/FinanceBro) is the web user interface. It can be used to trigger services, display financial data and mainly to create user accounts and user depots. Currently it runs as **Server-App** application, later it will be changed to **Webassembly-App** for the benefit of moving load from Azure host to the client browser and using [SignalR](https://docs.microsoft.com/de-de/aspnet/core/tutorials/signalr-blazor-webassembly?view=aspnetcore-3.1&tabs=visual-studio-mac).
-Market data is consumed via [MarketDataService](https://github.com/julian-frech/CentralFinanceManagerV1/tree/master/DOTNET/MarketDataService). Currently only [IEXCloud](https://iexcloud.io) is connected.  Before [BoersenDatenService2](https://github.com/julian-frech/CentralFinanceManagerV1/tree/NewReadMe/DOTNET/BoersenDatenService2/BoersenDatenService1) with a abstract factory pattern was used to connect various market data sources. Since one source can deliver much more information, it was not developed any further. [Fct_HTTP_Trigger](https://github.com/julian-frech/CentralFinanceManagerV1/tree/master/DOTNET/Fct_HTTP_Trigger) is an Azure Function triggered via API and in parallel also as crontab service.  
-[CalculatorService](https://github.com/julian-frech/CentralFinanceManagerV1/tree/NewReadMe/DOTNET/CalculatorService) implements various finance functions like relative-strength index and can be accessed via API. Due to the nature of various algorithms that need to be implemented the **strategy pattern** is used. ICalculator is the Interface for various concrete strategies. The API controller class (context) processes which concrete strategy needs to be implemented depending on the client input. The API is only depending on ICalculator. The client is in direct association to the **context** and indirect association with the **interface**. 
+[FinanceBro](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/FinanceBro) is the web user interface. It can be used to trigger services, display financial data and mainly to create user accounts and user depots. Currently it runs as **Server-App** application, later it will be changed to **Webassembly-App** for the benefit of moving load from Azure host to the client browser and using [SignalR](https://docs.microsoft.com/de-de/aspnet/core/tutorials/signalr-blazor-webassembly?view=aspnetcore-3.1&tabs=visual-studio-mac).
+Market data is consumed via [MarketDataService](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/MarketDataService). Currently only [IEXCloud](https://iexcloud.io) is connected.  Before [BoersenDatenService2](https://github.com/julian-frech/CodeExampleFB/tree/NewReadMe/DOTNET/BoersenDatenService2/BoersenDatenService1) with a abstract factory pattern was used to connect various market data sources. Since one source can deliver much more information, it was not developed any further. [Fct_HTTP_Trigger](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/Fct_HTTP_Trigger) is an Azure Function triggered via API and in parallel also as crontab service.  
+[CalculatorService](https://github.com/julian-frech/CodeExampleFB/tree/NewReadMe/DOTNET/CalculatorService) implements various finance functions like relative-strength index and can be accessed via API. Due to the nature of various algorithms that need to be implemented the **strategy pattern** is used. ICalculator is the Interface for various concrete strategies. The API controller class (context) processes which concrete strategy needs to be implemented depending on the client input. The API is only depending on ICalculator. The client is in direct association to the **context** and indirect association with the **interface**. 
 [Azure Data Factory](https://azure.microsoft.com/de-de/services/data-factory/) is used as ETL and ELT tool. It is currently decomissioned because of pricing. 
 
 # Component Design
 
-1. [CalculatorService](https://github.com/julian-frech/CentralFinanceManagerV1#calculatorservice)
-2. [MarketDataService](https://github.com/julian-frech/CentralFinanceManagerV1/tree/MarketDataServiceV2#marketdataservice)
+1. [CalculatorService](https://github.com/julian-frech/CodeExampleFB#calculatorservice)
+2. [MarketDataService](https://github.com/julian-frech/CodeExampleFB/tree/MarketDataServiceV2#marketdataservice)
 
 ## CalculatorService
 
