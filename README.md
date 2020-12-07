@@ -62,3 +62,9 @@ This leads to conformity with the [Interface Segregation Principle](https://docs
      1. No need to recompile if i.e. launchsettings change.
 
 Brief example: [OptionsPatternWorker](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/OptionsPatternWorker) 
+
+
+# Sources
+
+1. [Architecture and Design](https://www.amazon.de/gp/product/395845724X/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1)
+2. [Design pattern for C# and F#](https://www.amazon.de/gp/product/148424365X/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
