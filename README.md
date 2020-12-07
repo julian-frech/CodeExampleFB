@@ -56,7 +56,7 @@ The FinanceBroGraphQL is a GraphQL API based on [HotChocolate](https://github.co
 
 # Design and Features
 
-The Options pattern in [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) enables usage of strongly typed access to settings. Depdening on the scenario applied the configuration is isolated into separate classes. 
+The Options pattern in [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) enables usage of strongly typed access to settings. Depending on the case, the configuration is isolated into accessible separate classes.  
 This leads to conformity with the [Interface Segregation Principle](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles#encapsulation): 
 1. Decouple not needed modules (unnecessary dependencies)
      1. No need to recompile if i.e. launchsettings change.
