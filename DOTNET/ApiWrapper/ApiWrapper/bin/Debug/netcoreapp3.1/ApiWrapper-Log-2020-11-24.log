@@ -1,4 +1,0 @@
-2020-11-24 16:39:24.1930||INFO|ApiWrapper.ApiWorker|Worker running at: 11/24/2020 16:39:24 +01:00 
-2020-11-24 16:39:24.3810||INFO|ApiWrapper.Services.FileProcessor|FileProcessor.ReadAppSettings : Filewatcher for: CsvNameChanged.csv at Location: C:\Users\ds400\ 
-2020-11-24 16:39:24.3810||INFO|ApiWrapper.ApiWorker|Configured csv file:ApiWrapper.Models.FileWatchedConfig 
-2020-11-24 16:39:24.3870||INFO|ApiWrapper.ApiWorker|Trigger file available 
