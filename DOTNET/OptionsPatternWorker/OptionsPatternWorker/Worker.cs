@@ -26,14 +26,14 @@ namespace OptionsPatternWorker
         {
             _logger.LogInformation("Worker started at: {time}", DateTimeOffset.Now);
 
-            
+            var InitialCsvCreated = _fileProcessor.WriteFile();
+
+            _logger.LogInformation("Initial file created.");
 
             while (!stoppingToken.IsCancellationRequested)
             {
                 
-                var watchedCsv = _fileProcessor.ReadAppSettings();
-
-                
+                var watchedCsv = _fileProcessor.ReadAppSettingsRead();
 
                 string curFile = string.Concat(watchedCsv.FileLocation, watchedCsv.FileName);
 

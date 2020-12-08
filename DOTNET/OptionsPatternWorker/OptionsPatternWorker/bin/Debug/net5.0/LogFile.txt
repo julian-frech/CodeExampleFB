@@ -401,3 +401,249 @@
 2020-12-07 22:08:18.2569|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-12-07 22:08:18.2571|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-12-07 22:08:18.2571|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-08 11:38:09.5957|INFO|OptionsPatternWorker.Worker|Worker started at: 12/08/2020 11:38:09 +01:00
+2020-12-08 11:38:09.6488|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsWrite : File writer for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:38:09.8312|INFO|OptionsPatternWorker.Worker|Initial file created: first
+2020-12-08 11:38:09.8322|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:38:09.8322|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:38:09.8322|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:38:10.0491|FATAL|OptionsPatternWorker.Worker|<ExecuteAsync>d__3.MoveNext: Exception while reading csv file: Header with name 'FirstLine'[0] was not found.
+Header with name 'SecondLine'[0] was not found.
+Header with name 'ThirdLine'[0] was not found.
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+2020-12-08 11:38:10.0511|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-08 11:38:10.0511|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-08 11:38:10.0517|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-08 11:40:55.7545|INFO|OptionsPatternWorker.Worker|Worker started at: 12/08/2020 11:40:55 +01:00
+2020-12-08 11:40:55.8005|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsWrite : File writer for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:40:55.9041|INFO|OptionsPatternWorker.Worker|Initial file created: first
+2020-12-08 11:40:55.9041|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:40:55.9051|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:40:55.9051|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:40:55.9542|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:40:55.9559|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-08 11:40:55.9559|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-08 11:40:55.9562|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-08 11:41:00.9631|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:00.9635|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:00.9635|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:00.9643|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:05.9680|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:05.9686|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:05.9686|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:05.9698|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:10.9758|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:10.9758|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:10.9766|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:10.9766|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:15.9872|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:15.9876|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:15.9876|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:15.9887|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:20.9936|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:20.9936|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:20.9936|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:20.9953|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:26.0012|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:26.0019|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:26.0019|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:26.0030|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:31.0058|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:31.0063|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:31.0063|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:31.0073|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:36.0098|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:36.0105|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:36.0109|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:36.0109|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:41.0159|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:41.0164|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:41.0164|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:41.0175|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:46.0206|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:46.0206|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:46.0215|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:46.0221|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:51.0268|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:51.0274|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:51.0274|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:51.0283|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:41:56.0341|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:41:56.0346|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:41:56.0346|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:41:56.0357|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:01.0397|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:01.0397|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:01.0406|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:01.0406|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:06.0441|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:06.0446|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:06.0446|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:06.0446|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:11.0468|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:11.0468|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:11.0478|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:11.0478|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:16.0532|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:16.0532|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:16.0540|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:16.0540|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:21.0572|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:21.0572|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:21.0580|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:21.0580|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:26.0608|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:26.0613|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:26.0613|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:26.0623|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:31.0635|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:31.0635|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:31.0642|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:31.0642|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:36.0701|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:36.0706|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:36.0706|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:36.0716|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:41.0754|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:41.0754|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:41.0763|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:41.0763|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:46.0816|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:46.0816|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:46.0825|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:46.0825|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:51.0841|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:51.0847|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:51.0847|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:51.0856|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:42:56.0881|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:42:56.0886|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:42:56.0886|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:42:56.0898|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:01.0926|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:01.0933|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:01.0933|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:01.0941|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:06.0951|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:06.0951|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:06.0960|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:06.0960|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:11.1008|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:11.1013|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:11.1013|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:11.1021|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:16.1028|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:16.1034|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:16.1034|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:16.1042|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:21.1057|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:21.1061|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:21.1061|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:21.1071|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:26.1099|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:26.1105|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:26.1105|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:26.1115|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:31.1137|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:31.1143|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:31.1143|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:31.1143|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:36.1259|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:36.1259|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:36.1266|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:36.1266|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:41.1326|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:41.1326|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:41.1335|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:41.1335|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:46.1397|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:46.1397|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:46.1407|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:46.1407|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:51.1444|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:51.1449|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:51.1449|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:51.1457|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:43:56.1515|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:43:56.1520|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:43:56.1520|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:43:56.1530|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:44:01.1570|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:44:01.1570|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:44:01.1579|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:44:01.1579|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:49:28.4954|INFO|OptionsPatternWorker.Worker|Worker started at: 12/08/2020 11:49:28 +01:00
+2020-12-08 11:49:28.5398|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsWrite : File writer for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:49:28.6433|INFO|OptionsPatternWorker.Worker|Initial file created: OptionsPatternWorker.Models.CsvOutput
+2020-12-08 11:49:28.6442|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:49:28.6442|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:49:28.6445|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:49:28.6937|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:49:28.6953|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-08 11:49:28.6955|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-08 11:49:28.6955|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-08 11:49:33.7006|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:49:33.7006|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:49:33.7006|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:49:33.7020|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:49:38.7055|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:49:38.7055|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:49:38.7066|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:49:38.7074|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:49:43.7125|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:49:43.7125|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:49:43.7125|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:49:43.7140|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:49:48.7199|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:49:48.7199|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:49:48.7206|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:49:48.7206|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:49:53.7230|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:49:53.7230|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:49:53.7237|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:49:53.7237|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:50:57.7231|INFO|OptionsPatternWorker.Worker|Worker started at: 12/08/2020 11:50:57 +01:00
+2020-12-08 11:50:57.7697|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsWrite : File writer for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:50:57.8720|INFO|OptionsPatternWorker.Worker|Initial file created.
+2020-12-08 11:50:57.8729|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:50:57.8729|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:50:57.8729|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:50:57.9218|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:50:57.9234|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-08 11:50:57.9234|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-08 11:50:57.9238|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-08 11:51:02.9305|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:02.9308|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:51:02.9308|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:51:02.9319|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:51:07.9376|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:07.9383|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:51:07.9383|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:51:07.9392|INFO|OptionsPatternWorker.Worker|[]
+2020-12-08 11:51:32.9519|INFO|OptionsPatternWorker.Worker|Worker started at: 12/08/2020 11:51:32 +01:00
+2020-12-08 11:51:32.9962|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsWrite : File writer for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:33.0948|INFO|OptionsPatternWorker.Worker|Initial file created.
+2020-12-08 11:51:33.0956|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:33.0956|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:51:33.0956|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:51:33.1691|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2020-12-08 11:51:33.1707|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-12-08 11:51:33.1707|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-12-08 11:51:33.1707|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2020-12-08 11:51:38.1785|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:38.1785|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:51:38.1785|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:51:38.1814|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2020-12-08 11:51:43.1821|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:43.1821|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:51:43.1826|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:51:43.1841|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2020-12-08 11:51:48.1941|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:48.1952|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:51:48.1952|INFO|OptionsPatternWorker.Worker|Trigger file available
+2020-12-08 11:51:48.1974|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2020-12-08 11:51:53.2018|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2020-12-08 11:51:53.2018|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2020-12-08 11:51:53.2018|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2020-12-08 11:51:53.2029|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----

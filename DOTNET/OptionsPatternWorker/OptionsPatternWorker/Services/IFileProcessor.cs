@@ -8,9 +8,10 @@ namespace OptionsPatternWorker.Services
 {
     public interface IFileProcessor
     {
-        FileWatchedConfig ReadAppSettings();
+        FileWatchedConfig ReadAppSettingsRead();
 
         string ReadFile(string fileLocation);
 
+        CsvOutput WriteFile();
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 namespace OptionsPatternWorker.Models
 {
 
-    public class CsvInput
+    public class CsvOutput
     {
         public string FirstLine { get; set; }
         public string SecondLine { get; set; }

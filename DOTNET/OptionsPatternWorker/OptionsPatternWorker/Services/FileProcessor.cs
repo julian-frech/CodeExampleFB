@@ -6,6 +6,7 @@ using System.IO;
 using System.Globalization;
 using System.Text.Json;
 using OptionsPatternWorker.Models;
+using System.Collections.Generic;
 
 namespace OptionsPatternWorker.Services
 {
@@ -25,6 +26,7 @@ namespace OptionsPatternWorker.Services
 
         public string ReadFile(string fileLocation)
         {
+            
             using (var reader = new StreamReader(fileLocation))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
@@ -36,11 +38,38 @@ namespace OptionsPatternWorker.Services
             }
         }
 
-        public FileWatchedConfig ReadAppSettings()
+        public CsvOutput WriteFile()
+        {
+            FileWritingConfig CsvOutputFileConfig = ReadAppSettingsWrite();
+
+            CsvOutput NewCsvOutput =
+    new CsvOutput { FirstLine = "first", SecondLine = "second", ThirdLine = "third" };
+
+            using (var writer = new StreamWriter(string.Concat(CsvOutputFileConfig.FileLocation, CsvOutputFileConfig.FileName)))
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            {
+                csv.WriteHeader<CsvOutput>();
+                csv.NextRecord();
+                csv.WriteRecord(NewCsvOutput);
+            }
+
+            return NewCsvOutput;
+        }
+
+        public FileWritingConfig ReadAppSettingsWrite()
+        {
+            var csvFile = new FileWritingConfig();
+            _configuration.GetSection(FileWritingConfig.LocationWrite).Bind(csvFile);
+            _logger.LogInformation(string.Concat(MethodBase.GetCurrentMethod().DeclaringType.Name, ".", MethodBase.GetCurrentMethod().Name, " : File writer for: ", csvFile.FileName, " at Location: ", csvFile.FileLocation));
+
+            return csvFile;
+        }
+
+        public FileWatchedConfig ReadAppSettingsRead()
         {
             var csvFile = new FileWatchedConfig();
-            _configuration.GetSection(FileWatchedConfig.Location).Bind(csvFile);
-            _logger.LogInformation(string.Concat(MethodBase.GetCurrentMethod().DeclaringType.Name, ".", MethodBase.GetCurrentMethod().Name, " : Filewatcher for: ", csvFile.FileName, " at Location: ",csvFile.FileLocation));
+            _configuration.GetSection(FileWatchedConfig.LocationRead).Bind(csvFile);
+            _logger.LogInformation(string.Concat(MethodBase.GetCurrentMethod().DeclaringType.Name, ".", MethodBase.GetCurrentMethod().Name, " : File watcher for: ", csvFile.FileName, " at Location: ",csvFile.FileLocation));
             return csvFile;
         }
 

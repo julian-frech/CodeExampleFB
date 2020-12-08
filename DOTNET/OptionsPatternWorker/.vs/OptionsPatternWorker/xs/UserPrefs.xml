@@ -1,23 +1,27 @@
 ﻿<Properties StartupConfiguration="{1BEFC09F-72FB-49EB-9FB4-9C94AFE4D0C0}|Default">
   <MonoDevelop.Ide.ItemProperties.OptionsPatternWorker PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OptionsPatternWorker/Worker.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OptionsPatternWorker/Services/FileProcessor.cs">
     <Files>
-      <File FileName="OptionsPatternWorker/Worker.cs" Line="45" Column="21" />
-      <File FileName="OptionsPatternWorker/appsettings.json" />
-      <File FileName="OptionsPatternWorker/Program.cs" />
-      <File FileName="OptionsPatternWorker/Services/FileProcessor.cs" />
-      <File FileName="OptionsPatternWorker/Services/IFileProcessor.cs" />
-      <File FileName="OptionsPatternWorker/Models/CsvInput.cs" />
-      <File FileName="OptionsPatternWorker/Models/ConfigClasses.cs" />
-      <File FileName="OptionsPatternWorker/appsettings.Development.json" />
+      <File FileName="OptionsPatternWorker/Worker.cs" Line="42" Column="31" />
+      <File FileName="OptionsPatternWorker/appsettings.json" Line="1" Column="1" />
+      <File FileName="OptionsPatternWorker/Program.cs" Line="25" Column="53" />
+      <File FileName="OptionsPatternWorker/Services/FileProcessor.cs" Line="42" Column="41" />
+      <File FileName="OptionsPatternWorker/Services/IFileProcessor.cs" Line="1" Column="1" />
+      <File FileName="OptionsPatternWorker/Models/CsvInput.cs" Line="14" Column="6" />
+      <File FileName="OptionsPatternWorker/Models/ConfigClasses.cs" Line="19" Column="45" />
+      <File FileName="OptionsPatternWorker/appsettings.Development.json" Line="13" Column="17" />
       <File FileName="OptionsPatternWorker/NLog.config" />
+      <File FileName="OptionsPatternWorker/Models/CsvOutput.cs" Line="14" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OptionsPatternWorker" expanded="True">
             <Node name="OptionsPatternWorker" expanded="True">
-              <Node name="Worker.cs" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="FileProcessor.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
