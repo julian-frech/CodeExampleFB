@@ -17,7 +17,7 @@ Multiple services and applications, database and scripts to collect financial da
 2. [MarketDataService](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/MarketDataService) 
 3. [Fct_HTTP_Trigger](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/Fct_HTTP_Trigger) 
 4. [CalculatorService](https://github.com/julian-frech/CodeExampleFB/tree/NewReadMe/DOTNET/CalculatorService)
-5. [FinanceBroGraphQL](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/FinanceBroGraphQL)
+5. [FiBroGraphQL](https://github.com/julian-frech/CodeExampleFB/tree/master/DOTNET/FiBroGraphQL)
 
 ## Introduction
 
@@ -51,8 +51,9 @@ The CalculatorService is a simple strategy pattern. Main Nuggets used are:
 The [DefaultProblemDetailsFactory](https://github.com/dotnet/aspnetcore/blob/master/src/Mvc/Mvc.Core/src/Infrastructure/DefaultProblemDetailsFactory.cs) is provided and can be customized. The MS documentation is missing a description for the Exception method.
 
 
-## FinanceBroGraphQL
+## FiBroGraphQL
 The FinanceBroGraphQL is a GraphQL API based on [HotChocolate](https://github.com/ChilliCream/hotchocolate) and also the first application based on the new [.NET 5.0](https://docs.microsoft.com/en-us/dotnet/core/dotnet-five), which is the successor also of the .NET Core framework. Thus, the .NET Core and .NET Framework should finally be dropped. One needs to take into consideration the following: "ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6."
+FiBroGrapQL implements authentication via Auth0.
 
 # Design and Features
 
