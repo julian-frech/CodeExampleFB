@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{190D753F-5A3B-4963-B8C5-F3D75F4A8A35}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FiBroGraphQL/Program.cs">
+    <Files>
+      <File FileName="FiBroGraphQL/Startup.cs" Line="82" Column="36" />
+      <File FileName="FiBroGraphQL/CoreService/DepotResolver.cs" Line="21" Column="6" />
+      <File FileName="FiBroGraphQL/CoreService/IUserDepotService.cs" Line="3" Column="19" />
+      <File FileName="FiBroGraphQL/CoreService/UserDepotService.cs" Line="37" Column="87" />
+      <File FileName="FiBroGraphQL/Data/SqlDbContext.cs" Line="11" Column="10" />
+      <File FileName="FiBroGraphQL/ExceptionHandler/DepotNotFoundException.cs" Line="7" Column="30" />
+      <File FileName="FiBroGraphQL/GraphQL/CreateDepotInput.cs" Line="4" Column="23" />
+      <File FileName="FiBroGraphQL/GraphQL/DeleteDepotInput.cs" Line="4" Column="23" />
+      <File FileName="FiBroGraphQL/GraphQL/GraphQLTypes.cs" Line="23" Column="36" />
+      <File FileName="FiBroGraphQL/GraphQL/Mutation.cs" Line="2" Column="19" />
+      <File FileName="FiBroGraphQL/GraphQL/Query.cs" Line="27" Column="1" />
+      <File FileName="FiBroGraphQL/Models/DepotModels.cs" Line="20" Column="23" />
+      <File FileName="FiBroGraphQL/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="FiBroGraphQL/appsettings.json" Line="5" Column="5" />
+      <File FileName="FiBroGraphQL/appsettings.Development.json" Line="12" Column="4" />
+      <File FileName="FiBroGraphQL/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FiBroGraphQL" expanded="True">
+            <Node name="FiBroGraphQL" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="CoreService" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="ExceptionHandler" expanded="True" />
+              <Node name="GraphQL" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.FiBroGraphQL PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

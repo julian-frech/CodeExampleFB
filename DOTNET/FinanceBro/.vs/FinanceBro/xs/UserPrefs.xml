@@ -5,7 +5,7 @@
       <File FileName="FinanceBro/Data/SqlDbContext.cs" />
       <File FileName="FinanceBro/Data/SymbolDataListService.cs" />
       <File FileName="FinanceBro/Data/SymbolNewsListService.cs" />
-      <File FileName="FinanceBro/Startup.cs" Line="51" Column="36" />
+      <File FileName="FinanceBro/Startup.cs" />
       <File FileName="FinanceBro/_Imports.razor" />
       <File FileName="FinanceBro/Pages/SymbolDataList.razor" />
       <File FileName="FinanceBro/Pages/SymbolNewsList.razor" />
@@ -28,7 +28,7 @@
       <File FileName="FinanceBro/Service/MarketDataApiService.cs" />
       <File FileName="FinanceBro/Data/ApplicationDbContext.cs" />
       <File FileName="FinanceBro/Data/Migrations/ApplicationDbContextModelSnapshot.cs" />
-      <File FileName="FinanceBro/Data/UserDepotListService.cs" Line="82" Column="1" />
+      <File FileName="FinanceBro/Data/UserDepotListService.cs" Line="85" Column="31" />
       <File FileName="FinanceBro/Data/UserDataListService.cs" />
       <File FileName="FinanceBro/Pages/UserDepot.razor" />
       <File FileName="FinanceBro/FinanceBroUI.cs" />
