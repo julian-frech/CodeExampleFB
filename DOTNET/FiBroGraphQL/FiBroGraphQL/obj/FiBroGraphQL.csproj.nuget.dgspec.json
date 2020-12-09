@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/julianfrech/Projects/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj": {}
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj": {}
   },
   "projects": {
-    "/Users/julianfrech/Projects/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj": {
+    "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianfrech/Projects/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj",
+        "projectUniqueName": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj",
         "projectName": "FiBroGraphQL",
-        "projectPath": "/Users/julianfrech/Projects/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj",
+        "projectPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj",
         "packagesPath": "/Users/julianfrech/.nuget/packages/",
-        "outputPath": "/Users/julianfrech/Projects/FiBroGraphQL/FiBroGraphQL/obj/",
+        "outputPath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FiBroGraphQL/FiBroGraphQL/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UY2jIRmAwBrsdFGzs4rCGjFwTdeOGgBGA6KRxAHIVgAjxsu3n085ruggzMHH8nre8mrmqGRFS5aWAMWO7VmGuA==",
+  "dgSpecHash": "DK5hBVi88sy2V/zxep6Qns4G/ekUWeHx/RzbJN2tG4blpKqi6UXgo2BJaxmnQ2QT7IBICw+YrCM+DUuZlnqUmA==",
   "success": true,
-  "projectFilePath": "/Users/julianfrech/Projects/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj",
+  "projectFilePath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/FiBroGraphQL/FiBroGraphQL/FiBroGraphQL.csproj",
   "expectedPackageFiles": [
     "/Users/julianfrech/.nuget/packages/graphql/3.2.0/graphql.3.2.0.nupkg.sha512",
     "/Users/julianfrech/.nuget/packages/graphql-parser/5.3.3/graphql-parser.5.3.3.nupkg.sha512",
