@@ -3,13 +3,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="OptionsPatternWorker/Services/FileProcessor.cs">
     <Files>
       <File FileName="OptionsPatternWorker/Worker.cs" Line="31" Column="61" />
-      <File FileName="OptionsPatternWorker/appsettings.json" Line="1" Column="1" />
-      <File FileName="OptionsPatternWorker/Program.cs" Line="25" Column="53" />
+      <File FileName="OptionsPatternWorker/appsettings.json" />
+      <File FileName="OptionsPatternWorker/Program.cs" />
       <File FileName="OptionsPatternWorker/Services/FileProcessor.cs" Line="78" Column="1" />
       <File FileName="OptionsPatternWorker/Services/IFileProcessor.cs" Line="15" Column="19" />
       <File FileName="OptionsPatternWorker/Models/CsvInput.cs" Line="14" Column="6" />
       <File FileName="OptionsPatternWorker/Models/ConfigClasses.cs" Line="7" Column="25" />
-      <File FileName="OptionsPatternWorker/appsettings.Development.json" Line="14" Column="32" />
+      <File FileName="OptionsPatternWorker/appsettings.Development.json" />
       <File FileName="OptionsPatternWorker/NLog.config" />
       <File FileName="OptionsPatternWorker/Models/CsvOutput.cs" Line="14" Column="6" />
     </Files>
@@ -19,6 +19,7 @@
           <Node name="OptionsPatternWorker" expanded="True">
             <Node name="OptionsPatternWorker" expanded="True">
               <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="FileProcessor.cs" selected="True" />
               </Node>

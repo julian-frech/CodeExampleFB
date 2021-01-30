@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{190D753F-5A3B-4963-B8C5-F3D75F4A8A35}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FiBroGraphQL/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FiBroGraphQL/appsettings.Development.json">
     <Files>
       <File FileName="FiBroGraphQL/Startup.cs" Line="82" Column="10" />
       <File FileName="FiBroGraphQL/CoreService/DepotResolver.cs" />
@@ -14,9 +14,9 @@
       <File FileName="FiBroGraphQL/GraphQL/Query.cs" />
       <File FileName="FiBroGraphQL/Models/DepotModels.cs" />
       <File FileName="FiBroGraphQL/WeatherForecast.cs" />
-      <File FileName="FiBroGraphQL/appsettings.json" Line="4" Column="18" />
-      <File FileName="FiBroGraphQL/appsettings.Development.json" />
-      <File FileName="FiBroGraphQL/Program.cs" Line="16" Column="1" />
+      <File FileName="FiBroGraphQL/appsettings.json" />
+      <File FileName="FiBroGraphQL/appsettings.Development.json" Line="14" Column="33" />
+      <File FileName="FiBroGraphQL/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,7 +29,9 @@
               <Node name="ExceptionHandler" expanded="True" />
               <Node name="GraphQL" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="appsettings.json" expanded="True" selected="True" />
+              <Node name="appsettings.json" expanded="True">
+                <Node name="appsettings.Development.json" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

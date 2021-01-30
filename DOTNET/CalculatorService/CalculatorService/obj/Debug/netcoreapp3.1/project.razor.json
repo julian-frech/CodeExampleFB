@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/julianfrech/Documents/CentralFinanceManagerV1/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
+  "FilePath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/CalculatorService/CalculatorService/CalculatorService.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14387,7 +14387,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 900
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "CalculatorService",
   "Documents": [],
