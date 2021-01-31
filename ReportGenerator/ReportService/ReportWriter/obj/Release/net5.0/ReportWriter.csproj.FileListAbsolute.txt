@@ -1,0 +1,12 @@
+C:\Users\ds400\Desktop\ReportService\ReportWriter\bin\Release\net5.0\ReportWriter.deps.json
+C:\Users\ds400\Desktop\ReportService\ReportWriter\bin\Release\net5.0\ReportWriter.dll
+C:\Users\ds400\Desktop\ReportService\ReportWriter\bin\Release\net5.0\ref\ReportWriter.dll
+C:\Users\ds400\Desktop\ReportService\ReportWriter\bin\Release\net5.0\ReportWriter.pdb
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ReportWriter.csprojAssemblyReference.cache
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ReportWriter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ReportWriter.AssemblyInfoInputs.cache
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ReportWriter.AssemblyInfo.cs
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ReportWriter.csproj.CoreCompileInputs.cache
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ReportWriter.dll
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ref\ReportWriter.dll
+C:\Users\ds400\Desktop\ReportService\ReportWriter\obj\Release\net5.0\ReportWriter.pdb
