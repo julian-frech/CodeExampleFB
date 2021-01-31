@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using DataOperator.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataOperator.Data
+namespace DataOperator.Context
 {
     public class BaseDbContext : DbContext
     {

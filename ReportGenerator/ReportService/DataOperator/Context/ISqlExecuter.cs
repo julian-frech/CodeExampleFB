@@ -4,7 +4,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace DataOperator.Data
+namespace DataOperator.Context
 {
     public interface ISqlExecuter
     {
