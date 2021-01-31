@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{BE9DB289-984D-436B-82D5-D4093C54F113}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReportService/Properties/launchSettings.json">
+    <Files>
+      <File FileName="DataOperator/Data/ISqlExecuter.cs" Line="28" Column="86" />
+      <File FileName="DataOperator/Data/BaseDbContext.cs" />
+      <File FileName="ReportService/appsettings.json" Line="22" Column="27" />
+      <File FileName="DataOperator/Models/ReportingModels.cs" />
+      <File FileName="ReportService/Program.cs" Line="54" Column="1" />
+      <File FileName="ReportService/ReportServiceHosted.cs" Line="76" Column="36" />
+      <File FileName="ReportService/appsettings.Development.json" />
+      <File FileName="ReportService/QueueService/ReportsQueue.cs" Line="82" Column="1" />
+      <File FileName="ReportWriter/ReportWriter.cs" Line="52" Column="1" />
+      <File FileName="ReportWriter/Services/Extensions/DataTableExtension.cs" Line="50" Column="1" />
+      <File FileName="ReportWriter/Services/IFileWriter.cs" Line="73" Column="51" />
+      <File FileName="../../../../../.nuget/packages/microsoft.aspnetcore.azurekeyvault.hostingstartup/2.0.4/contentFiles/cs/netstandard2.0/_AssembyInfo.KeyVaultHostingStartup.cs" />
+      <File FileName="ReportService/Settings.job" />
+      <File FileName="DataOperator/Models/Logs.cs" />
+      <File FileName="UTReportService/UTReportWriter/UTReportService.cs" />
+      <File FileName="UTReportService/expectedReport.csv" />
+      <File FileName="UTReportService/UTData/RandomDataTable.cs" />
+      <File FileName="ReportService/obj/Debug/net5.0/ReportService.AssemblyInfo.cs" />
+      <File FileName="ReportService/ConfigurationLogic/FileWriterConfig.cs" Line="10" Column="34" />
+      <File FileName="ReportService/ConfigurationLogic/CloudFileWriterConfig.cs" Line="7" Column="82" />
+      <File FileName="ReportService/ConfigurationLogic/QueueConfig.cs" Line="14" Column="32" />
+      <File FileName="ReportService/Properties/launchSettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ReportService" expanded="True">
+            <Node name="ReportService" expanded="True">
+              <Node name="ConfigurationLogic" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="ServiceDependencies" expanded="True" />
+              </Node>
+              <Node name="QueueService" expanded="True" />
+            </Node>
+            <Node name="ReportWriter" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ReportService PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
