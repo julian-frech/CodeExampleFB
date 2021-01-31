@@ -1,0 +1,12 @@
+C:\Users\ds400\Desktop\ReportService\DataOperator\bin\Release\net5.0\DataOperator.deps.json
+C:\Users\ds400\Desktop\ReportService\DataOperator\bin\Release\net5.0\DataOperator.dll
+C:\Users\ds400\Desktop\ReportService\DataOperator\bin\Release\net5.0\ref\DataOperator.dll
+C:\Users\ds400\Desktop\ReportService\DataOperator\bin\Release\net5.0\DataOperator.pdb
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\DataOperator.csprojAssemblyReference.cache
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\DataOperator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\DataOperator.AssemblyInfoInputs.cache
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\DataOperator.AssemblyInfo.cs
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\DataOperator.csproj.CoreCompileInputs.cache
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\DataOperator.dll
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\ref\DataOperator.dll
+C:\Users\ds400\Desktop\ReportService\DataOperator\obj\Release\net5.0\DataOperator.pdb
