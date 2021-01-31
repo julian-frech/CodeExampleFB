@@ -12,7 +12,7 @@ namespace DataOperator.Data
         public BaseDbContext(DbContextOptions<BaseDbContext> options)
             : base(options) { }
 
-        public DbSet<V_Report_Overview> ReportConfigurations { get; set; }
+        public DbSet<ReportConfiguration> ReportConfigurations { get; set; }
 
         public DbSet<Logs> logs { get; set; }
 
