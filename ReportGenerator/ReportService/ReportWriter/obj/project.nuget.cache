@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S9DjsQ7SBiUDaPWD2d7W5NXCB//jx17PGesARqGj8/IWxim+3jZBoMdHi2OU9TEiOddGv/wLaG5f/vK+CpIFsg==",
+  "dgSpecHash": "+2mH2lg7pyUXdbGGKgr+iK1D+HbOEA0MfOi9V0o9zkM1ZwBQm5z3H04OX1owlTD05mo6Qha2QMRtbp6VSKI5RA==",
   "success": true,
   "projectFilePath": "/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/ReportWriter.csproj",
   "expectedPackageFiles": [
@@ -102,7 +102,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Das Paket \"Microsoft.WindowsAzure.ConfigurationManager 3.2.3\" wurde nicht mit dem Projektzielframework \"net5.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "message": "Package 'Microsoft.WindowsAzure.ConfigurationManager 3.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.WindowsAzure.ConfigurationManager",
       "targetGraphs": [
         "net5.0"

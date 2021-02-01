@@ -27,7 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="QueueService\" />
-    <Folder Include="ConfigurationLogic\" />
+    <Folder Include="ConfigurationOptions\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Migrations\" />
   </ItemGroup>
