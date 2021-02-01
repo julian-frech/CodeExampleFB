@@ -8,7 +8,7 @@ Based on database side defined reporting objects, txt based files are saved to a
 
 
 <img src="./images/ReportGenerator.png" align="center"
-     alt="Overview: ReportGenerator" width="720" height="480">
+     alt="Overview: ReportGenerator" width="680" height="480">
 
 # Central Finance Manager
 
