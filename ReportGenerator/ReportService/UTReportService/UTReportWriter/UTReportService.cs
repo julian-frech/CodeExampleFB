@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using Moq;
 using ReportWriter.Service;
 using Microsoft.Extensions.Options;
-using FileWriter.ConfigurationOption;
+using ReportWriter.ConfigurationOption;
 
 namespace UTReportService.UTReportWriter
 {
@@ -29,7 +29,6 @@ namespace UTReportService.UTReportWriter
             fileWriterConfig.BaseFolder = @"./";
 
             IOptions<FileWriterConfig> someOptions = Options.Create<FileWriterConfig>(fileWriterConfig);
-
 
             var mock = new Mock<ILogger<ReportWriter.Service.FileWriter>>();
 

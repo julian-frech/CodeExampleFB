@@ -1,5 +1,5 @@
 ﻿using System;
-namespace FileWriter.ConfigurationOption
+namespace ReportWriter.ConfigurationOption
 {
     public class FileWriterConfig
     {

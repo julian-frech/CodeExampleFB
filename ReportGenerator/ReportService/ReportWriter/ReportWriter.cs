@@ -1,7 +1,6 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Threading.Tasks;
-using FileWriter.ConfigurationOption;
-using Microsoft.Extensions.Options;
 using ReportWriter.Service;
 using ReportWriter.Service.Extensions;
 
@@ -45,12 +44,9 @@ namespace ReportWriter
         /// <returns></returns>
         public async Task ReportAsFileAsync(DataTable reportAsdataTable, string fileName, string targetLocationExtension, string delimiter, string headerRow)
         {
-
             await _fileWriter.StringToFile(targetLocationExtension + fileName,
                                     reportAsdataTable.ToCsv(delimiter, headerRow)
                                     );
-
         }
-
     }
 }
