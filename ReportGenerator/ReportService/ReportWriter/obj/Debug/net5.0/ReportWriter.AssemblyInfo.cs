@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("DataOperator")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ReportWriter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("DataOperator")]
-[assembly: System.Reflection.AssemblyTitleAttribute("DataOperator")]
+[assembly: System.Reflection.AssemblyProductAttribute("ReportWriter")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ReportWriter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.

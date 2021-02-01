@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,13 +20,11 @@ namespace ReportWriter.Service.Extensions
             var result = new StringBuilder();
             result.Append(headerRow);
             // Rows in parallel --> No ordering anymore
+
             Parallel.ForEach(datatable.AsEnumerable(), new ParallelOptions { MaxDegreeOfParallelism = maxThreads }, drow =>
             {
-                for (int i = 0; i < datatable.Columns.Count; i++)
-                {
-                    result.Append(drow[i].ToString());
-                    result.Append(i == /*datatable.Columns.Count - 1*/ 0 ? "\n" : delimiter);
-                }
+                IEnumerable<string> columns = drow.ItemArray.Select(column => column.ToString());
+                result.Append('\n'+string.Join(delimiter, columns));
             });
 
             return result.ToString();
@@ -38,15 +38,14 @@ namespace ReportWriter.Service.Extensions
         public static string ToCsv(this DataTable datatable, string delimiter, string headerRow)
         {
             var result = new StringBuilder();
-            result.Append(headerRow + "\n");
+            result.AppendLine(headerRow);
+
             foreach (DataRow row in datatable.Rows)
             {
-                for (int i = 0; i < datatable.Columns.Count; i++)
-                {
-                    result.Append(row[i].ToString());
-                    result.Append(i == datatable.Columns.Count - 1 ? "\n" : delimiter);
-                }
+                IEnumerable<string> columns = row.ItemArray.Select(column => column.ToString());
+                result.AppendLine(string.Join(delimiter, columns));
             }
+
             return result.ToString();
 
         }

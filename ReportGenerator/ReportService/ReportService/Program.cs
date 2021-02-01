@@ -1,10 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Threading.Tasks;
 using DataOperator.Context;
-using FileWriter.ConfigurationOption;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using ReportService.ConfigurationLogic;
 using ReportService.QueueService;
 using ReportWriter;
+using ReportWriter.ConfigurationOption;
 using ReportWriter.Service;
 
 namespace ReportService
@@ -60,7 +56,7 @@ namespace ReportService
 
                     services.AddHostedService<ReportServiceHosted>();
 
-                    services.AddTransient<IFileWriter, /*FileWriter*/CloudFileWriter>();
+                    services.AddTransient<IFileWriter, FileWriter/*CloudFileWriter*/>();
 
                     services.AddTransient<IReportFile, ReportFile>();
 

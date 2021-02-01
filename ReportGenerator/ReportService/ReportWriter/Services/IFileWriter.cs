@@ -1,10 +1,8 @@
-﻿using FileWriter.ConfigurationOption;
-using Microsoft.Azure;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
+using ReportWriter.ConfigurationOption;
 using System;
 using System.IO;
 using System.Text;
@@ -22,8 +20,6 @@ namespace ReportWriter.Service
         private readonly ILogger<FileWriter> _logger;
 
         private readonly FileWriterConfig _fileWriterConfig;
-
-        public FileWriter() { }
 
         public FileWriter(ILogger<FileWriter> logger, IOptions<FileWriterConfig> fileWriterConfig)
         {
