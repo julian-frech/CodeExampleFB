@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using DataOperator.Data;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ReportService.QueueService;
@@ -15,6 +14,8 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using ReportService.ConfigurationLogic;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore.Design;
+using DataOperator.Context;
 
 namespace ReportService
 {

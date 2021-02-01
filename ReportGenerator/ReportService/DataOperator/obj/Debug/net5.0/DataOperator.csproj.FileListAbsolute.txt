@@ -1,0 +1,15 @@
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/bin/Debug/net5.0/DataOperator.deps.json
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/bin/Debug/net5.0/DataOperator.dll
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/bin/Debug/net5.0/ref/DataOperator.dll
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/bin/Debug/net5.0/DataOperator.pdb
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.csprojAssemblyReference.cache
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.AssemblyInfoInputs.cache
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.AssemblyInfo.cs
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.csproj.CoreCompileInputs.cache
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.dll
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/ref/DataOperator.dll
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.pdb
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/bin/Debug/net5.0/DataOperator.runtimeconfig.json
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/bin/Debug/net5.0/DataOperator.runtimeconfig.dev.json
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/obj/Debug/net5.0/DataOperator.genruntimeconfig.cache

@@ -9,22 +9,33 @@ using ReportWriter.Service;
 using UTReportService.UTData;
 using Microsoft.Extensions.Logging.Abstractions;
 using Moq;
+using ReportWriter.Service;
+using Microsoft.Extensions.Options;
+using FileWriter.ConfigurationOption;
 
 namespace UTReportService.UTReportWriter
 {
     [TestClass]
     public class UTReportService
     {
-        
+
 
         [TestMethod]
         public void FileWriterUT()
         {
-            var mock = new Mock<ILogger<FileWriter>>();
 
-            ILogger<FileWriter> logger = mock.Object;
+            var fileWriterConfig = new FileWriterConfig();
 
-            IFileWriter fileWriter = new FileWriter(logger) ;
+            fileWriterConfig.BaseFolder = @"./";
+
+            IOptions<FileWriterConfig> someOptions = Options.Create<FileWriterConfig>(fileWriterConfig);
+
+
+            var mock = new Mock<ILogger<ReportWriter.Service.FileWriter>>();
+
+            ILogger<ReportWriter.Service.FileWriter> logger = mock.Object;
+
+            IFileWriter fileWriter = new ReportWriter.Service.FileWriter(logger, someOptions) ;
 
             IReportFile reportService = new ReportFile(fileWriter);
 
@@ -34,7 +45,7 @@ namespace UTReportService.UTReportWriter
 
             Console.WriteLine(testData);
 
-            reportService.ReportAsFileAsync(testData, "testReport.csv", @"./", ";", "Row1;Row2;Row3;Row4") ;
+            reportService.ReportAsFileAsync(testData, "testReport.csv","" , ";", "Row1;Row2;Row3;Row4") ;
 
             var Expected = File.ReadAllText(@"./expectedReport.csv");
 

@@ -5,8 +5,8 @@
       <File FileName="OptionsPatternWorker/Worker.cs" Line="31" Column="61" />
       <File FileName="OptionsPatternWorker/appsettings.json" />
       <File FileName="OptionsPatternWorker/Program.cs" />
-      <File FileName="OptionsPatternWorker/Services/FileProcessor.cs" Line="78" Column="1" />
-      <File FileName="OptionsPatternWorker/Services/IFileProcessor.cs" Line="15" Column="19" />
+      <File FileName="OptionsPatternWorker/Services/FileProcessor.cs" Line="34" Column="1" />
+      <File FileName="OptionsPatternWorker/Services/IFileProcessor.cs" />
       <File FileName="OptionsPatternWorker/Models/CsvInput.cs" Line="14" Column="6" />
       <File FileName="OptionsPatternWorker/Models/ConfigClasses.cs" Line="7" Column="25" />
       <File FileName="OptionsPatternWorker/appsettings.Development.json" />

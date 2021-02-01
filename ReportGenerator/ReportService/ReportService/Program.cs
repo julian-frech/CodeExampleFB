@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
-using DataOperator.Data;
+using DataOperator.Context;
 using FileWriter.ConfigurationOption;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -53,7 +53,7 @@ namespace ReportService
 
 
                     services.AddDbContext<BaseDbContext>(options =>
-                options.UseSqlServer(configuration["ConnectionString:SqlDatabaseContext"]),
+                options.UseSqlServer(configuration["ConnectionString:SqlDatabaseContext"], a => a.MigrationsAssembly("ReportService")),
                     ServiceLifetime.Singleton);
 
                     
