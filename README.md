@@ -1,7 +1,19 @@
+# Report Generator
+
+<img src="./images/C-Sharp-01.svg" align="right"
+     width="120" height="178">
+
+
+Based on database side defined reporting objects, txt based files are saved to a local drive or uploaded to cloud file/blob storage. The Report Generator is divided into two applications and connection via **message queues** (Azure Queue or Amazon SQS). The frontend service is an api endpoint. It provides the access point to the queue (not yet). The queue collects report names, that should be configured in the database. The report creation is done via the **ReportService**. The ReportService is subdivided into **DataOperator** (managing database objects and collecting data), **ReportService** (queue mediation plus coordination) and **ReportWriter** (writing files to file systems).
+
+
+<img src="./images/ReportGenerator.png" align="center"
+     alt="Overview: ReportGenerator" width="480" height="720">
+
 # Central Finance Manager
 
 <img src="./images/C-Sharp-01.svg" align="right"
-     alt="Size Limit logo by Anton Lovchikov" width="120" height="178">
+     width="120" height="178">
 
 Multiple services and applications, database and scripts to collect financial data, perform analysis and build your own depot.
 
