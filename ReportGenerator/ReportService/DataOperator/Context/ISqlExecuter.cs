@@ -37,7 +37,6 @@ namespace DataOperator.Context
                     
                     dataAdapter.SelectCommand = new SqlCommand(SqlCommand, connection);
                     
-                    //// avoid SQL-Injection
                     dataAdapter.SelectCommand.Parameters.Add("@DATE", SqlDbType.Date);
                     
                     dataAdapter.SelectCommand.Parameters["@DATE"].Value = DateParameter;

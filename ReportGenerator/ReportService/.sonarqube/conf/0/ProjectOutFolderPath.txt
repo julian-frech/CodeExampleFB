@@ -1,0 +1,1 @@
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/.sonarqube/out/0

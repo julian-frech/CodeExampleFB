@@ -1,0 +1,27 @@
+Product projects
+---------------------------------------
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/ReportWriter.csproj
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/DataOperator/DataOperator.csproj
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportService/ReportService.csproj
+
+
+Test projects
+---------------------------------------
+/Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/UTReportService/UTReportService.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+
