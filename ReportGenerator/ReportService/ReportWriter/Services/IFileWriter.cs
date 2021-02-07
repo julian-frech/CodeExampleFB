@@ -35,7 +35,7 @@ namespace ReportWriter.Service
 
                 _logger.LogInformation("Writing to: " + target);
 
-                File.WriteAllTextAsync(target, inputString);
+                await File.WriteAllTextAsync(target, inputString);
 
             }
             catch(Exception exc)
@@ -86,7 +86,7 @@ namespace ReportWriter.Service
 
                 var fileStream = new MemoryStream(Encoding.UTF8.GetBytes(inputString ?? ""));
 
-                cloudBlockBlob.UploadFromStreamAsync(fileStream);
+                await cloudBlockBlob.UploadFromStreamAsync(fileStream);
 
                 _logger.LogInformation($"'{target}' uploaded to '{containerName}'");
                 

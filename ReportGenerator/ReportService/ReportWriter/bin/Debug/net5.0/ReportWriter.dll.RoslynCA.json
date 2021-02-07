@@ -1,0 +1,189 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "3.8.0.0",
+        "fileVersion": "3.8.0-5.20604.10 (9ed4b774)",
+        "semanticVersion": "3.8.0",
+        "language": "de-DE"
+      },
+      "results": [
+        {
+          "ruleId": "CS4014",
+          "level": "warning",
+          "message": "Da auf diesen Aufruf nicht gewartet wird, wird die Ausführung der aktuellen Methode vor Abschluss des Aufrufs fortgesetzt. Ziehen Sie ein Anwenden des \"Await\"-Operators auf das Ergebnis des Aufrufs in Betracht.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/Services/IFileWriter.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 17,
+                  "endLine": 38,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "In dieser Async-Methode fehlen die \"await\"-Operatoren, weshalb sie synchron ausgeführt wird. Sie sollten die Verwendung des \"await\"-Operators oder von \"await Task.Run(...)\" in Betracht ziehen, um auf nicht blockierende API-Aufrufe zu warten bzw. CPU-gebundene Aufgaben auf einem Hintergrundthread auszuführen.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/Services/IFileWriter.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 27,
+                  "endLine": 30,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS4014",
+          "level": "warning",
+          "message": "Da auf diesen Aufruf nicht gewartet wird, wird die Ausführung der aktuellen Methode vor Abschluss des Aufrufs fortgesetzt. Ziehen Sie ein Anwenden des \"Await\"-Operators auf das Ergebnis des Aufrufs in Betracht.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/Services/IFileWriter.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 17,
+                  "endLine": 89,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/ConfigurationOptions/CloudFileWriterConfig.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/ConfigurationOptions/FileWriterConfig.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/julianfrech/Documents/GitHub/CodeExampleFB/ReportGenerator/ReportService/ReportWriter/ReportWriter.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS1998": {
+          "id": "CS1998",
+          "shortDescription": "Bei der asynchronen Methode fehlen \"await\"-Operatoren. Die Methode wird synchron ausgeführt.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS4014": {
+          "id": "CS4014",
+          "shortDescription": "Da auf diesen Aufruf nicht gewartet wird, wird die Ausführung der aktuellen Methode vor Abschluss des Aufrufs fortgesetzt.",
+          "fullDescription": "Die aktuelle Methode ruft eine asynchrone Methode auf, die ein Task- oder ein Task<TResult>-Objekt zurückgibt und den await-Operator nicht auf das Ergebnis anwendet. Der Aufruf der asynchronen Methode beginnt als asynchroner Task. Da kein await-Operator angewendet wird, wird das Programm jedoch fortgesetzt, ohne dass auf den Abschluss des Tasks gewartet wird. In den meisten Fällen entspricht dieses Verhalten nicht Ihren Erwartungen. Normalerweise hängen andere Aspekte der aufrufenden Methode von den Ergebnissen des Aufrufs ab, oder es wird mindestens erwartet, dass die aufgerufene Methode abgeschlossen wird, bevor die Rückgabe von der Methode erfolgt, die den Aufruf enthält.\u000d\u000a\u000d\u000aEbenso wichtig ist, was mit Ausnahmen geschieht, die in der aufgerufenen asynchronen Methode ausgelöst werden. Eine Ausnahme, die in einer Methode ausgelöst wird, die ein Task- oder Task<TResult>-Objekt zurückgibt, wird im zurückgegebenen Task gespeichert. Wenn Sie nicht auf den Abschluss des Tasks warten bzw. keine explizite Überprüfung auf Ausnahmen ausführen, geht die Ausnahme verloren. Wenn Sie auf den Abschluss des Tasks warten, wird die Ausnahme erneut ausgelöst.\u000d\u000a\u000d\u000aAls bewährte Methode sollten Sie immer auf den Abschluss des Aufrufs warten.\u000d\u000a\u000d\u000aSie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie sicher sind, dass Sie nicht auf den Abschluss des asynchronen Aufrufs warten möchten und die aufgerufene Methode keine Ausnahmen auslöst. In diesem Fall können Sie die Warnung unterdrücken, indem Sie das Taskergebnis des Aufrufs einer Variablen zuweisen.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1128": {
+          "id": "S1128",
+          "shortDescription": "Unused \"using\" should be removed",
+          "fullDescription": "Although unnecessary using won't change anything to the produced application, removing them:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1128",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

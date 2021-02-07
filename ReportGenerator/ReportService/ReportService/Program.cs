@@ -4,17 +4,19 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using ReportService.ConfigurationLogic;
 using ReportService.QueueService;
 using ReportWriter;
 using ReportWriter.ConfigurationOption;
 using ReportWriter.Service;
+using Serilog;
 
 namespace ReportService
 {
     public class Program
     {
-        
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -22,7 +24,7 @@ namespace ReportService
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration((context,hostConfig) =>
+            .ConfigureAppConfiguration((context, hostConfig) =>
             {
                 hostConfig.AddEnvironmentVariables();
 
@@ -33,6 +35,25 @@ namespace ReportService
                     hostConfig.AddUserSecrets<Program>();
                 }
             })
+            .ConfigureLogging(
+                loggingBuilder =>
+                {
+                    var configuration = new ConfigurationBuilder()
+                        .AddJsonFile("appsettings.json")
+                        .Build();
+                    var logger = new LoggerConfiguration()
+                        .ReadFrom.Configuration(configuration)
+                        .MinimumLevel.Information()
+                        .Enrich.WithThreadId()
+                        .Enrich.WithProcessId()
+                        .Enrich.WithThreadName()
+                        .Enrich.WithMachineName()
+
+                    .CreateLogger();
+
+                    loggingBuilder.AddSerilog(logger, dispose: true);
+                }
+                )
                 .ConfigureServices((hostConfig, services) =>
                 {
 
@@ -52,7 +73,7 @@ namespace ReportService
                 options.UseSqlServer(configuration["ConnectionString:SqlDatabaseContext"], a => a.MigrationsAssembly("ReportService")),
                     ServiceLifetime.Singleton);
 
-                    
+
 
                     services.AddHostedService<ReportServiceHosted>();
 
@@ -63,6 +84,8 @@ namespace ReportService
                     services.AddTransient<IReportsQueue, ReportsQueue>();
 
                     services.AddTransient<ISqlExecuter, SqlExecuter>();
+
+                    services.AddApplicationInsightsTelemetryWorkerService();
                 });
 
     }
