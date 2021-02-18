@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ReportService.Migrations
 {
     [DbContext(typeof(BaseDbContext))]
-    [Migration("20210131191004_Initial")]
-    partial class Initial
+    [Migration("20210208135717_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,21 +23,47 @@ namespace ReportService.Migrations
 
             modelBuilder.Entity("DataOperator.Models.Logs", b =>
                 {
-                    b.Property<string>("LogMessage")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Log_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
-                    b.Property<DateTimeOffset>("LogTime")
-                        .HasColumnType("datetimeoffset");
+                    b.Property<DateTime>("ITS")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("ServiceId")
+                    b.Property<DateTime>("Log_Time")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Logging_Level")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Machine_Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Service_Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Service_Step_Num")
                         .HasColumnType("int");
 
-                    b.Property<string>("ServiceMethod")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Solved")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("int");
 
-                    b.HasKey("LogMessage", "LogTime", "ServiceId", "ServiceMethod");
+                    b.Property<int>("Thread_Id")
+                        .HasColumnType("int");
 
-                    b.ToTable("F_SERVICE_LOGS", "logging");
+                    b.Property<DateTime>("UTS")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Log_Id");
+
+                    b.ToTable("LOGS", "logging");
                 });
 
             modelBuilder.Entity("DataOperator.Models.ReportConfiguration", b =>

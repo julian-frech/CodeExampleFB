@@ -647,3 +647,107 @@ If you are expecting some headers to be missing and want to ignore this validati
 2020-12-08 11:51:53.2018|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
 2020-12-08 11:51:53.2018|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
 2020-12-08 11:51:53.2029|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2021-02-15 16:04:05.5117|INFO|OptionsPatternWorker.Worker|Worker started at: 02/15/2021 16:04:05 +01:00
+2021-02-15 16:04:05.5625|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsWrite : File writer for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:05.6826|INFO|OptionsPatternWorker.Worker|Initial file created.
+2021-02-15 16:04:05.6835|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:05.6835|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:05.6835|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:05.7590|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:05.7608|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-02-15 16:04:05.7608|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-02-15 16:04:05.7608|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2021-02-15 16:04:10.7646|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:10.7649|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:10.7649|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:10.7675|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:15.7637|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:15.7637|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:15.7644|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:15.7661|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:20.7642|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:20.7642|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:20.7652|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:20.7677|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:25.7693|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:25.7693|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:25.7701|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:25.7721|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:30.7702|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:30.7702|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:30.7712|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:30.7734|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:35.7749|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:35.7749|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:35.7749|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:35.7777|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:40.7813|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:40.7819|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:40.7819|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:40.7845|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:45.7862|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:45.7869|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:45.7869|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:45.7894|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:50.7898|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:50.7898|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:50.7898|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:50.7930|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:04:55.7969|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:04:55.7975|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:04:55.7975|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:04:55.8005|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:00.8035|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:00.8041|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:00.8041|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:00.8066|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:05.8114|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:05.8119|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:05.8119|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:05.8146|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:10.8202|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:10.8207|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:10.8207|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:10.8233|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:15.8242|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:15.8245|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:15.8245|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:15.8263|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:20.8279|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:20.8279|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:20.8287|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:20.8305|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:25.8360|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:25.8365|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:25.8365|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:25.8393|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:30.8436|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:30.8436|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:30.8445|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:30.8470|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:35.8476|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads/
+2021-02-15 16:05:35.8476|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloads/username.csv
+2021-02-15 16:05:35.8476|INFO|OptionsPatternWorker.Worker|Trigger file available
+2021-02-15 16:05:35.8501|INFO|OptionsPatternWorker.Worker|[{"FirstLine":"first","SecondLine":"second","ThirdLine":"third"}]
+2021-02-15 16:05:40.8536|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/
+2021-02-15 16:05:40.8536|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/username.csv
+2021-02-15 16:05:40.8548|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2021-02-15 16:05:40.8548|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2021-02-15 16:24:43.8016|INFO|OptionsPatternWorker.Worker|Worker started at: 02/15/2021 16:24:43 +01:00
+2021-02-15 16:24:43.8464|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsWrite : File writer for: username.csv at Location: /Users/julianfrech/
+2021-02-15 16:24:43.9552|INFO|OptionsPatternWorker.Worker|Initial file created.
+2021-02-15 16:24:43.9561|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads
+2021-02-15 16:24:43.9561|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloadsusername.csv
+2021-02-15 16:24:43.9561|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2021-02-15 16:24:43.9561|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2021-02-15 16:24:43.9583|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-02-15 16:24:43.9583|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-02-15 16:24:43.9583|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker
+2021-02-15 16:25:43.9626|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads
+2021-02-15 16:25:43.9626|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloadsusername.csv
+2021-02-15 16:25:43.9626|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2021-02-15 16:25:43.9626|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
+2021-02-15 16:26:43.9732|INFO|OptionsPatternWorker.Services.FileProcessor|FileProcessor.ReadAppSettingsRead : File watcher for: username.csv at Location: /Users/julianfrech/Downloads
+2021-02-15 16:26:43.9743|INFO|OptionsPatternWorker.Worker|Configured csv file: /Users/julianfrech/Downloadsusername.csv
+2021-02-15 16:26:43.9743|INFO|OptionsPatternWorker.Worker|Triggerfile available: False Sleeping for 1 Minute.
+2021-02-15 16:26:43.9748|INFO|OptionsPatternWorker.Worker|----->>>>>>Adjust filename and file location in appsettings.json at location: /Users/julianfrech/Documents/GitHub/CodeExampleFB/DOTNET/OptionsPatternWorker/OptionsPatternWorker<<<<<<-----
