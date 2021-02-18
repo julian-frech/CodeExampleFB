@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ReportService.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,18 +14,26 @@ namespace ReportService.Migrations
                 name: "reporting");
 
             migrationBuilder.CreateTable(
-                name: "F_SERVICE_LOGS",
+                name: "LOGS",
                 schema: "logging",
                 columns: table => new
                 {
-                    ServiceId = table.Column<int>(type: "int", nullable: false),
-                    LogMessage = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ServiceMethod = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    LogTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
+                    Log_Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Service_Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Logging_Level = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Log_Time = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Thread_Id = table.Column<int>(type: "int", nullable: false),
+                    Machine_Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Service_Step_Num = table.Column<int>(type: "int", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Solved = table.Column<int>(type: "int", nullable: false),
+                    ITS = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UTS = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_F_SERVICE_LOGS", x => new { x.LogMessage, x.LogTime, x.ServiceId, x.ServiceMethod });
+                    table.PrimaryKey("PK_LOGS", x => x.Log_Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -48,7 +56,7 @@ namespace ReportService.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "F_SERVICE_LOGS",
+                name: "LOGS",
                 schema: "logging");
 
             migrationBuilder.DropTable(

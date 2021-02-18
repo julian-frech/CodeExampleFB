@@ -5,12 +5,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NLog.Web;
 using ReportService.ConfigurationLogic;
 using ReportService.QueueService;
 using ReportWriter;
 using ReportWriter.ConfigurationOption;
 using ReportWriter.Service;
 using Serilog;
+using Serilog.Sinks.MSSqlServer;
 
 namespace ReportService
 {
@@ -19,7 +21,25 @@ namespace ReportService
 
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var _logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+
+            try
+            {
+                _logger.Info("Starting up the service");
+
+                CreateHostBuilder(args).Build().Run();
+
+            }
+            catch (Exception ex)
+            {
+                _logger.Fatal(ex, "There was a problem starting the serivce");
+            }
+            finally
+            {
+                NLog.LogManager.Shutdown();
+            }
+
+            
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -35,25 +55,7 @@ namespace ReportService
                     hostConfig.AddUserSecrets<Program>();
                 }
             })
-            .ConfigureLogging(
-                loggingBuilder =>
-                {
-                    var configuration = new ConfigurationBuilder()
-                        .AddJsonFile("appsettings.json")
-                        .Build();
-                    var logger = new LoggerConfiguration()
-                        .ReadFrom.Configuration(configuration)
-                        .MinimumLevel.Information()
-                        .Enrich.WithThreadId()
-                        .Enrich.WithProcessId()
-                        .Enrich.WithThreadName()
-                        .Enrich.WithMachineName()
 
-                    .CreateLogger();
-
-                    loggingBuilder.AddSerilog(logger, dispose: true);
-                }
-                )
                 .ConfigureServices((hostConfig, services) =>
                 {
 
@@ -73,8 +75,6 @@ namespace ReportService
                 options.UseSqlServer(configuration["ConnectionString:SqlDatabaseContext"], a => a.MigrationsAssembly("ReportService")),
                     ServiceLifetime.Singleton);
 
-
-
                     services.AddHostedService<ReportServiceHosted>();
 
                     services.AddTransient<IFileWriter, FileWriter/*CloudFileWriter*/>();
@@ -86,7 +86,15 @@ namespace ReportService
                     services.AddTransient<ISqlExecuter, SqlExecuter>();
 
                     services.AddApplicationInsightsTelemetryWorkerService();
-                });
+                })
+                .ConfigureLogging(logging =>
+                {
+                    logging.ClearProviders();
+                    logging.SetMinimumLevel(LogLevel.Information);
+                    logging.AddConsole();
+                })
+                    .UseNLog();
+
 
     }
 }

@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using DataOperator.Context;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
+using DataOperator.Models;
 
 namespace ReportService
 {
@@ -57,12 +58,12 @@ namespace ReportService
 
                         var ConfiguredReports = _context.ReportConfigurations.ToList();
 
-                        while (messages.Length > 0)
+                        while (messages.Length > 0 && messages[0] is not null)
                         {
 
-                            _logger.LogInformation($"'{DateTime.Now}': Number of Messages received: ['{messages.Count()}']");
+                            _logger.LogInformation($"Number of Messages received: ['{messages.Count()}']");
 
-                            Parallel.ForEach(messages, new ParallelOptions { MaxDegreeOfParallelism = 4 }, async message =>
+                            Parallel.ForEach(messages, new ParallelOptions { MaxDegreeOfParallelism = 2 }, async message =>
                             {
                                 byte[] data = Convert.FromBase64String(message.MessageText);
 
@@ -72,17 +73,17 @@ namespace ReportService
                                 if (ConfiguredReports.Where(x => x.Report_Name.ToLower() == ReportNameDecodedString).Any())
                                 {
                                     //2. Get data for each message via SQL execution
-                                    DataTable ReportData = _sqlExecuter.GetSqlFeedback(ConfiguredReports.Where(x => x.Report_Name == ReportNameDecodedString).First().Report_Sql, DateTime.Now);
+                                    DataTable ReportData = _sqlExecuter.GetSqlFeedback(ConfiguredReports.Where(x => x.Report_Name.ToLower() == ReportNameDecodedString).First().Report_Sql, DateTime.Now);
 
                                     //    //3. Call ReportWriter for each data
                                     if (ReportData is not null)
                                         {
                                             await _reportFile.ReportAsFileAsync(ReportData,
-                                                ConfiguredReports.Where(x => x.Report_Name == ReportNameDecodedString).First().Report_Name,
+                                                ConfiguredReports.Where(x => x.Report_Name.ToLower() == ReportNameDecodedString).First().Report_Name,
                                                 "",
-                                                ConfiguredReports.Where(x => x.Report_Name == ReportNameDecodedString).First().Report_Separator,
-                                                ConfiguredReports.Where(x => x.Report_Name == ReportNameDecodedString).First().Header_Row);
-                                            _logger.LogInformation($"'{DateTime.Now}': Report '{ConfiguredReports.Where(x => x.Report_Name == ReportNameDecodedString).First().Report_Name}' created.");
+                                                ConfiguredReports.Where(x => x.Report_Name.ToLower() == ReportNameDecodedString).First().Report_Separator,
+                                                ConfiguredReports.Where(x => x.Report_Name.ToLower() == ReportNameDecodedString).First().Header_Row);
+                                            _logger.LogInformation($"Report '{ConfiguredReports.Where(x => x.Report_Name.ToLower() == ReportNameDecodedString).First().Report_Name}' created.");
                                         }
                                         else
                                         {
@@ -105,7 +106,7 @@ namespace ReportService
 
                         _logger.LogInformation("No messages in Queue. Sleeping for 10000ms.");
 
-                        await Task.Delay(100000, stoppingToken);
+                        await Task.Delay(10000, stoppingToken);
 
                     }
                     catch (Exception exc)
@@ -115,15 +116,6 @@ namespace ReportService
 
                 }
                 
-            }
-
-            private async Task<string> DecodeMessage(message)
-            {
-                byte[] data = Convert.FromBase64String(message.MessageText);
-
-                string ReportNameDecodedString = Encoding.UTF8.GetString(data).ToLower();
-
-                return ReportNameDecodedString;
             }
         }
     }
